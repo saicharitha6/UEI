@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+/* body {
+    @apply bg-cover bg-repeat bg-fixed bg-[url('/src/lib/images/bg.jpg')];
+  } */
+  
+ 
