@@ -1,5 +1,5 @@
 <script>
-  import { Drawer, Button, CloseButton } from "flowbite-svelte";
+  import { Drawer, Button, CloseButton, Textarea } from "flowbite-svelte";
   import { InfoCircleSolid, ArrowRightOutline } from "flowbite-svelte-icons";
   import { sineIn } from "svelte/easing";
   import { Label, Input } from "flowbite-svelte";
@@ -39,12 +39,20 @@
     />
   </div>
   <div class="mb-6">
-    <Label for="medium-input" class="block mb-2">Participant Member</Label>
+    <Label for="medium-input" class="block mb-2">Participant Name *</Label>
     <Input id="medium-input" size="md" placeholder="Enter participant" />
+  </div>
+  <div class="mb-6">
+    <Label for="medium-input" class="block mb-2">Location *</Label>
+    <Input id="medium-input" size="md" placeholder="Enter location" />
+  </div>
+  <div class="mb-6">
+    <Label for="medium-input" class="block mb-2">Description</Label>
+    <Textarea for="medium-input" rows=4 placeholder="Enter details..." class="block mb-2"></Textarea>
   </div>
 
   <Button
-    class="bg-green-500 no-underline hover:bg-green-800 text-white"
+    class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold"
     color="light"
     href="/">submit</Button
   >

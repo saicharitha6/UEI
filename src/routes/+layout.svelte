@@ -1,6 +1,10 @@
 <script>
+  // @ts-nocheck
+
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
+  import { Popover } from "flowbite-svelte";
+  let placement;
   // Import your styles here
   import "./styles.css";
   import "../app.css";
@@ -13,7 +17,15 @@
     <slot />
   </main>
   <!-- Fixed clickable icon -->
-  <a href="/participants" class="fixed bottom-20 left-0 p-4">
+  <a
+    href="/participants"
+    id="placement-top"
+    on:mouseenter={() => (placement = "top")}
+    class="fixed bottom-20 left-0 p-4"
+  >
+    <Popover triggeredBy="[id^='placement-top']" class="w-30 text-sm font-bold"
+      >Join Us</Popover
+    >
     <svg
       class="w-16 h-16 text-gray-800 dark:text-white border-2 rounded-full shadow-lg"
       aria-hidden="true"
