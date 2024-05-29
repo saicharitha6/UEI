@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: relative; /* Ensure the parent container is relatively positioned */
+    position: relative; 
   }
 
   main {
@@ -59,6 +59,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
+    padding-top: 24px;
     /* margin: 0 auto; */
     /* box-sizing: border-box; */
   }
