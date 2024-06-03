@@ -13,25 +13,27 @@
 </script>
 
 <div
-  class="participants grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 my-20 "
+  class="participants bg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 my-20 "
 >
   {#each cards as card}
     <div
-      class="bg-gray-600 border bg-cover bg-no-repeat bg-center rounded-lg overflow-hidden flex flex-col"
+      class="border bg-cover bg-no-repeat bg-center rounded-lg overflow-hidden flex flex-col shadow-lg"
     >
+    <div class="bg-gray-500">
       <img
         src={card.imageUrl}
         alt="Cardimage"
-        class="h-40 w-full object-cover md:w-full md:object-cover p-3 rounded-3xl"
+        class="h-40 w-full object-cover md:w-full md:object-cover p-3 hover:p-2 hover:rounded-xl rounded-2xl"
       />
-<hr />
+    </div>
+<!-- <hr class="border-black"/> -->
       <div class="p-4 flex flex-col flex-grow">
-        <p class="text-white mb-4 font-bold text-center text-2xl">
+        <p class="text-black mb-4 font-bold text-center text-2xl">
           {card.text}
         </p>
         <div class="flex-grow flex items-center justify-center">
           <button
-            class="flex items-center bg-green-600 text-white hover:bg-white hover:text-green-600 font-bold py-2 px-4 rounded"
+            class="flex items-center bg-green-500 text-white hover:bg-green-800 hover:text-white font-bold py-2 px-4 rounded"
           >
             Read More
             <svg

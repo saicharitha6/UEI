@@ -3,8 +3,8 @@
 
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import { Popover } from "flowbite-svelte";
-  let placement;
+  // import { Popover } from "flowbite-svelte";
+  // let placement;
   // Import your styles here
   import "./styles.css";
   import "../app.css";
@@ -17,7 +17,7 @@
     <slot />
   </main>
   <!-- Fixed clickable icon -->
-  <a
+  <!-- <a
     href="/participants"
     id="placement-top"
     on:mouseenter={() => (placement = "top")}
@@ -41,7 +41,7 @@
         clip-rule="evenodd"
       />
     </svg>
-  </a>
+  </a> -->
   <Footer />
 </div>
 

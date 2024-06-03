@@ -19,8 +19,8 @@
   }
 </script>
 
-<div class="about w-full flex flex-col items-center justify-center my-20">
-  <div class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg">
+<div class="about w-full flex flex-col items-center justify-center my-10">
+  <!-- <div class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg">
     <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
       The UEI Alliance is committed to global development, adoption, and
       compliance with the Beckn Protocol for energy-related economic
@@ -29,13 +29,13 @@
       Participation from both public and private organisations is highly
       encouraged.
     </p>
-  </div>
+  </div> -->
 
   <h2 class="font-bold mt-5 text-center  text-3xl text-green-600">
     Our Mission
   </h2>
   <div
-    class="w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-gray-500 dark:text-gray-400 bg-white py-4 px-6 mx-5 align-middle"
+    class="border m-5 shadow-lg rounded-xl w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-gray-500 dark:text-gray-400 bg-white py-4 px-6 mx-5 align-middle"
   >
     <!-- Paragraphs with floating animation -->
     <ul class="list-disc">
@@ -84,14 +84,14 @@
 
   /* Delay each paragraph by 1 second */
   .animate-float:nth-child(1) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
   }
 
   .animate-float:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 1s;
   }
 
   .animate-float:nth-child(3) {
-    animation-delay: 3s;
+    animation-delay: 1.5s;
   }
 </style>
