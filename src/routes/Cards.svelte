@@ -22,7 +22,7 @@
   }
 </script>
 
-<div>
+<div class="lg:right-0">
   <h2 class="font-bold text-black text-3xl mt-10 text-center">
     Focus Areas
   </h2>
