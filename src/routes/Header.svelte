@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logo from "../lib/images/logo.png";
+  import logo from "$lib/assets/images/logo.png";
   // export let title: string; // Title for the header
   import "../app.css";
   import Draw from "./form.svelte";
@@ -7,7 +7,7 @@
   let activeTab: string = "home";
 </script>
 
-<header class="bg-[#161A1D]/50 fixed top-0 left-0 right-0 z-50">
+<header class="bg-black fixed top-0 left-0 right-0 z-50">
   <div class="flex items-center justify-between px-4 py-3">
     <div class="flex items-center">
       <img src={logo} alt="Logo" class="h-10 w-auto mr-5 rounded-md" />

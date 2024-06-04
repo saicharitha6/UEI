@@ -1,12 +1,12 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
-  import member1 from "../lib/images/member1.png";
-  import member2 from "../assets/chargezone.png";
-  import member3 from "../assets/sheru.png";
-  import member4 from "../assets/isof.png";
-  import member5 from "../lib/images/image3.jpg";
-  import member6 from "../lib/images/image4.jpg";
-  import member7 from "../assets/thunder.png";
+  import member1 from "$lib/assets/images/member1.png";
+  import member2 from "$lib/assets/company-icons/chargezone.png";
+  import member3 from "$lib/assets/company-icons/sheru.png";
+  import member4 from "$lib/assets/company-icons/isof.png";
+  import member5 from "$lib/assets/images/image3.jpg";
+  import member6 from "$lib/assets/images/image4.jpg";
+  import member7 from "$lib/assets/company-icons/thunder.png";
 
   // import member1 from "../assets/image2-removebg-preview.png";
   // import member2 from "../assets/isof-removebg-preview.png";
@@ -44,7 +44,7 @@
   });
 </script>
 
-<h3 class="text-3xl text-green-500 text-center font-bold mb-5">
+<h3 class="text-3xl text-black text-center font-bold mb-5">
   Member Participants
 </h3>
 

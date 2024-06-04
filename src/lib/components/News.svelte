@@ -53,7 +53,7 @@
 <div
   class="flex flex-col gap-10 w-full px-[7vw] buildAnimateCustomers opacity-0"
 >
-  <p class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white to-green-500">
+  <p class="text-4xl font-bold text-center text-black">
     Our News Updates
   </p>
 
@@ -62,13 +62,13 @@
     <div class="flex gap-20">
       {#each customers as customer}
         <div class="flex flex-col items-center gap-4 min-w-[350px]">
-          <p class="text-3xl font-semibold text-center text-white ">
+          <p class="text-3xl font-semibold text-center text-black ">
             {customer.title}
           </p>
-          <p class="text-xl font-semibold text-center text-[#30BFAE] ">
+          <p class="text-xl font-semibold text-center text-green-500 ">
             Development @ India
           </p>
-          <p class="text-sm text-gray-400 text-center whitespace-normal">
+          <p class="text-sm text-gray-600 text-center whitespace-normal">
            {customer.para}
           </p>
         </div>

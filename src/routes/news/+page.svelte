@@ -22,8 +22,8 @@
   ];
 </script>
 
-<div class="bg-[#1A1F24] h-screen">
-  <h2 class="text-center mt-20 font-bold text-2xl text-green-400">
+<div class="bg-white h-screen">
+  <h2 class="text-center mt-20 font-bold text-2xl text-black">
     Daily News
   </h2>
 
@@ -31,15 +31,15 @@
     class="news  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center"
   >
     {#each news as card}
-      <Card class="overflow-hidden hover:translate-y-1 floating bg-[#1C2428]">
-        <div class="flex-grow overflow-auto bg-[#1C2428]">
+      <Card class="overflow-hidden hover:translate-y-1 floating bg-white shadow-lg">
+        <div class="flex-grow overflow-auto bg-white">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
+            class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-black"
           >
             {card.title}
           </h5>
           <p
-            class="mb-3 font-normal text-gray-200 dark:text-gray-400 leading-tight"
+            class="mb-3 font-normal text-gray-600 dark:text-gray-600 leading-tight"
           >
             {card.para}
           </p>
@@ -55,7 +55,7 @@
           <!-- Your SVG icons here -->
           <div class="mt-5 left-5 flex flex-row flex-auto">
             <svg
-              class="w-7 h-7 text-white dark:text-white mr-5"
+              class="w-7 h-7 text-black dark:text-white mr-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -75,7 +75,7 @@
               />
             </svg>
             <svg
-              class="w-7 h-7 text-white dark:text-white"
+              class="w-7 h-7 text-black dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -90,7 +90,7 @@
               />
             </svg>
             <svg
-              class="w-7 h-7 text-white dark:text-white mx-5"
+              class="w-7 h-7 text-black dark:text-white mx-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"

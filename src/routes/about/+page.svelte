@@ -19,14 +19,14 @@
   }
 </script>
 
-<div class="bg-[#1A1F24] ">
+<div class="bg-white ">
   <div
     class="about  w-full flex flex-col items-center justify-center my-16 pt-7"
   >
     <div
       class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg"
     >
-      <p class="mb-3 font-normal text-gray-300 dark:text-gray-400">
+      <p class="mb-3 font-normal text-black dark:text-gray-700">
         The UEI Alliance is committed to global development, adoption, and
         compliance with the Beckn Protocol for energy-related economic
         transactions between digital platforms. The alliance serves as a hub for
@@ -36,11 +36,11 @@
       </p>
     </div>
 
-    <h2 class="font-bold mt-5 text-center text-3xl text-green-400">
+    <h2 class="font-bold mt-5 text-center text-3xl text-black">
       Our Mission
     </h2>
     <div
-      class="m-5 w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-gray-300 dark:text-gray-300 py-4 px-6 mx-5 align-middle"
+      class="m-5 w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-black dark:text-gray-700 py-4 px-6 mx-5 align-middle"
     >
       <!-- Paragraphs with floating animation -->
       <ul class="list-disc">

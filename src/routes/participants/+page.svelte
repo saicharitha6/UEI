@@ -2,14 +2,14 @@
   import { onMount } from "svelte";
   import { Button } from "flowbite-svelte";
   import { ArrowRightOutline } from "flowbite-svelte-icons";
-  import screen1 from "../../lib/images/member2.png";
-  import screen2 from "../../lib/images/image2.jpg";
-  import screen3 from "../../lib/images/member7.jpg";
-  import screen4 from "../../lib/images/member6.jpg";
-  import screen5 from "../../lib/images/member1.png";
-  import screen6 from "../../lib/images/image3.jpg";
-  import screen7 from "../../assets/chargezone.png";
-  import screen8 from "../../assets/sheru-logo.webp";
+  import screen1 from "$lib/assets/images/member2.png";
+  import screen2 from "$lib/assets/images/image2.jpg";
+  import screen3 from "$lib/assets/images/member7.jpg";
+  import screen4 from "$lib/assets/images/member6.jpg";
+  import screen5 from "$lib/assets/images/member1.png";
+  import screen6 from "$lib/assets/images/image3.jpg";
+  import screen7 from "$lib/assets/company-icons/chargezone.png";
+  import screen8 from "$lib/assets/company-icons/sheru-logo.webp";
 
   let steps = [
     {
@@ -86,14 +86,14 @@
 </script>
 
 <div
-  class="bg-[#1A1F24] flex flex-col gap-14 w-full min-h-screen px-[10vw] pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
+  class="bg-white flex flex-col gap-14 w-full min-h-screen px-[10vw] pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">
-      <p class="text-center text-4xl font-semibold text-green-400">
+      <p class="text-center text-4xl font-semibold text-black">
         Our Participants
       </p>
-      <p class="text-lg text-center text-gray-400">
+      <p class="text-lg text-center text-gray-500">
         See our member participants that we have co-ordinate!
       </p>
     </div>
@@ -103,9 +103,9 @@
     class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10"
   >
     {#each steps as step}
-      <div class="flex flex-col bg-[#1A1F24]">
+      <div class="flex flex-col bg-[#1A1F24] rounded-md">
         <div
-          class="flex items-center w-full h-auto border border-t-gray-500 shadow-md shadow-white"
+          class="flex items-center w-full h-auto border border-t-gray-500 shadow-md shadow-black"
         >
           <img
             src={step.img}
@@ -114,10 +114,10 @@
           />
         </div>
         <div
-          class="flex flex-col items-start w-full bg-[#1C2428] border-white border shadow shadow-white p-4"
+          class="flex flex-col items-start w-full bg-[#1C2428] border shadow-md shadow-black p-4"
         >
           <p class="text-white text-lg font-semibold">{step.title}</p>
-          <p class="text-sm text-gray-400">{step.des}</p>
+          <p class="text-sm text-gray-300">{step.des}</p>
 
           <div class="flex justify-center bg-[#1C2428] mt-3">
             <Button

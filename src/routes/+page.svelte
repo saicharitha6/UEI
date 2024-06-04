@@ -3,14 +3,13 @@
   import Background from "./backgroud.svelte";
   import Members from "./Members.svelte";
   import Paragraph from "./paragraph.svelte";
-  import MainContent from "./home/MainContent.svelte";
-  import Content from "./home/Content.svelte";
-  // import Steps from "./home/Steps.svelte";
-  import Customers from "./home/News.svelte";
+  import MainContent from "$lib/components/MainContent.svelte";
+  import Content from "$lib/components/Content.svelte";
+  import Customers from "$lib/components/News.svelte";
 </script>
 
 <div
-  class="flex flex-col bg-gradient-to-t to-[#1C2328] from-[#14181B] min-h-screen"
+  class="flex flex-col bg-white min-h-screen"
 >
   <MainContent />
   <Content />

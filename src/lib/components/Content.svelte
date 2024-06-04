@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import Icon2 from '../../lib/images/icon.png';
+  import Icon2 from '$lib/assets/icons/icon.png';
 
   let steps = [
     {
@@ -46,24 +46,25 @@
     animateData();
   });
 </script>
-
-<h2 class="font-bold text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-white to-green-400 mt-10">Our Vision</h2>
+<div class="mb-5">
+<h2 class="font-bold text-4xl text-center text-black mt-10">Our Vision</h2>
 <div class="w-full items-center flex flex-col justify-center">
-  <div class="flex items-center w-3/4 md:w-3/4 lg:w-full justify-center lg:justify-center md:justify-center text-gray-300"></div>
+  <div class="flex items-center w-3/4 md:w-3/4 lg:w-full justify-center lg:justify-center md:justify-center text-white"></div>
 </div>
 <div class="w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
   {#each steps as step}
-    <div class="relative buildAnimate flex flex-col bg-[#1A1F24] rounded-lg border border-gray-800 p-4">
-      <div class="flex-grow flex flex-col justify-center items-center w-full bg-[#1C2428] p-4">
-        <div class="flex justify-center items-center h-24">
+    <div class="relative buildAnimate flex flex-col ">
+      <div class="flex-grow flex flex-col justify-center items-center w-full bg-[#1C2428] p-4 rounded-md shadow-md shadow-black">
+        <div class="flex justify-center items-center h-15">
           {#if step.isSvg}
             {@html step.icon}
           {:else}
             <img src={step.icon} alt="icon" class="h-16 w-16" />
           {/if}
         </div>
-        <p class="text-md text-gray-400 mt-4">{step.des}</p>
+        <p class="text-md text-gray-300 p-5">{step.des}</p>
       </div>
     </div>
   {/each}
+</div>
 </div>

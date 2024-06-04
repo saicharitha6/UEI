@@ -19,7 +19,7 @@
 </div> -->
 
 <script>
-  import background from "../lib/images/bg.jpg";
+  import background from "$lib/assets/images/bg.jpg";
 </script>
 
 <div class="relative h-auto flex justify-center mb-5">

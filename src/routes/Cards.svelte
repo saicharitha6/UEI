@@ -23,7 +23,7 @@
 </script>
 
 <div>
-  <h2 class="font-bold text-green-500 text-3xl mt-10 text-center">
+  <h2 class="font-bold text-black text-3xl mt-10 text-center">
     Focus Areas
   </h2>
   <div class="justify-center items-center w-full px-[7vw]  p-5">
@@ -34,7 +34,7 @@
         >
           {#if i === 0}
             <div
-              class="bg-green-800 text-white font-bold py-2 px-4 rounded-t-lg"
+              class="bg-black text-white font-bold py-2 px-4 rounded-t-lg"
             >
               Scaling Transactions
             </div>
@@ -43,7 +43,7 @@
               network.
             </p>
           {:else if i === 1}
-            <div class="bg-green-800 text-white font-bold py-2 px-4 rounded-t-lg ">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg ">
               Ease of Scaling
             </div>
             <p class="text-gray-700 p-3">
@@ -51,7 +51,7 @@
               existing participants.
             </p>
           {:else}
-            <div class="bg-green-800 text-white font-bold py-2 px-4 rounded-t-lg">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Ease of Adoption
             </div>
             <p class="text-gray-700 p-3">
