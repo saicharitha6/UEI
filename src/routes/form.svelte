@@ -14,7 +14,7 @@
 
 <div class="text-center">
   <Button
-    class="font-bold p-2 sm:p-1 md:p-auto text-gray text-xs lg:text-sm md:text-sm sm:text-xs bg-white"
+    class="font-bold p-1 py-2 sm:p-1 md:p-3 lg:p-3 text-gray text-xs lg:text-sm md:text-sm sm:text-xs bg-white"
     on:click={() => (hidden6 = false)}>Join Us</Button
   >
 </div>
