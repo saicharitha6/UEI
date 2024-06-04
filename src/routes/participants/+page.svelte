@@ -1,58 +1,121 @@
-<script>
-  // Sample card data
-  import image1 from "../../lib/images/image1.jpg";
-  import image2 from "../../lib/images/image2.jpg";
-  import image3 from "../../lib/images/image3.jpg";
-  import image4 from "../../lib/images/image4.jpg";
-  const cards = [
-    { imageUrl: image1, text: "Charge Zone" },
-    { imageUrl: image2, text: "Turno" },
-    { imageUrl: image3, text: "Kazam" },
-    { imageUrl: image4, text: "World Resources Institute" },
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { Button } from "flowbite-svelte";
+  import { ArrowRightOutline } from "flowbite-svelte-icons";
+  import screen1 from '../../lib/images/member2.png';
+  import screen2 from '../../lib/images/image2.jpg';
+  import screen3 from '../../lib/images/member7.jpg';
+  import screen4 from '../../lib/images/member6.jpg';
+  import screen5 from '../../lib/images/member1.png';
+  import screen6 from "../../lib/images/image3.jpg";
+  import screen7 from "../../assets/chargezone.png";
+  import screen8 from "../../assets/sheru-logo.webp";
+
+  let steps = [
+    {
+      img: screen1,
+      title: 'ISGF',
+      des: 'partnership initiative between government and various stakeholders',
+    },
+    {
+      img: screen2,
+      title: 'TURNO',
+      des: 'upload your own custom organization logo. own custom organization logo',
+    },
+    {
+      img: screen3,
+      title: 'World Resources Institute',
+      des: 'select payment gateway depend on your business need.',
+    },
+    {
+      img: screen4,
+      title: 'Thunder',
+      des: 'See what it\'s like to build custom EV charging App, without writing code!',
+    },
+    {
+      img: screen5,
+      title: 'Thunder',
+      des: 'See what it\'s like to build custom EV charging App, without writing code!',
+    },
+    {
+      img: screen6,
+      title: 'Kazam',
+      des: 'See what it\'s like to build custom EV charging App, without writing code!',
+    },
+    {
+      img: screen7,
+      title: 'Charge Zone',
+      des: 'See what it\'s like to build custom EV charging App, without writing code!',
+    },
+
+    {
+      img: screen8,
+      title: 'SHERU',
+      des: 'See what it\'s like to build custom EV charging App, without writing code!',
+    },
+
   ];
+
+  const animateData = async () => {
+    const { default: gsap } = await import('gsap');
+    const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.buildAnimateSteps',
+        start: '10% 80%',
+      },
+    });
+    tl.fromTo(
+      '.buildAnimateSteps',
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+      }
+    );
+  };
+
+  onMount(() => {
+    animateData();
+  });
 </script>
 
-<div
-  class="participants bg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 my-20 "
->
-  {#each cards as card}
-    <div
-      class="border bg-cover bg-no-repeat bg-center rounded-lg overflow-hidden flex flex-col shadow-lg"
-    >
-    <div class="bg-gray-500">
-      <img
-        src={card.imageUrl}
-        alt="Cardimage"
-        class="h-40 w-full object-cover md:w-full md:object-cover p-3 hover:p-2 hover:rounded-xl rounded-2xl"
-      />
+<div class="bg-[#1A1F24] flex flex-col gap-14 w-full min-h-screen px-[10vw] pt-[15vh] buildAnimateSteps opacity-0 overflow-y-auto">
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-3">
+      <p class="text-center text-4xl font-semibold text-green-400">
+        Our Participants
+      </p>
+      <p class="text-lg text-center text-gray-400">
+        See our member participants that we have co-ordinate!
+      </p>
     </div>
-<!-- <hr class="border-black"/> -->
-      <div class="p-4 flex flex-col flex-grow">
-        <p class="text-black mb-4 font-bold text-center text-2xl">
-          {card.text}
-        </p>
-        <div class="flex-grow flex items-center justify-center">
-          <button
-            class="flex items-center bg-green-500 text-white hover:bg-green-800 hover:text-white font-bold py-2 px-4 rounded"
-          >
-            Read More
-            <svg
-              class="w-4 h-4 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              ></path>
-            </svg>
-          </button>
+  </div>
+
+  <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10">
+    {#each steps as step}
+      <div class="flex flex-col bg-[#1A1F24] rounded-lg border border-gray-800">
+        <div class="flex items-center w-full h-auto">
+          <img src={step.img} alt="logo" class="h-[200px] w-full mx-auto" />
+        </div>
+        <div class="flex flex-col items-start w-full bg-[#1C2428] p-4">
+          <p class="text-white text-lg font-semibold">{step.title}</p>
+          <p class="text-sm text-gray-400">{step.des}</p>
+       
+          <!-- <div class="flex justify-center bg-[#1C2428] p-5">
+            <Button class="bg-green-500 hover:bg-green-700 font-bold text-white px-4 py-2 flex items-center">
+              <ArrowRightOutline class="w-6 h-6 ml-2" />
+            </Button>
+          </div> -->
+          
         </div>
       </div>
-    </div>
-  {/each}
+    {/each}
+  </div>
 </div>

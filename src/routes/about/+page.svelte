@@ -19,45 +19,51 @@
   }
 </script>
 
-<div class="about w-full flex flex-col items-center justify-center my-10">
-  <!-- <div class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg">
-    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-      The UEI Alliance is committed to global development, adoption, and
-      compliance with the Beckn Protocol for energy-related economic
-      transactions between digital platforms. The alliance serves as a hub for
-      open network concepts, providing support and advisory services.
-      Participation from both public and private organisations is highly
-      encouraged.
-    </p>
-  </div> -->
-
-  <h2 class="font-bold mt-5 text-center  text-3xl text-green-600">
-    Our Mission
-  </h2>
+<div class="bg-[#1A1F24] ">
   <div
-    class="border m-5 shadow-lg rounded-xl w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-gray-500 dark:text-gray-400 bg-white py-4 px-6 mx-5 align-middle"
+    class="about  w-full flex flex-col items-center justify-center my-16 pt-7"
   >
-    <!-- Paragraphs with floating animation -->
-    <ul class="list-disc">
-      <li class="animate-float">
-        UEI Alliance is a collaborative group formed by various stakeholders in
-        the energy sector, committed to global development, adoption, and
+    <div
+      class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg"
+    >
+      <p class="mb-3 font-normal text-gray-300 dark:text-gray-400">
+        The UEI Alliance is committed to global development, adoption, and
         compliance with the Beckn Protocol for energy-related economic
-        transactions between digital platforms.
-      </li>
-      <li class="animate-float mt-5 mb-5">
-        This alliance transcends specific sectors like electric vehicles (EVs)
-        or battery technology, encompassing a wide range of energy-related
-        transaction domains.
-      </li>
-      <li class="animate-float">
-        Its primary aim is to promote the adoption and interoperability of the
-        Beckn Protocol within the energy field, thereby scaling the Unified
-        Energy Interface (UEI) network. Operating as a think tank, the alliance
-        focuses on enhancing digital economic transactions between energy
-        platforms, particularly in resource discovery and fulfillment.
-      </li>
-    </ul>
+        transactions between digital platforms. The alliance serves as a hub for
+        open network concepts, providing support and advisory services.
+        Participation from both public and private organisations is highly
+        encouraged.
+      </p>
+    </div>
+
+    <h2 class="font-bold mt-5 text-center text-3xl text-green-400">
+      Our Mission
+    </h2>
+    <div
+      class="m-5 w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-gray-300 dark:text-gray-300 py-4 px-6 mx-5 align-middle"
+    >
+      <!-- Paragraphs with floating animation -->
+      <ul class="list-disc">
+        <li class="animate-float">
+          UEI Alliance is a collaborative group formed by various stakeholders
+          in the energy sector, committed to global development, adoption, and
+          compliance with the Beckn Protocol for energy-related economic
+          transactions between digital platforms.
+        </li>
+        <li class="animate-float mt-5 mb-5">
+          This alliance transcends specific sectors like electric vehicles (EVs)
+          or battery technology, encompassing a wide range of energy-related
+          transaction domains.
+        </li>
+        <li class="animate-float">
+          Its primary aim is to promote the adoption and interoperability of the
+          Beckn Protocol within the energy field, thereby scaling the Unified
+          Energy Interface (UEI) network. Operating as a think tank, the
+          alliance focuses on enhancing digital economic transactions between
+          energy platforms, particularly in resource discovery and fulfillment.
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 

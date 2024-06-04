@@ -1,14 +1,15 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
   import member1 from "../lib/images/member1.png";
-  import member2 from "../lib/images/member2.png";
-  import member3 from "../lib/images/member3.png";
-  import member4 from "../lib/images/image2.jpg";
-  import member5 from "../lib/images/menber5.png";
+  import member2 from "../assets/chargezone.png";
+  import member3 from "../assets/sheru.png";
+  import member4 from "../assets/isof.png";
+  // import member5 from "../lib/images/member2.png";
   import member6 from "../lib/images/image3.jpg";
   import member7 from "../lib/images/image4.jpg";
+  import member8 from "../assets/thunder.png";
 
-  let members = [member1, member2, member3, member4, member5, member6, member7];
+  let members = [member1, member2, member3, member4,  member6, member7, member8];
   let container: HTMLElement | null = null;
   let interval: number | null = null;
 
@@ -36,7 +37,7 @@
   });
 </script>
 
-<h3 class="text-3xl text-green-600 text-center font-bold mb-5">
+<h3 class="text-3xl text-green-500 text-center font-bold mb-5">
   Member Participants
 </h3>
 
@@ -47,7 +48,7 @@
         <img
           src={member}
           alt="Member"
-          class="w-34 h-24 justify-between space-x-5"
+          class="w-35 h-24 justify-between space-x-5 rounded-md"
         />
       {/each}
     </div>

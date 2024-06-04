@@ -1,10 +1,10 @@
-<script>
+<!-- <script>
   import background from "../lib/images/bg.jpg";
 </script>
 
-<div class="relative w-full h-auto mt-10">
+<div class="relative h-auto">
   <img
-    class="lg:h-auto block md:max-h-50 object-cover w-full rounded-b-2xl"
+    class="md:max-h-50 object-cover w-full rounded-b-2xl"
     src={background}
     alt="background"
   />
@@ -16,4 +16,27 @@
       UEI Alliance is formed by various stakeholders in the energy sector.
     </h2>
   </div>
+</div> -->
+
+<script>
+  import background from "../lib/images/bg.jpg";
+</script>
+
+<div class="relative h-auto flex justify-center mb-5">
+  <div class="w-[90%]">
+    <img
+      class="object-cover w-full"
+      src={background}
+      alt="background"
+    />
+
+    <div
+      class="text-white px-10 font-bold text-center absolute inset-0 flex justify-center items-center"
+    >
+      <h2 class="max-w-lg text-3xl font-bold">
+        UEI Alliance is formed by various stakeholders in the energy sector.
+      </h2>
+    </div>
+  </div>
 </div>
+

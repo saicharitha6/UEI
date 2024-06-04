@@ -7,7 +7,7 @@
   let activeTab: string = "home";
 </script>
 
-<header class="bg-[#1a6e4f] fixed top-0 left-0 right-0 z-50">
+<header class="bg-[#161A1D]/50 fixed top-0 left-0 right-0 z-50">
   <div class="flex items-center justify-between px-4 py-3">
     <div class="flex items-center">
       <img src={logo} alt="Logo" class="h-10 w-auto mr-5 rounded-md" />
