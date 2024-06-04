@@ -33,7 +33,7 @@
     <div
       class="text-white px-10 font-bold text-center absolute inset-0 flex justify-center items-center"
     >
-      <h2 class="max-w-lg text-3xl font-bold">
+      <h2 class="max-w-lg text-2xl sm:text-2xl md:text-3xl font-bold">
         UEI Alliance is formed by various stakeholders in the energy sector.
       </h2>
     </div>
