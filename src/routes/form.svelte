@@ -54,6 +54,6 @@
   <Button
     class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold"
     color="light"
-    href="/">submit</Button
+    href="/">Submit</Button
   >
 </Drawer>

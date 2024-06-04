@@ -4,12 +4,19 @@
   import member2 from "../assets/chargezone.png";
   import member3 from "../assets/sheru.png";
   import member4 from "../assets/isof.png";
-  // import member5 from "../lib/images/member2.png";
-  import member6 from "../lib/images/image3.jpg";
-  import member7 from "../lib/images/image4.jpg";
-  import member8 from "../assets/thunder.png";
+  import member5 from "../lib/images/image3.jpg";
+  import member6 from "../lib/images/image4.jpg";
+  import member7 from "../assets/thunder.png";
 
-  let members = [member1, member2, member3, member4,  member6, member7, member8];
+  // import member1 from "../assets/image2-removebg-preview.png";
+  // import member2 from "../assets/isof-removebg-preview.png";
+  // import member3 from "../assets/member4-removebg-preview.png";
+  // import member4 from "../assets/pulse_energy-removebg-preview.png";
+  // import member5 from "../assets/sheru-removebg-preview.png";
+  // import member6 from "../assets/thunder-removebg-preview.png";
+  // import member7 from "../assets/kazam-logo.png";
+
+  let members = [member1, member2, member3, member4,  member5, member6, member7];
   let container: HTMLElement | null = null;
   let interval: number | null = null;
 
