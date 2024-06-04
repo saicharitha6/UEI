@@ -27,7 +27,7 @@
   class="flex flex-col gap-8 h-max px-[10vw] w-full animation_text opacity-0"
 >
   <p
-    class="text-center text-7xl mx-auto font-semibold mt-40 text-transparent bg-clip-text bg-gradient-to-r from-green-600 pb-4 to-black leading-[85px] "
+    class="text-center text-5xl lg:text-7xl md:text-6xl sm:text-5xl sm:text-center sm:mx-auto mx-auto font-semibold mt-40 text-transparent bg-clip-text bg-gradient-to-r from-green-600 pb-4 to-black leading-[85px] "
   >UEI Alliance is a collaborative group<br/>
   
   </p>

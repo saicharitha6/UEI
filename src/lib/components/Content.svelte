@@ -53,7 +53,7 @@
 </div>
 <div class="w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
   {#each steps as step}
-    <div class="relative buildAnimate flex flex-col ">
+    <div class="relative buildAnimate flex flex-col">
       <div class="flex-grow flex flex-col justify-center items-center w-full bg-[#1C2428] p-4 rounded-md shadow-md shadow-black">
         <div class="flex justify-center items-center h-15">
           {#if step.isSvg}
