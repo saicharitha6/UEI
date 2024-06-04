@@ -26,7 +26,7 @@
   <h2 class="font-bold text-black text-3xl mt-10 text-center">
     Focus Areas
   </h2>
-  <div class="justify-center items-center w-full px-[7vw]  p-5">
+  <div class="justify-center items-center w-full px-[7vw] p-5">
     <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
       {#each Array.from({ length: 3 }) as _, i}
         <div

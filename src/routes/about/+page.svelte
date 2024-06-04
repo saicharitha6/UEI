@@ -40,7 +40,7 @@
       Our Mission
     </h2>
     <div
-      class="m-5 w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-black dark:text-gray-700 py-4 px-6 mx-5 align-middle"
+      class="w-3/4 md:w-3/4 lg:w-1/2 bg-scroll flex flex-col justify-center font-normal text-black dark:text-gray-700 py-4 px-6 mx-5 align-middle"
     >
       <!-- Paragraphs with floating animation -->
       <ul class="list-disc">

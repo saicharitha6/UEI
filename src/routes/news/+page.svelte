@@ -29,7 +29,7 @@
     <h2 class="text-center mt-20 font-bold text-2xl text-black">Daily News</h2>
 
     <div
-      class="news grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center"
+      class="news grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center"
     >
       {#each news as card}
         <Card

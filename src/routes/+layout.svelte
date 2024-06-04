@@ -1,11 +1,7 @@
 <script>
   // @ts-nocheck
-
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  // import { Popover } from "flowbite-svelte";
-  // let placement;
-  // Import your styles here
   import "./styles.css";
   import "../app.css";
 </script>
@@ -16,7 +12,6 @@
     <!-- Content of your main section -->
     <slot />
   </main>
-
   <Footer />
 </div>
 
@@ -34,8 +29,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* box-sizing: border-box; */
   }
 </style>
