@@ -86,7 +86,7 @@
 </script>
 
 <div
-  class="bg-white flex flex-col gap-14 w-full min-h-screen sm:pt-5 px-[10vw] pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
+  class="bg-white flex flex-col gap-14 w-full min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">
@@ -103,31 +103,24 @@
     class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10"
   >
     {#each steps as step}
-      <div class="flex flex-col bg-[#1A1F24] rounded-md">
-        <div
-          class="flex items-center w-full h-auto border border-t-gray-500 shadow-md shadow-black"
-        >
-          <img
-            src={step.img}
-            alt="logo"
-            class="h-[150px] w-full mx-auto p-3 hover:p-1"
-          />
-        </div>
-        <div
-          class="flex flex-col items-start w-full bg-[#1C2428] border shadow-md shadow-black p-4"
-        >
-          <p class="text-white text-lg font-semibold">{step.title}</p>
-          <p class="text-sm text-gray-300">{step.des}</p>
-
-          <div class="flex justify-center bg-[#1C2428] mt-3">
-            <Button
-              class="bg-green-500 hover:bg-green-700 font-bold w-auto h-10 text-white px-4 py-2 flex items-center"
-            >
-              Know More
-              <ArrowRightOutline class="w-6 h-6 ml-2" />
-            </Button>
+      <div class="flex flex-col  rounded-md ">
+        <div class="flex flex-col rounded-md h-full">
+          <div class="flex items-center w-full h-auto border bg-[#1A1F24] shadow-md shadow-black">
+            <img src={step.img} alt="logo" class="h-[150px] w-full mx-auto p-3 hover:p-1" />
           </div>
-        </div>
+          <div class="flex flex-col items-start w-full bg-[#1C2428] border shadow-md shadow-black p-4">
+            <div class="flex flex-col w-auto h-[80px] sm:h-[80px] md:h-[120px] lg:h-[120px]">
+              <p class="text-white text-lg font-semibold ">{step.title}</p>
+              <p class="text-sm text-gray-300 flex-1">{step.des}</p>
+            </div>
+            <!-- <div class="flex justify-center bg-[#1C2428] mt-3">
+              <Button class="bg-green-500 hover:bg-green-700 font-bold w-auto h-10 text-white px-4 py-2 flex items-center">
+                Know More
+                <ArrowRightOutline class="w-6 h-6 ml-2" />
+              </Button>
+            </div> -->
+          </div>
+        </div>        
       </div>
     {/each}
   </div>

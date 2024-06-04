@@ -1,13 +1,13 @@
 <script lang="ts">
-  // import AppBuilderDashboardImg from "../../lib/images/member3.png";
+  // import AppBuilderDashboardImg from "$lib/assets/images/uei.jpg";
   import gsap from "gsap";
   import { onMount } from "svelte";
 
   const animateData = () => {
-    gsap.to(".animateImage", {
-      x: 100,
-      force3D: true, // always uses 3d
-    });
+    // gsap.to(".animateImage", {
+    //   x: 100,
+    //   force3D: true, // always uses 3d
+    // });
 
     const tl = gsap.timeline();
     tl.fromTo(

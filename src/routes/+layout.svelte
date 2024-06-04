@@ -15,7 +15,7 @@
   <Footer />
 </div>
 
-<style>
+<!-- <style>
   .app {
     display: flex;
     flex-direction: column;
@@ -32,4 +32,4 @@
     margin: 0 auto;
     /* box-sizing: border-box; */
   }
-</style>
+</style> -->
