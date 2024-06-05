@@ -86,7 +86,7 @@
 </script>
 
 <div
-  class="bg-white flex flex-col gap-14 w-full min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
+  class="bg-white flex flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">

@@ -19,9 +19,9 @@
   }
 </script>
 
-<div class="bg-white ">
+<div class="bg-white sm:h-screen lg:h-screen min-h-screen">
   <div
-    class="about  w-full flex flex-col items-center justify-center my-16 pt-7"
+    class="about w-full flex flex-col items-center justify-center my-16 pt-7"
   >
     <div
       class="w-3/4 md:w-3/4 lg:w-1/2 flex items-center border shadow-lg p-5 rounded-lg"

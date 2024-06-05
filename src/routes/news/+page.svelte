@@ -23,7 +23,7 @@
 </script>
 
 <div
-  class="bg-white flex flex-col gap-14 w-full min-h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"
+  class="bg-white flex flex-col gap-14 w-full lg:h-screen min-h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"
 >
   <div class="bg-white h-screen">
     <h2 class="text-center mt-20 font-bold text-2xl text-black">Daily News</h2>
