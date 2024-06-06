@@ -18,25 +18,29 @@
   </div>
 </div> -->
 
-<script>
-  import background from "$lib/assets/images/bg.jpg";
+<script lang="ts">
+  import { Carousel } from "flowbite-svelte";
+  import courosel1 from "../assets/courosel1.png";
+  import courosel2 from "../assets/courosel2.png";
+  import courosel3 from "../assets/courosel3.png";
+
+  const images = [{ src: courosel1 }, { src: courosel2 }, { src: courosel3 }];
+  
 </script>
 
 <div class="relative h-auto flex justify-center mb-5">
   <div class="w-[90%]">
-    <img
-      class="object-cover w-full"
-      src={background}
-      alt="background"
-    />
+    <div class=" space-y-4 items-center">
+      <Carousel {images} duration={3900}></Carousel>
+      <link rel="preload" href="src/assets/courosel2.png" as="image">
 
-    <div
-      class="text-white px-10 font-bold text-center absolute inset-0 flex justify-center items-center"
-    >
-      <h2 class="max-w-lg text-2xl sm:text-2xl md:text-3xl font-bold">
-        UEI Alliance is formed by various stakeholders in the energy sector.
-      </h2>
+      <div
+        class="text-white px-10 font-bold text-center absolute inset-0 flex justify-center items-center"
+      >
+        <h2 class="max-w-lg text-2xl sm:text-2xl md:text-3xl font-bold">
+          UEI Alliance is formed by various stakeholders in the energy sector.
+        </h2>
+      </div>
     </div>
   </div>
 </div>
-

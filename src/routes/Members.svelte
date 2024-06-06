@@ -8,14 +8,6 @@
   import member6 from "$lib/assets/images/image4.jpg";
   import member7 from "$lib/assets/company-icons/thunder.png";
 
-  // import member1 from "../assets/image2-removebg-preview.png";
-  // import member2 from "../assets/isof-removebg-preview.png";
-  // import member3 from "../assets/member4-removebg-preview.png";
-  // import member4 from "../assets/pulse_energy-removebg-preview.png";
-  // import member5 from "../assets/sheru-removebg-preview.png";
-  // import member6 from "../assets/thunder-removebg-preview.png";
-  // import member7 from "../assets/kazam-logo.png";
-
   let members = [member1, member2, member3, member4,  member5, member6, member7];
   let container: HTMLElement | null = null;
   let interval: number | null = null;
@@ -50,12 +42,12 @@
 
 <div class="mx-auto max-w-screen-xl">
   <a href="/participants">
-    <div class="flex items-center space-x-7 overflow-x-auto mb-10 scrollbar-hide participantList">
+    <div class="flex items-center space-x-1 overflow-x-auto mb-10 scrollbar-hide participantList">
       {#each members as member}
         <img
           src={member}
           alt="Member"
-          class="w-35 h-24 justify-between space-x-5 rounded-md"
+          class="w-35 h-24 space-x-1 rounded-md"
         />
       {/each}
     </div>
