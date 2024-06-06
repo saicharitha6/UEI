@@ -1,8 +1,22 @@
 <script>
-  import { Drawer, Button, CloseButton, Textarea } from "flowbite-svelte";
+  import {
+    Drawer,
+    Button,
+    CloseButton,
+    Fileupload,
+    Textarea,
+  } from "flowbite-svelte";
   import { InfoCircleSolid } from "flowbite-svelte-icons";
   import { sineIn } from "svelte/easing";
   import { Label, Input, Select, Checkbox } from "flowbite-svelte";
+
+  let fileuploadprops = {
+    id: "user_avatar",
+  };
+
+  let fileuploadprops2 = {
+    id: "user_avatar2",
+  };
 
   let hidden6 = true;
   let hiddenTerms = true;
@@ -13,7 +27,7 @@
   };
 
   $: formDrawerVisible = hidden6 && hiddenTerms;
-  
+
   let selected = "";
 
   let type = [
@@ -27,7 +41,6 @@
     { value: "fr", name: "Other" },
   ];
 
-
   function toggleTerms() {
     hidden6 = false;
     hiddenTerms = false;
@@ -40,12 +53,16 @@
   function closeTerms() {
     hiddenTerms = true;
   }
+
+  function toggleFormDrawer() {
+    hidden6 = !hidden6;
+  }
 </script>
 
 <div class="text-center">
   <Button
     class="font-bold p-3 py-2 sm:p-3 md:p-3 lg:p-3 text-gray text-xs lg:text-sm md:text-sm sm:text-xs bg-white"
-    on:click={() => (hidden6 = false)}>Join Us</Button
+    on:click={toggleFormDrawer}>Join Us</Button
   >
 </div>
 
@@ -88,8 +105,7 @@
     <Input id="id2" size="md" placeholder="Enter Field" />
   </div>
   <div class="mb-6">
-    <Label for="medium-input" class="block mb-2">Name and Contact Details</Label
-    >
+    <Label for="medium-input" class="block mb-2">Name & Contact Details</Label>
     <Input id="id3" size="md" placeholder="Enter Details" />
   </div>
   <div class="mb-6">
@@ -98,15 +114,26 @@
     >
     <Input id="id4" size="md" placeholder="Enter Details" />
   </div>
+
   <div class="mb-6">
     <Label for="medium-input" class="block mb-2">Organization Name *</Label>
     <Input id="id5" size="md" placeholder="Enter Organization" />
   </div>
-  <div class="flex mb-6">
+
+  <div class="mb-6">
+    <Label for="medium-input" class="block mb-2">How did you know about UEI Alliance?</Label>
+    <Textarea for="medium-input" rows=4 placeholder="Enter details..." class="block mb-2"></Textarea>
+  </div>
+
+  <Label class="mb-3">Upload Photo</Label>
+  <Fileupload {...fileuploadprops} />
+
+  <div class="flex my-6">
     <Checkbox checked on:click={toggleTerms} class="text-red-800"
       >Terms & Conditions</Checkbox
     >
   </div>
+
   <!-- Submit button -->
   <Button
     class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold"

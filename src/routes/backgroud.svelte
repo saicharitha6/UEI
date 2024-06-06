@@ -20,9 +20,9 @@
 
 <script lang="ts">
   import { Carousel } from "flowbite-svelte";
-  import courosel1 from "../assets/courosel1.png";
-  import courosel2 from "../assets/c2.png";
-  import courosel3 from "../assets/c3.png";
+  import courosel1 from "$lib/assets/images/courosel1.png";
+  import courosel2 from "$lib/assets/images/c2.png";
+  import courosel3 from "$lib/assets/images/c3.png";
 
   const images = [{ src: courosel1 }, { src: courosel2 }, { src: courosel3 }];
 </script>
