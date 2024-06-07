@@ -47,7 +47,7 @@
   ];
 </script>
 
-<div class="flex flex-col gap-10 w-full px-[7vw] ">
+<div class="flex flex-col gap-10 w-full px-[7vw] mb-10 ">
   <p class="text-3xl lg:text-4xl md:text-4xl sm:text-3xl font-bold text-center text-black">
     Our News Updates
   </p>

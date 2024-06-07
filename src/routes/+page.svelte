@@ -3,15 +3,15 @@
   import Background from "./backgroud.svelte";
   import Members from "./Members.svelte";
   import MainContent from "$lib/components/MainContent.svelte";
-  import Content from "$lib/components/Content.svelte";
-  import Customers from "$lib/components/News.svelte";
+  import News from "$lib/components/News.svelte";
+  import AboutUei from "$lib/components/AboutUEI.svelte";
 </script>
 
 <div class="flex flex-col bg-white min-h-screen">
   <MainContent />
-  <Content />
+  <AboutUei />
   <Background />
-  <Customers />
-  <Cards />
   <Members />
+  <Cards />
+  <News />
 </div>

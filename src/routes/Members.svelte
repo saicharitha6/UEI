@@ -36,7 +36,7 @@
   });
 </script>
 
-<h3 class="text-3xl text-black text-center font-bold mb-5">
+<h3 class="text-3xl text-black text-center font-bold">
   Member Participants
 </h3>
 

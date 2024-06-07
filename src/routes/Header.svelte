@@ -1,7 +1,6 @@
 <script lang="ts">
   import logo from "$lib/assets/images/logo.png";
   import "../app.css";
-  import Draw from "./form.svelte";
 
   let activeTab: string = "home";
   let showMenu: boolean = false;
@@ -41,11 +40,14 @@
         class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
         class:bg-white={activeTab === "news"}
         class:text-gray-800={activeTab === "news"}
-        class:text-white={activeTab !== "news"}>News</a
+        class:text-white={activeTab !== "news"}>Updates</a
       >
     </nav>
 
-      <Draw />
+    <a href="/form" class="inline-block px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white">
+      Join Us
+    </a>
+    
 
     <div class="block md:hidden">
       <button

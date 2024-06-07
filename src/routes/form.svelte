@@ -14,10 +14,6 @@
     id: "user_avatar",
   };
 
-  let fileuploadprops2 = {
-    id: "user_avatar2",
-  };
-
   let hidden6 = true;
   let hiddenTerms = true;
   let transitionParamsRight = {
