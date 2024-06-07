@@ -42,7 +42,7 @@
    
     <div class="m-5 w-3/4" >
       <div
-        class="flex flex-col lg:flex-row justify-center items-center bg-gray-200 rounded-lg p-6 mb-10"
+        class="flex flex-col lg:flex-row justify-center items-center bg-white shadow-md border rounded-lg px-6 mb-10"
       >
         <!-- Left side content -->
         <div class="w-full lg:w-1/2 m-10">
@@ -79,7 +79,7 @@
 
       <!-- Short-term Objectives -->
       <div
-        class="flex flex-col lg:flex-row justify-center items-center bg-gray-200 rounded-lg p-6"
+        class="flex flex-col lg:flex-row justify-center items-center bg-white shadow-md border rounded-lg px-6"
       >
         <!-- Left side image -->
         <div class="w-full lg:w-1/2 m-10 order-last lg:order-first">

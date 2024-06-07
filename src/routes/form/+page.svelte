@@ -8,6 +8,7 @@
     Fileupload,
     Textarea,
     Modal,
+    CloseButton,
   } from "flowbite-svelte";
 
   let fileuploadprops = {
@@ -54,8 +55,12 @@
   }
 </script>
 
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+<div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20">
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
+    <div class="flex justify-between">
+    <h2 class="font-bold text-2xl mb-10">Form</h2>
+    <a href="/"><CloseButton class="mb-4 dark:text-white" /></a>
+  </div>
     <!-- Form fields -->
     <div class="mb-6">
       <Label for="medium-input" class="block mb-2">Organization Name *</Label>
@@ -131,58 +136,60 @@
         title="Terms and Conditions"
         on:close={acceptTerms}
       >
-      <div>
         <div>
-          <Label for="input" class="block font-bold my-2">
-            Permission for Usage of Logo and Name *
-          </Label>
-          <Checkbox checked class="mr-2 text-red-800">
-            You grant permission to UEI Alliance and its representatives to use
-            your logo and name solely for the purposes of promoting the agenda
-            of UEI alliance by means of presenting it in the UEI Alliance
-            website, PR and marketing materials and presentations.
-          </Checkbox>
-        </div>
-        <div>
-          <Label for="input" class="block my-2 font-bold"
-            >Usage of UEI Alliance logo, name and PR materials *</Label
-          >
-          <Checkbox checked class="mr-2 text-red-800">
-            You agree to use the alliance's logo and name in a manner consistent
-            with our brand guidelines, which will be provided to you upon
-            request. This includes maintaining the integrity and professionalism
-            of the UEI Alliance.
-          </Checkbox>
-        </div>
+          <div>
+            <Label for="input" class="block font-bold my-2">
+              Permission for Usage of Logo and Name *
+            </Label>
+            <Checkbox checked class="mr-2 text-red-800">
+              You grant permission to UEI Alliance and its representatives to
+              use your logo and name solely for the purposes of promoting the
+              agenda of UEI alliance by means of presenting it in the UEI
+              Alliance website, PR and marketing materials and presentations.
+            </Checkbox>
+          </div>
+          <div>
+            <Label for="input" class="block my-2 font-bold"
+              >Usage of UEI Alliance logo, name and PR materials *</Label
+            >
+            <Checkbox checked class="mr-2 text-red-800">
+              You agree to use the alliance's logo and name in a manner
+              consistent with our brand guidelines, which will be provided to
+              you upon request. This includes maintaining the integrity and
+              professionalism of the UEI Alliance.
+            </Checkbox>
+          </div>
 
-        <div>
-          <Label for="input" class="block my-2 font-bold"
-            >Usage Termination *</Label
-          >
-          <Checkbox checked class="mr-2 text-red-800">
-            Your organization reserves the right to revoke this permission and
-            terminate the usage of the logo and name at any time, with proper
-            cause during the membership period. Similarly, UEI Alliance reserves
-            the right to revoke the permission and terminate your usage of the
-            logo and name at any time, with proper cause during the membership
-            period.
-          </Checkbox>
-        </div>
+          <div>
+            <Label for="input" class="block my-2 font-bold"
+              >Usage Termination *</Label
+            >
+            <Checkbox checked class="mr-2 text-red-800">
+              Your organization reserves the right to revoke this permission and
+              terminate the usage of the logo and name at any time, with proper
+              cause during the membership period. Similarly, UEI Alliance
+              reserves the right to revoke the permission and terminate your
+              usage of the logo and name at any time, with proper cause during
+              the membership period.
+            </Checkbox>
+          </div>
 
-        <div>
-          <Label for="input" class="block my-2 font-bold">Acceptance *</Label>
-          <Checkbox checked class="mr-2 text-red-800"
-            >By confirming your membership with UEI Alliance, you acknowledge
-            that you have read, understood, and agree to abide by these terms
-            and conditions.</Checkbox
-          >
-        </div>
+          <div>
+            <Label for="input" class="block my-2 font-bold">Acceptance *</Label>
+            <Checkbox checked class="mr-2 text-red-800"
+              >By confirming your membership with UEI Alliance, you acknowledge
+              that you have read, understood, and agree to abide by these terms
+              and conditions.</Checkbox
+            >
+          </div>
 
-        <!-- Other terms and conditions checkboxes -->
-        <div class="flex justify-center my-6">
-          <Button class="bg-green-500 text-white " on:click={acceptTerms}>Accept</Button>
+          <!-- Other terms and conditions checkboxes -->
+          <div class="flex justify-center my-6">
+            <Button class="bg-green-500 text-white " on:click={acceptTerms}
+              >Accept</Button
+            >
+          </div>
         </div>
-      </div>
       </Modal>
     {/if}
   </div>

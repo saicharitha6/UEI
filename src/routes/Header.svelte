@@ -44,7 +44,7 @@
       >
     </nav>
 
-    <a href="/form" class="inline-block px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white">
+    <a href="/form" class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white">
       Join Us
     </a>
     

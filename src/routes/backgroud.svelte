@@ -28,7 +28,7 @@
 </script>
 
 <div class="relative h-auto flex justify-center mb-5">
-  <div class="w-[90%]">
+  <div class="w-[90%] lg:w-3/4 md:w-3/4 lg:p-5 md:p-5">
     <div class="space-y-4 items-center object-cover">
       <Carousel {images} duration={3900}></Carousel>
 

@@ -2,10 +2,10 @@
   import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
-<div class="mt-10 flex justify-center p-10 w-full">
-  <Accordion class="w-3/4">
-    <AccordionItem open>
-      <span slot="header">What is UEI?</span>
+<div class="mt-10 flex justify-center p-5 w-full">
+  <Accordion class="lg:w-3/4 md:w-3/4">
+    <AccordionItem open class="bg-black hover:bg-gray-500">
+      <span slot="header" class="text-white">What is UEI?</span>
       <ul class="list-disc ps-5 dark:text-gray-400 text-gray-500">
         <li class="mb-2 text-gray-500 dark:text-gray-400">
           <p>
@@ -36,8 +36,8 @@
         </li>
       </ul>
     </AccordionItem>
-    <AccordionItem>
-      <span slot="header">About the Alliance</span>
+    <AccordionItem  class="bg-black hover:bg-gray-500">
+      <span slot="header" class="text-white">About the Alliance</span>
       <ul class="list-disc px-5">
       <li class="mb-2 text-gray-500 dark:text-gray-400">
         The UEI Alliance is a collaborative group formed by various stakeholders

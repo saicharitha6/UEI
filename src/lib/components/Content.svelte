@@ -51,16 +51,17 @@
 </script>
 
 <div class="mb-5">
-  <div>
+  <div class="items-center justify-center flex flex-col">
     <h3 class="font-bold text-3xl text-center text-black mt-20">Our Mission</h3>
-    <p class="text-center mt-5">
+    <p class="w-3/4 justify-center sm:content-center m-5">
       The UEI Alliance is committed to global development, adoption, and
       compliance with the Beckn Protocol for energy-related economic
       transactions between digital platforms.
     </p>
   </div>
-  <h3 class="font-bold text-3xl text-center text-black mt-10">Our Vision</h3>
-  <div class="px-20">
+  <h3 class="font-bold text-3xl text-center text-black">Our Vision</h3>
+  <div class="flex items-center flex-col">
+  <div class="lg:w-3/4 md:w-3/4">
     <div
       class="w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
     >
@@ -86,4 +87,5 @@
       {/each}
     </div>
   </div>
+</div>
 </div>
