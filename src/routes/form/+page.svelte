@@ -9,7 +9,9 @@
     Textarea,
     Modal,
     CloseButton,
+    Radio,
   } from "flowbite-svelte";
+  // import { isOpen } from '../../routes/Header.svelte';
 
   let fileuploadprops = {
     id: "user_avatar",
@@ -34,11 +36,13 @@
   let modalOpen = false;
 
   function toggleTerms() {
+    // isOpen.set(true);
     modalOpen = true;
     hiddenTerms = false;
   }
 
   function acceptTerms() {
+    // isOpen.set(false);
     modalOpen = false;
     hiddenTerms = true;
     termsAccepted = true;
@@ -55,142 +59,226 @@
   }
 </script>
 
-<div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20">
-  <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
-    <div class="flex justify-between">
-    <h2 class="font-bold text-2xl mb-10">Form</h2>
-    <a href="/"><CloseButton class="mb-4 dark:text-white" /></a>
-  </div>
-    <!-- Form fields -->
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2">Organization Name *</Label>
-      <Input id="medium-input" size="md" placeholder="Enter Organization" />
-    </div>
+<!-- {#if isOpen} -->
+  <div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20">
+    <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
+      <div class="flex justify-between">
+        <h2 class="font-bold text-2xl mb-10">UEI Alliance Membership Form</h2>
+        <a href="/"><CloseButton class="mb-4 dark:text-white" /></a>
+      </div>
+      <div class="mb-5">
+        UEI Alliance (<a
+          class="text-blue-600 underline"
+          href="https://ueialliance.org/">https://ueialliance.org/</a
+        >) is a collaborative group formed by various stakeholders in the energy
+        sector, committed to global development, adoption and compliance with
+        the Beckn Protocol (<a
+          class="text-blue-600 underline"
+          href="https://becknprotocol.io/">https://becknprotocol.io/</a
+        >) for energy-related economic transactions between digital platforms.
+        Its primary aim is to promote the adoption and interoperability of the
+        Beckn Protocol within the energy field, thereby scaling the Unified
+        Energy Interface (UEI) network. The alliance serves as a hub for open
+        network concepts, providing support and advisory services.
+      </div>
+      <!-- Form fields -->
+      <div class="mb-3">
+        <Label for="id0" class="block font-bold mb-2">Organization Name *</Label
+        >
+        <Input id="id0" size="md" placeholder="Enter Organization" />
+      </div>
 
-    <div class="mb-6">
-      <Label>
-        Select an option
+      <div class="mb-3">
+        <Label id="id1" class="font-bold">Nature of Organization *</Label>
         <Select class="mt-2" items={type} bind:value={selected} />
-      </Label>
-    </div>
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2">Website *</Label>
-      <Input id="id1" size="md" placeholder="Enter Organization" />
-    </div>
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2">Industry/Field *</Label>
-      <Input id="id2" size="md" placeholder="Enter Field" />
-    </div>
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2">Name & Contact Details</Label
-      >
-      <Input id="id3" size="md" placeholder="Enter Details" />
-    </div>
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2"
-        >Name & EmailId of Organization CEO*</Label
-      >
-      <Input id="id4" size="md" placeholder="Enter Details" />
-    </div>
+      </div>
+      <div class="mb-3">
+        <Label for="id2" class="block mb-2 font-bold">Website *</Label>
+        <Input id="id2" size="md" placeholder="Enter Organization" />
+      </div>
+      <div class="mb-3">
+        <Label for="id3" class="block mb-1 font-bold">Industry/Field *</Label>
+        <p class="text-xs mb-3">
+          eg. Charging Point Operator, EV fleet management, software and service
+          provider, energy storage, etc.
+        </p>
+        <Input id="id3" size="md" placeholder="Enter Field" />
+      </div>
+      <div class="mb-3">
+        <Label id="id4" class="block mb-2 font-bold"
+          >Name & Contact Details of Point of Contact</Label
+        >
+        <p class="text-xs mb-3">
+          This would be one of your organization's designated representatives.
+          Please identify that person by writing in their name, title, e-mail
+          and contact number.
+        </p>
+        <Input id="id4" size="md" placeholder="Enter Details" />
+      </div>
+      <div class="mb-3">
+        <Label id="id5" class="block mb-2 font-bold"
+          >Mission / Description of Organization's Work
+        </Label>
+        <Textarea
+          for="id9"
+          rows="4"
+          placeholder="Enter details..."
+          class="block mb-2"
+        ></Textarea>
+      </div>
+      <div class="mb-3">
+        <Label id="id6" class="block mb-2 font-bold"
+          >Name & Email Id of Organization's CEO *</Label
+        >
+        <Input id="id6" size="md" placeholder="Enter Details" />
+      </div>
 
-    <div class="mb-6">
+      <!-- <div class="mb-3">
       <Label for="medium-input" class="block mb-2">Organization Name *</Label>
       <Input id="id5" size="md" placeholder="Enter Organization" />
-    </div>
+    </div> -->
 
-    <div class="mb-6">
-      <Label for="medium-input" class="block mb-2"
-        >How did you know about UEI Alliance?</Label
-      >
-      <Textarea
-        for="medium-input"
-        rows="4"
-        placeholder="Enter details..."
-        class="block mb-2"
-      ></Textarea>
-    </div>
+      <div class="mb-3">
+        <Label id="id7" class="font-bold block mb-2"
+          >How did you know about UEI Alliance?</Label
+        >
+        <Textarea
+          for="medium-input"
+          rows="4"
+          placeholder="Enter details..."
+          class="block mb-2"
+        ></Textarea>
+      </div>
 
-    <Label class="mb-3">Upload Photo</Label>
-    <Fileupload {...fileuploadprops} />
+      <div class="mb-3">
+        <Label id="id-8" class="block text-xl font-bold mb-2"
+          >Terms of Association</Label
+        >
+        <ol class="list-decimal ml-4">
+          <li class="text-sm">
+            <span class="font-bold text-sm"
+              >Permission for Usage of Logo and Name:</span
+            > You grant permission to UEI Alliance and its representatives to use
+            your logo and name solely for the purposes of promoting the agenda of
+            UEI alliance by means of presenting it in the UEI Alliance website, PR
+            and marketing materials and presentations.
+          </li>
+          <li class="text-sm">
+            <span class="font-bold text-sm"
+              >Usage of UEI Alliance logo, name and PR materials:</span
+            > You agree to use the alliance's logo and name in a manner consistent
+            with our brand guidelines, which will be provided to you upon request.
+            This includes maintaining the integrity and professionalism of the UEI
+            Alliance.
+          </li>
+          <li class="text-sm">
+            <span class="font-bold text-sm">Usage Termination:</span> Your organization
+            reserves the right to revoke this permission and terminate the usage
+            of the logo and name at any time, with proper cause during the membership
+            period. Similarly, UEI Alliance reserves the right to revoke the permission
+            and terminate your usage of the logo and name at any time, with proper
+            cause during the membership period.
+          </li>
+        </ol>
+        <p class="my-3 text-sm">
+          By confirming your membership with UEI Alliance, you acknowledge that
+          you have read, understood, and agree to abide by these terms and
+          conditions.
+        </p>
 
-    <!-- Other form fields -->
+        <Radio name="example" class="mb-2">Yes</Radio>
+        <Radio name="example" checked={true}>No</Radio>
+      </div>
 
-    <!-- Terms and conditions -->
-    <div class="flex my-6">
-      <Checkbox on:click={toggleTerms} class="text-red-800">
-        Terms & Conditions
-      </Checkbox>
-    </div>
-    <div class="flex justify-center my-6">
-      <Button
-        on:click={handleSubmit}
-        class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold mb-10"
-      >
-        Submit
-      </Button>
-    </div>
-    <!-- Terms and conditions modal -->
-    {#if !hiddenTerms}
-      <Modal
-        open={modalOpen}
-        title="Terms and Conditions"
-        on:close={acceptTerms}
-      >
-        <div>
+      <Label id="id9" class="mb-3 font-bold">Upload Photo</Label>
+      <Fileupload {...fileuploadprops} />
+
+      <div class="mt-3">
+        <Label id="id10" class="block mb-2 font-bold">Member Referral</Label>
+        <p class="text-xs mb-2">
+          Please refer any potential UEI Alliance members you may be aware of -
+          share names & contacts details below
+        </p>
+        <Input id="id10" size="md" placeholder="Enter referral details" />
+      </div>
+
+      <!-- Terms and conditions -->
+      <div class="flex my-6">
+        <Checkbox id="checkbox" on:click={toggleTerms} class="text-red-800">
+          Terms & Conditions
+        </Checkbox>
+      </div>
+      <div class="flex justify-center my-6">
+        <Button
+          on:click={handleSubmit}
+          class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold mb-10"
+        >
+          Submit
+        </Button>
+      </div>
+      <!-- Terms and conditions modal -->
+      {#if !hiddenTerms}
+        <Modal
+          open={modalOpen}
+          title="Terms and Conditions"
+          on:close={acceptTerms}
+        >
           <div>
-            <Label for="input" class="block font-bold my-2">
-              Permission for Usage of Logo and Name *
-            </Label>
-            <Checkbox checked class="mr-2 text-red-800">
-              You grant permission to UEI Alliance and its representatives to
-              use your logo and name solely for the purposes of promoting the
-              agenda of UEI alliance by means of presenting it in the UEI
-              Alliance website, PR and marketing materials and presentations.
-            </Checkbox>
-          </div>
-          <div>
-            <Label for="input" class="block my-2 font-bold"
-              >Usage of UEI Alliance logo, name and PR materials *</Label
-            >
-            <Checkbox checked class="mr-2 text-red-800">
-              You agree to use the alliance's logo and name in a manner
-              consistent with our brand guidelines, which will be provided to
-              you upon request. This includes maintaining the integrity and
-              professionalism of the UEI Alliance.
-            </Checkbox>
-          </div>
+            <div>
+              <Label id="id11" class="block font-bold my-2">
+                Permission for Usage of Logo and Name *
+              </Label>
+              <Checkbox checked class="mr-2 text-red-800">
+                You grant permission to UEI Alliance and its representatives to
+                use your logo and name solely for the purposes of promoting the
+                agenda of UEI alliance by means of presenting it in the UEI
+                Alliance website, PR and marketing materials and presentations.
+              </Checkbox>
+            </div>
+            <div>
+              <Label id="id12" class="block my-2 font-bold"
+                >Usage of UEI Alliance logo, name and PR materials *</Label
+              >
+              <Checkbox checked class="mr-2 text-red-800">
+                You agree to use the alliance's logo and name in a manner
+                consistent with our brand guidelines, which will be provided to
+                you upon request. This includes maintaining the integrity and
+                professionalism of the UEI Alliance.
+              </Checkbox>
+            </div>
 
-          <div>
-            <Label for="input" class="block my-2 font-bold"
-              >Usage Termination *</Label
-            >
-            <Checkbox checked class="mr-2 text-red-800">
-              Your organization reserves the right to revoke this permission and
-              terminate the usage of the logo and name at any time, with proper
-              cause during the membership period. Similarly, UEI Alliance
-              reserves the right to revoke the permission and terminate your
-              usage of the logo and name at any time, with proper cause during
-              the membership period.
-            </Checkbox>
-          </div>
+            <div>
+              <Label id="id13" class="block my-2 font-bold"
+                >Usage Termination *</Label
+              >
+              <Checkbox checked class="mr-2 text-red-800">
+                Your organization reserves the right to revoke this permission
+                and terminate the usage of the logo and name at any time, with
+                proper cause during the membership period. Similarly, UEI
+                Alliance reserves the right to revoke the permission and
+                terminate your usage of the logo and name at any time, with
+                proper cause during the membership period.
+              </Checkbox>
+            </div>
 
-          <div>
-            <Label for="input" class="block my-2 font-bold">Acceptance *</Label>
-            <Checkbox checked class="mr-2 text-red-800"
-              >By confirming your membership with UEI Alliance, you acknowledge
-              that you have read, understood, and agree to abide by these terms
-              and conditions.</Checkbox
-            >
-          </div>
+            <div>
+              <Label id="id14" class="block my-2 font-bold">Acceptance *</Label>
+              <Checkbox checked class="mr-2 text-red-800"
+                >By confirming your membership with UEI Alliance, you
+                acknowledge that you have read, understood, and agree to abide
+                by these terms and conditions.</Checkbox
+              >
+            </div>
 
-          <!-- Other terms and conditions checkboxes -->
-          <div class="flex justify-center my-6">
-            <Button class="bg-green-500 text-white " on:click={acceptTerms}
-              >Accept</Button
-            >
+            <!-- Other terms and conditions checkboxes -->
+            <div class="flex justify-center my-6">
+              <Button class="bg-green-500 text-white " on:click={acceptTerms}
+                >Accept</Button
+              >
+            </div>
           </div>
-        </div>
-      </Modal>
-    {/if}
+        </Modal>
+      {/if}
+    </div>
   </div>
-</div>
+<!-- {/if} -->

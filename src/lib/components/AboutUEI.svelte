@@ -3,9 +3,9 @@
 </script>
 
 <div class="mt-10 flex justify-center p-5 w-full">
-  <Accordion class="lg:w-3/4 md:w-3/4">
-    <AccordionItem open class="bg-black hover:bg-gray-500">
-      <span slot="header" class="text-white">What is UEI?</span>
+  <Accordion class="w-full md:w-3/4 lg:w-3/4 sm:w-full" activeClass="bg-gray-600 dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white">
+    <AccordionItem open>
+      <span slot="header">What is UEI?</span>
       <ul class="list-disc ps-5 dark:text-gray-400 text-gray-500">
         <li class="mb-2 text-gray-500 dark:text-gray-400">
           <p>
@@ -36,29 +36,28 @@
         </li>
       </ul>
     </AccordionItem>
-    <AccordionItem  class="bg-black hover:bg-gray-500">
-      <span slot="header" class="text-white">About the Alliance</span>
+    <AccordionItem>
+      <span slot="header">About the Alliance</span>
       <ul class="list-disc px-5">
-      <li class="mb-2 text-gray-500 dark:text-gray-400">
-        The UEI Alliance is a collaborative group formed by various stakeholders
-        in the energy sector, committed to global development, adoption, and
-        compliance with the Beckn Protocol for energy-related economic
-        transactions between digital platforms.
-      </li>
-      <li class="mb-2 text-gray-500 dark:text-gray-400">
-        This alliance transcends specific sectors like electric vehicles (EVs)
-        or battery technology, encompassing a wide range of energy-related
-        transaction domains. Its primary aim is to promote the adoption and
-        interoperability of the Beckn Protocol within the energy field, thereby
-        scaling the Unified Energy Interface (UEI) network.
-      </li>
-      <li>
-        Operating as a think tank, the alliance focuses on enhancing digital
-        economic transactions between energy platforms, particularly in resource
-        discovery and fulfilment.
-      </li>
-    </ul>
+        <li class="mb-2 text-gray-500 dark:text-gray-400">
+          The UEI Alliance is a collaborative group formed by various
+          stakeholders in the energy sector, committed to global development,
+          adoption, and compliance with the Beckn Protocol for energy-related
+          economic transactions between digital platforms.
+        </li>
+        <li class="mb-2 text-gray-500 dark:text-gray-400">
+          This alliance transcends specific sectors like electric vehicles (EVs)
+          or battery technology, encompassing a wide range of energy-related
+          transaction domains. Its primary aim is to promote the adoption and
+          interoperability of the Beckn Protocol within the energy field,
+          thereby scaling the Unified Energy Interface (UEI) network.
+        </li>
+        <li>
+          Operating as a think tank, the alliance focuses on enhancing digital
+          economic transactions between energy platforms, particularly in
+          resource discovery and fulfilment.
+        </li>
+      </ul>
     </AccordionItem>
-    
   </Accordion>
 </div>

@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  // import Icon2 from '$lib/assets/icons/icon.png';
+  import mission from '$lib/assets/images/mission.png';
 
   let steps = [
     {
@@ -50,42 +50,50 @@
   });
 </script>
 
-<div class="mb-5">
-  <div class="items-center justify-center flex flex-col">
-    <h3 class="font-bold text-3xl text-center text-black mt-20">Our Mission</h3>
-    <p class="w-3/4 justify-center sm:content-center m-5">
-      The UEI Alliance is committed to global development, adoption, and
-      compliance with the Beckn Protocol for energy-related economic
-      transactions between digital platforms.
-    </p>
-  </div>
-  <h3 class="font-bold text-3xl text-center text-black">Our Vision</h3>
-  <div class="flex items-center flex-col">
-  <div class="lg:w-3/4 md:w-3/4">
-    <div
-      class="w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
-    >
-      {#each steps as step}
-        <div class="relative buildAnimate flex flex-col">
-          <div
-            class="flex-grow flex flex-col justify-center items-center w-full bg-[#1C2428] p-4 rounded-md shadow-md shadow-black"
-          >
-            <div class="flex justify-center items-center h-15">
-              {#if step.isSvg}
-                {@html step.icon}
-              {:else}
-                <img src={step.icon} alt="icon" class="h-16 w-16" />
-              {/if}
-            </div>
-            <p
-              class="text-md content-center sm:content-center lg:content-center text-gray-300 p-5"
-            >
-              {step.des}
-            </p>
-          </div>
-        </div>
-      {/each}
+<div class="mb-5 buildAnimate">
+  <div class="flex flex-row mt-20 mb-10 bg-gray-300 mx-5 sm:mx-5 rounded-br-3xl rounded-tl-3xl sm:rounded-br-2xl sm:rounded-tl-2xl lg:mx-52 lg:rounded-br-full lg:rounded-tl-full">
+    <div class="w-1/2 mt-5 flex flex-col items-center justify-center">
+      <h3 class="font-bold text-3xl text-center text-black mt-30">Our Mission</h3>
+      <img src={mission} alt="mission" class="w-20 h-20"/>
+      <!-- <h3 class="font-bold text-3xl text-center text-black">Our Mission</h3> -->
+    </div>
+    
+    <div class="w-3/4 ">
+      <p class="w-3/4 justify-center sm:content-center m-5">
+        The UEI Alliance is committed to global development, adoption, and
+        compliance with the Beckn Protocol for energy-related economic
+        transactions between digital platforms.
+      </p>
     </div>
   </div>
-</div>
+ 
+  <h3 class="font-bold text-3xl text-center text-black">Our Vision</h3>
+  <div class="flex items-center flex-col">
+    <div class="lg:w-3/4 md:w-3/4">
+      <div
+        class="w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
+      >
+        {#each steps as step}
+          <div class="relative buildAnimate flex flex-col">
+            <div
+              class="flex-grow flex flex-col justify-center items-center w-full bg-[#1C2428] p-4 rounded-md shadow-md shadow-black"
+            >
+              <div class="flex justify-center items-center h-15">
+                {#if step.isSvg}
+                  {@html step.icon}
+                {:else}
+                  <img src={step.icon} alt="icon" class="h-16 w-16" />
+                {/if}
+              </div>
+              <p
+                class="text-md content-center sm:content-center lg:content-center text-gray-300 p-5"
+              >
+                {step.des}
+              </p>
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+  </div>
 </div>

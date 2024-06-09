@@ -1,9 +1,10 @@
 <script lang="ts">
   import logo from "$lib/assets/images/logo.png";
   import "../app.css";
-
-  let activeTab: string = "home";
+  let activeTab: string = "";
   let showMenu: boolean = false;
+  import { writable } from "svelte/store";
+  export let isOpen = writable(false); // isOpen as a writable store
 </script>
 
 <header class="bg-black fixed top-0 left-0 right-0 z-50">
@@ -44,10 +45,13 @@
       >
     </nav>
 
-    <a href="/form" class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white">
+    <a
+      href="/form"
+      on:click={() => isOpen.update((value) => !value)}
+      class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white"
+    >
       Join Us
     </a>
-    
 
     <div class="block md:hidden">
       <button
