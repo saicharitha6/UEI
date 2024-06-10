@@ -1,10 +1,30 @@
 <script lang="ts">
   import logo from "$lib/assets/images/logo.png";
   import "../app.css";
+  import { isOpen } from "$lib/store";
+  import { onDestroy } from "svelte";
+  import { goto } from "$app/navigation";
+
   let activeTab: string = "";
   let showMenu: boolean = false;
-  import { writable } from "svelte/store";
-  export let isOpen = writable(false); // isOpen as a writable store
+  let alertContent = false;
+
+  const unsubscribe = isOpen.subscribe((value) => (alertContent = value));
+
+  onDestroy(unsubscribe);
+
+  function toggleForm() {
+    isOpen.update((n) => {
+      if (!n) {
+        console.log("open");
+        goto("/form");
+      } else {
+        console.log("close");
+        goto("/");
+      }
+      return !n;
+    });
+  }
 </script>
 
 <header class="bg-black fixed top-0 left-0 right-0 z-50">
@@ -45,13 +65,12 @@
       >
     </nav>
 
-    <a
-      href="/form"
-      on:click={() => isOpen.update((value) => !value)}
+    <button
+      on:click={toggleForm}
       class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white"
     >
       Join Us
-    </a>
+    </button>
 
     <div class="block md:hidden">
       <button
@@ -62,6 +81,7 @@
       </button>
     </div>
   </div>
+
   {#if showMenu}
     <div class="md:hidden">
       <nav class="flex flex-col space-y-1 mb-2">

@@ -23,19 +23,17 @@
 </script>
 
 <div class="lg:right-0">
-  <h2 class="font-bold text-black text-3xl text-center">
-    Focus Areas
-  </h2>
+  <h2 class="font-bold text-black text-3xl text-center">Focus Areas</h2>
   <div class="justify-center items-center w-full px-[7vw] p-5">
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-4 lg:gap-6"
+    >
       {#each Array.from({ length: 3 }) as _, i}
         <div
-          class="card hover:translate-y-1 floating rounded-lg shadow-md bg-white border overflow-hidden"
+          class="card floating rounded-lg shadow-md bg-white border overflow-hidden"
         >
           {#if i === 0}
-            <div
-              class="bg-black text-white font-bold py-2 px-4 rounded-t-lg"
-            >
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Scaling Transactions
             </div>
             <p class="text-gray-700 p-3">
@@ -43,7 +41,7 @@
               network.
             </p>
           {:else if i === 1}
-            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg ">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Ease of Scaling
             </div>
             <p class="text-gray-700 p-3">

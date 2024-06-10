@@ -11,13 +11,24 @@
     CloseButton,
     Radio,
   } from "flowbite-svelte";
-  // import { isOpen } from '../../routes/Header.svelte';
+
+  import { isOpen } from "$lib/store";
+  import { onDestroy } from "svelte";
+
+  let alertContent = false;
+
+  const unsubscribe = isOpen.subscribe((value) => (alertContent = value));
+
+  onDestroy(unsubscribe);
+
+  // Hide the form when the route changes away from '/form'
+  $: if (!alertContent) {
+    isOpen.set(false);
+  }
 
   let fileuploadprops = {
     id: "user_avatar",
   };
-
-  let hiddenTerms = true;
 
   let selected = "";
 
@@ -31,35 +42,9 @@
     { value: "fr", name: "Think tank" },
     { value: "fr", name: "Other" },
   ];
-
-  let termsAccepted = false; // Track if terms are accepted
-  let modalOpen = false;
-
-  function toggleTerms() {
-    // isOpen.set(true);
-    modalOpen = true;
-    hiddenTerms = false;
-  }
-
-  function acceptTerms() {
-    // isOpen.set(false);
-    modalOpen = false;
-    hiddenTerms = true;
-    termsAccepted = true;
-  }
-
-  function handleSubmit() {
-    if (termsAccepted) {
-      // Form submission logic here
-      console.log("Form submitted!");
-    } else {
-      // Show error message or handle it as per your UI/UX
-      alert("Please accept the terms and conditions.");
-    }
-  }
 </script>
 
-<!-- {#if isOpen} -->
+{#if alertContent}
   <div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20">
     <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
       <div class="flex justify-between">
@@ -188,8 +173,6 @@
         <Radio name="example" checked={true}>No</Radio>
       </div>
 
-   
-
       <div class="mt-3">
         <Label id="id10" class="block mb-2 font-bold">Member Referral</Label>
         <p class="text-xs mb-2">
@@ -199,83 +182,13 @@
         <Input id="id10" size="md" placeholder="Enter referral details" />
       </div>
 
-      <!-- Terms and conditions -->
-      <!-- <div class="flex my-6">
-        <Checkbox id="checkbox" on:click={toggleTerms} class="text-red-800">
-          Terms & Conditions
-        </Checkbox>
-      </div> -->
       <div class="flex justify-center my-6">
         <Button
-          on:click={handleSubmit}
           class="bg-green-500 no-underline hover:bg-green-800 text-white mx-20 ring-1 font-bold mb-10"
         >
           Submit
         </Button>
       </div>
-      <!-- Terms and conditions modal -->
-      {#if !hiddenTerms}
-        <Modal
-          open={modalOpen}
-          title="Terms and Conditions"
-          on:close={acceptTerms}
-        >
-          <div>
-            <div>
-              <Label id="id11" class="block font-bold my-2">
-                Permission for Usage of Logo and Name *
-              </Label>
-              <Checkbox checked class="mr-2 text-red-800">
-                You grant permission to UEI Alliance and its representatives to
-                use your logo and name solely for the purposes of promoting the
-                agenda of UEI alliance by means of presenting it in the UEI
-                Alliance website, PR and marketing materials and presentations.
-              </Checkbox>
-            </div>
-            <div>
-              <Label id="id12" class="block my-2 font-bold"
-                >Usage of UEI Alliance logo, name and PR materials *</Label
-              >
-              <Checkbox checked class="mr-2 text-red-800">
-                You agree to use the alliance's logo and name in a manner
-                consistent with our brand guidelines, which will be provided to
-                you upon request. This includes maintaining the integrity and
-                professionalism of the UEI Alliance.
-              </Checkbox>
-            </div>
-
-            <div>
-              <Label id="id13" class="block my-2 font-bold"
-                >Usage Termination *</Label
-              >
-              <Checkbox checked class="mr-2 text-red-800">
-                Your organization reserves the right to revoke this permission
-                and terminate the usage of the logo and name at any time, with
-                proper cause during the membership period. Similarly, UEI
-                Alliance reserves the right to revoke the permission and
-                terminate your usage of the logo and name at any time, with
-                proper cause during the membership period.
-              </Checkbox>
-            </div>
-
-            <div>
-              <Label id="id14" class="block my-2 font-bold">Acceptance *</Label>
-              <Checkbox checked class="mr-2 text-red-800"
-                >By confirming your membership with UEI Alliance, you
-                acknowledge that you have read, understood, and agree to abide
-                by these terms and conditions.</Checkbox
-              >
-            </div>
-
-            <!-- Other terms and conditions checkboxes -->
-            <div class="flex justify-center my-6">
-              <Button class="bg-green-500 text-white " on:click={acceptTerms}
-                >Accept</Button
-              >
-            </div>
-          </div>
-        </Modal>
-      {/if}
     </div>
   </div>
-<!-- {/if} -->
+{/if}

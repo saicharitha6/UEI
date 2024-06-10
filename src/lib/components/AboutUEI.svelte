@@ -7,7 +7,7 @@
     <AccordionItem open>
       <span slot="header">What is UEI?</span>
       <ul class="list-disc ps-5 dark:text-gray-400 text-gray-500">
-        <li class="mb-2 text-gray-500 dark:text-gray-400">
+        <li class="mb-2 text-gray-500 dark:text-gray-400 whitespace-normal">
           <p>
             The Unified Energy Interface, or UEI, emerges as a way of unifying
             the fragmented digital attempts spread across the domain of energy
