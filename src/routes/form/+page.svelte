@@ -133,12 +133,10 @@
         <Input id="id6" size="md" placeholder="Enter Details" />
       </div>
 
-      <!-- <div class="mb-3">
-      <Label for="medium-input" class="block mb-2">Organization Name *</Label>
-      <Input id="id5" size="md" placeholder="Enter Organization" />
-    </div> -->
+      <Label id="id9" class="mb-3 font-bold">Upload Logo</Label>
+      <Fileupload {...fileuploadprops} />
 
-      <div class="mb-3">
+      <div class="my-3">
         <Label id="id7" class="font-bold block mb-2"
           >How did you know about UEI Alliance?</Label
         >
@@ -151,7 +149,7 @@
       </div>
 
       <div class="mb-3">
-        <Label id="id-8" class="block text-xl font-bold mb-2"
+        <Label id="id-8" class="block text-lg font-bold mb-2"
           >Terms of Association</Label
         >
         <ol class="list-decimal ml-4">
@@ -190,8 +188,7 @@
         <Radio name="example" checked={true}>No</Radio>
       </div>
 
-      <Label id="id9" class="mb-3 font-bold">Upload Photo</Label>
-      <Fileupload {...fileuploadprops} />
+   
 
       <div class="mt-3">
         <Label id="id10" class="block mb-2 font-bold">Member Referral</Label>
@@ -203,11 +200,11 @@
       </div>
 
       <!-- Terms and conditions -->
-      <div class="flex my-6">
+      <!-- <div class="flex my-6">
         <Checkbox id="checkbox" on:click={toggleTerms} class="text-red-800">
           Terms & Conditions
         </Checkbox>
-      </div>
+      </div> -->
       <div class="flex justify-center my-6">
         <Button
           on:click={handleSubmit}
