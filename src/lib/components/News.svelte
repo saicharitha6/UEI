@@ -1,6 +1,15 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
+  import { isActiveTab } from "$lib/store";
 
+  let activeTab: string = "";
+  const unsubscribe = isActiveTab.subscribe((value) => (activeTab = value));
+
+  onDestroy(unsubscribe);
+
+  function todo() {
+    isActiveTab.set("news");
+  }
   let container: HTMLElement | null = null;
   let interval: number | null = null;
 
@@ -79,7 +88,7 @@
   >
     Our News Updates
   </p>
-  <a href="/news">
+  <a href="/news" on:click={todo}>
     <div class="flex gap-5 scrollbar-hide List">
       {#each news as customer}
         <div class="flex flex-col items-center min-w-[250px] px-2">

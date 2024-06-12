@@ -33,12 +33,12 @@
         opacity: 1,
       }
     );
-    ScrollSmoother.create({
-      content: "#smooth-content",
-      wrapper: "#smooth-wrapper",
-      smooth: 1.5,
-      effects: true,
-    });
+    // ScrollSmoother.create({
+    //   content: "#smooth-content",
+    //   wrapper: "#smooth-wrapper",
+    //   smooth: 1.5,
+    //   effects: true,
+    // });
   };
 
   onMount(() => {

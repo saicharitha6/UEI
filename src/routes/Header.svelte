@@ -2,24 +2,29 @@
   import logo from "$lib/assets/images/logo.png";
   import "../app.css";
   import { isOpen } from "$lib/store";
+  import { isActiveTab } from "$lib/store";
   import { onDestroy } from "svelte";
   import { goto } from "$app/navigation";
 
-  let activeTab: string = "";
   let showMenu: boolean = false;
-  let alertContent = false;
+  let alertContent: boolean = false;
+  let activeTab: string = "";
 
   const unsubscribe = isOpen.subscribe((value) => (alertContent = value));
+  const unsubscribe1 = isActiveTab.subscribe((value) => (activeTab = value));
 
   onDestroy(unsubscribe);
+  onDestroy(unsubscribe1);
 
   function toggleForm() {
     isOpen.update((n) => {
       if (!n) {
         console.log("open");
+        isActiveTab.set("");
         goto("/form");
       } else {
         console.log("close");
+        isActiveTab.set("home");
         goto("/");
       }
       return !n;
