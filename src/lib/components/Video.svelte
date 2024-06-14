@@ -1,6 +1,10 @@
-<div class="flex justify-center my-10">
-  <div class="flex flex-col w-3/4 ">
-    <div class="flex justify-center items-center">
+<script lang="ts">
+  import { Indicator } from "flowbite-svelte";
+</script>
+
+<div class="flex justify-center">
+  <div class="flex flex-col w-3/4">
+    <!-- <div class="flex justify-center items-center">
       <p class="justify-center font-medium" style="font-family: 'proxima_nova">
         <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy
         transactions. Built on the open-source Beckn Protocol, which powers networks
@@ -11,7 +15,7 @@
         unified ecosystem, connecting providers and consumers of energy-related services,
         fostering innovation, and promoting efficient and sustainable energy use.
       </p>
-    </div>
+    </div> -->
     <div>
       <h3
         class="text-2xl text-center font-sans font-extrabold mt-5"
@@ -33,6 +37,14 @@
         allowfullscreen
       ></iframe>
     </div>
+    <div
+      class="inline p-2 bg-gradient-to-b from-black via-transparent to-white"
+    ></div>
   </div>
+  
 </div>
-
+<div class="flex justify-center mb-5">
+  <Indicator color="dark" />
+  <Indicator color="green" />
+  <Indicator color="dark" />
+</div>

@@ -9,8 +9,9 @@
 
 <div class="flex flex-col bg-white min-h-screen">
   <MainContent />
-  <Video />
   <AboutUei />
+  <Video />
+
   <Cards />
   <Members />
   <!-- <News /> -->

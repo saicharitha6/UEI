@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
   import member1 from "$lib/assets/images/member1.png";
-  import member2 from "$lib/assets/company-icons/chargezone1.png";
+  import member2 from "$lib/assets/company-icons/chargezone.png";
   import member3 from "$lib/assets/company-icons/sheru.png";
   import member4 from "$lib/assets/company-icons/isof.png";
   import member5 from "$lib/assets/images/image3.jpg";

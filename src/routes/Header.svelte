@@ -63,7 +63,7 @@
 
     <button
       on:click={toggleForm}
-      class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:text-white"
+      class="inline-block px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-[#f2fcf9] hover:text-black"
     >
       Join Us
     </button>

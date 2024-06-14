@@ -90,18 +90,18 @@
 <div class="bg-white flex flex-col w-full lg:h-screen h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"  style="font-family: 'proxima_nova">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center">
     {#each news as card}
-      <div class="bg-white border-gray-300 shadow-lg hover:translate-y-1 floating">
-        <div class="flex flex-col h-full">
-          <div class="flex-grow p-4 overflow-auto">
-            <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-black">{card.title}</h5>
-            <p class="mb-3 font-normal text-gray-600 dark:text-gray-600 leading-tight">{card.posted}</p>
-          </div>
-          <hr />
-          <div class="flex items-center justify-center p-5">
+      <div class="bg-black border-gray-300 shadow-lg hover:translate-y-1 floating">
+        <div class="flex flex-col h-full p-5" >
+          <!-- <div class="flex-grow p-4 overflow-auto"> -->
+            <h5 class="mb-2 text-md font-bold tracking-tight text-white dark:text-black">{card.title}</h5>
+            <p class="mb-3 font-normal text-white dark:text-gray-600 leading-tight">{card.posted}</p>
+          <!-- </div> -->
+          <!-- <hr /> -->
+          <!-- <div class="flex items-center justify-center p-5">
             <Button href={card.link} class="bg-green-500 hover:bg-green-700 font-bold justify-center">
               Read more <ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
             </Button>
-          </div>
+          </div> -->
         </div>
       </div>
     {/each}
