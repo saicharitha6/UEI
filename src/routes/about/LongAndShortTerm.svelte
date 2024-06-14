@@ -8,7 +8,7 @@
   import l4 from "$lib/assets/images/l4.png";
 </script>
 
-<div class="justify-center flex">
+<div class="justify-center flex"  style="font-family: 'proxima_nova">
   <div class="w-full p-5 sm:w-full lg:w-3/4">
     <div
       class="flex flex-col lg:flex-row justify-center items-center px-7 rounded-xl mb-10"

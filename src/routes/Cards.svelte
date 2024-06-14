@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="lg:right-0 bg-black">
+<div class="lg:right-0 bg-black"  style="font-family: 'proxima_nova">
   <h2 class="font-bold text-white py-5 text-3xl text-center">Focus Areas</h2>
   <div class="justify-center items-center w-full px-[7vw] p-5">
     <div
@@ -36,7 +36,7 @@
             <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Scaling Transactions
             </div>
-            <p class="text-gray-700 p-3">
+            <p class="text-black p-3">
               The primary aim is to increase transaction volume within the UEI
               network.
             </p>
@@ -44,7 +44,7 @@
             <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Ease of Scaling
             </div>
-            <p class="text-gray-700 p-3">
+            <p class="text-black p-3">
               Promoting a scalable model for easy integration of new and
               existing participants.
             </p>
@@ -52,7 +52,7 @@
             <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
               Ease of Adoption
             </div>
-            <p class="text-gray-700 p-3">
+            <p class="text-black p-3"  style="font-family: 'proxima_nova">
               Ensuring the Beckn Protocol remains relevant and adaptable to
               market needs, guiding technical evolution, and governance.
             </p>

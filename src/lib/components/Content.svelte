@@ -50,7 +50,7 @@
   });
 </script>
 
-<div class="mb-5 buildAnimate">
+<div class="mb-5 buildAnimate"  style="font-family: 'proxima_nova">
   <div class="flex items-center justify-center">
     <!-- <h3 class="font-bold text-3xl text-center text-black" style="font-family: 'proxima_nova">Our Mission</h3> -->
   </div>

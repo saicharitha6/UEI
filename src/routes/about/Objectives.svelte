@@ -35,7 +35,7 @@
   });
 </script>
 
-<div class="w-full flex flex-col items-center justify-center my-5">
+<div class="w-full flex flex-col items-center justify-center my-5"  style="font-family: 'proxima_nova">
   <h3
     class="buildAnimateSteps text-center text-3xl font-bold mb-5"
     style="font-family: 'proxima_nova"

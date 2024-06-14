@@ -62,7 +62,7 @@
   }
 </script>
 
-<div class="my-10 mb-20">
+<div class="my-10 mb-20"  style="font-family: 'proxima_nova">
   <div class="flex flex-col gap-3 w-full px-[7vw]">
     <div class="flex flex-row justify-center items-center">
       <svg

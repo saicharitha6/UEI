@@ -23,7 +23,7 @@
   }
 </script>
 
-<header class="bg-black fixed top-0 left-0 right-0 z-50">
+<header class="bg-black fixed top-0 left-0 right-0 z-50"  style="font-family: 'proxima_nova">
   <div class="flex items-center justify-between px-4 py-3">
     <div class="flex items-center">
       <img

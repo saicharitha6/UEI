@@ -35,7 +35,7 @@
   });
 </script>
 
-<div class="justify-center">
+<div class="justify-center"  style="font-family: 'proxima_nova">
   <h3
     class="buildAnimate text-2xl text-center text-black font-bold"
     style="font-family: 'proxima_nova"

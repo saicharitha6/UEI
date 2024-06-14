@@ -28,7 +28,7 @@
   const images = [{ src: courosel1 }, { src: courosel2 }, { src: courosel3 }];
 </script>
 
-<div class="relative h-[100%] flex justify-center mb-5">
+<div class="relative h-[100%] flex justify-center mb-5"  style="font-family: 'proxima_nova">
   <div class="w-[90%] h-[100%] lg:w-3/4 md:w-3/4 lg:p-5 md:p-5">
     <div class=" items-center">
       <Carousel {images} duration={3900} class="rounded-none"></Carousel>

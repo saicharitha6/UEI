@@ -1,4 +1,4 @@
-<footer class="bg-[#252D33] text-gray-300 py-8 px-4 md:px-8 lg:h-20 flex flex-col justify-center items-center w-full">
+<footer class="bg-[#252D33] text-gray-300 py-8 px-4 md:px-8 lg:h-20 flex flex-col justify-center items-center w-full"  style="font-family: 'proxima_nova">
     <div class="container mx-auto lg:right-0">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="mb-4 md:mb-0 text-center md:text-left font-bold text-lg">Contact Us</p>

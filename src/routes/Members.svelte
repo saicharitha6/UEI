@@ -46,7 +46,7 @@
   });
 </script>
 
-<h3 class="text-3xl text-black text-center font-bold mt-10 mb-5 font-inter">
+<h3 class="text-3xl text-black text-center font-bold mt-10 mb-5 font-inter"  style="font-family: 'proxima_nova">
   Member Participants
 </h3>
 
