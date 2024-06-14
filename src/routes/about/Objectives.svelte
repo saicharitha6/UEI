@@ -44,7 +44,7 @@
   </h3>
   <div class="lg:w-3/4">
     <div
-      class="flex flex-col sm:flex-row mx-5 rounded-md border bg-[#141a1d] justify-center items-center"
+      class="flex flex-col sm:flex-row  rounded-md border bg-[#141a1d] justify-center items-center"
     >
       <div class="text-center sm:text-left">
         <img src={aim} alt="aim" class="buildAnimate lg:h-auto w-auto" />

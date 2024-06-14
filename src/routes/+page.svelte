@@ -3,12 +3,14 @@
   import Video from "$lib/components/Video.svelte";
   import Members from "./Members.svelte";
   import MainContent from "$lib/components/MainContent.svelte";
+  import Background from "$lib/components/backgroud.svelte";
   // import News from "$lib/components/News.svelte";
   import AboutUei from "$lib/components/AboutUEI.svelte";
 </script>
 
 <div class="flex flex-col bg-white min-h-screen">
   <MainContent />
+  <Background />
   <AboutUei />
   <Video />
 

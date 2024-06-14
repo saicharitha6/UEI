@@ -35,7 +35,7 @@
   });
 </script>
 
-<div class="justify-center" style="font-family: 'proxima_nova">
+<div class="justify-center text-lg" style="font-family: 'proxima_nova">
   <h3
     class="buildAnimate text-2xl text-center text-black font-bold"
     style="font-family: 'proxima_nova"
@@ -99,7 +99,7 @@
   </div>
 </div>
 
-<div class="flex items-center justify-center mb-10">
+<div class="flex items-center justify-center text-lg mb-10" style="font-family: 'proxima_nova">
   <div class="mt-10 items-center justify-center w-3/4">
     <h2
       class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate"
@@ -182,9 +182,5 @@
     height: 0.75rem;
     background-color: red; /* Green color */
     border-radius: 20%;
-  }
-
-  span {
-    width: 20rem;
   }
 </style>

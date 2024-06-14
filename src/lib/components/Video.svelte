@@ -45,6 +45,6 @@
 </div>
 <div class="flex justify-center mb-5">
   <Indicator color="dark" />
-  <Indicator color="green" />
+  <Indicator color="dark" />
   <Indicator color="dark" />
 </div>

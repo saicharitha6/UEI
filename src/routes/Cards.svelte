@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="lg:right-0 bg-black"  style="font-family: 'proxima_nova">
+<div class="lg:right-0 bg-black text-lg"  style="font-family: 'proxima_nova">
   <h2 class="font-bold text-white py-5 text-3xl text-center">Focus Areas</h2>
   <div class="justify-center items-center w-full px-[7vw] p-5">
     <div
@@ -33,7 +33,7 @@
           class="card floating rounded-lg shadow-md bg-white border overflow-hidden"
         >
           {#if i === 0}
-            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg text-center">
               Scaling Transactions
             </div>
             <p class="text-black p-3">
@@ -41,7 +41,7 @@
               network.
             </p>
           {:else if i === 1}
-            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg text-center">
               Ease of Scaling
             </div>
             <p class="text-black p-3">
@@ -49,7 +49,7 @@
               existing participants.
             </p>
           {:else}
-            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg">
+            <div class="bg-black text-white font-bold py-2 px-4 rounded-t-lg text-center">
               Ease of Adoption
             </div>
             <p class="text-black p-3"  style="font-family: 'proxima_nova">

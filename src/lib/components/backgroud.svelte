@@ -28,6 +28,22 @@
   const images = [{ src: courosel1 }, { src: courosel2 }, { src: courosel3 }];
 </script>
 
+
+<div class="flex justify-center mx-5">
+  <div class=" items-center justify-center w-3/4">
+    <p class="text-lg" style="font-family: 'proxima_nova">
+      <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
+      Built on the open-source Beckn Protocol, which powers networks like Open Network
+      for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
+      Open Network for Education & Skilling Transformations (ONEST). it links platforms
+      dealing in energy and its derivatives such as E V charging, battery swapping,
+      renewable energy, and more. UEI creates a unified ecosystem, connecting providers
+      and consumers of energy-related services, fostering innovation, and promoting
+      efficient and sustainable energy use.
+    </p>
+  </div>
+</div>
+
 <div class="relative h-[100%] flex justify-center mb-5"  style="font-family: 'proxima_nova">
   <div class="w-[90%] h-[100%] lg:w-3/4 md:w-3/4 lg:p-5 md:p-5">
     <div class=" items-center">

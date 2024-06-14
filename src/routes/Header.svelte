@@ -23,7 +23,7 @@
   }
 </script>
 
-<header class="bg-black fixed top-0 left-0 right-0 z-50"  style="font-family: 'proxima_nova">
+<header class="bg-black fixed top-0 left-0 right-0 z-50 text-lg"  style="font-family: 'proxima_nova">
   <div class="flex items-center justify-between px-4 py-3">
     <div class="flex items-center">
       <img
@@ -38,7 +38,7 @@
       <a
         href="/"
         on:click={() => ($isActiveTab = "home")}
-        class="p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500 after:bg-white active:bg-white active:text-gray-600"
+        class="p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500 after:bg-white active:bg-white active:text-gray-600"
         class:bg-white={$isActiveTab === "home"}
         class:text-gray-800={$isActiveTab === "home"}
         class:text-white={$isActiveTab !== "home"}>Home</a
@@ -46,7 +46,7 @@
       <a
         href="/about"
         on:click={() => ($isActiveTab = "about")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
         class:bg-white={$isActiveTab === "about"}
         class:text-gray-800={$isActiveTab === "about"}
         class:text-white={$isActiveTab !== "about"}>About</a
@@ -54,7 +54,7 @@
       <a
         href="/news"
         on:click={() => ($isActiveTab = "news")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
         class:bg-white={$isActiveTab === "news"}
         class:text-gray-800={$isActiveTab === "news"}
         class:text-white={$isActiveTab !== "news"}>Media Center</a

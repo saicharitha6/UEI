@@ -1,5 +1,6 @@
 <!-- Carousel.svelte -->
 <script>
+  import blog from "$lib/assets/images/blog.jpg"
   import s5 from "$lib/assets/images/bussinessLine.png";
   import s2 from "$lib/assets/images/economicTimes.png";
   import s3 from "$lib/assets/images/evReporter.png";
@@ -63,6 +64,9 @@
 </script>
 
 <div class="my-10 mb-20"  style="font-family: 'proxima_nova">
+  <div class="w-full h-3/4">
+    <src img={blog} alt="blog" />
+    </div>
   <div class="flex flex-col gap-3 w-full px-[7vw]">
     <div class="flex flex-row justify-center items-center">
       <svg

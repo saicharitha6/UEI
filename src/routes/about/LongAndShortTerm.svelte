@@ -8,15 +8,17 @@
   import l4 from "$lib/assets/images/l4.png";
 </script>
 
-<div class="justify-center flex" style="font-family: 'proxima_nova">
-  <div class="w-full p-5 sm:w-full lg:w-3/4">
+<div class="justify-center flex text-lg" style="font-family: 'proxima_nova">
+  <div class="w-full sm:w-full lg:w-3/4">
     <div
-      class="flex flex-col lg:flex-row justify-center items-center px-7 rounded-xl"
+      class="flex flex-col lg:flex-row justify-center items-center rounded-xl"
     >
       <!-- Left side content -->
-      <div class="buildAnimateSteps w-full lg:m-10">
+      <div
+        class="buildAnimateSteps w-full border rounded-md border-black lg:border lg:border-black sm:border-collapse"
+      >
         <h2
-          class="buildAnimateSteps font-bold text-center text-2xl pt-5 sm:pt-5 text-black"
+          class="buildAnimateSteps font-bold text-center bg-black text-white text-2xl py-3 sm:py-3"
         >
           Long-term Objectives
         </h2>
@@ -30,11 +32,11 @@
                 alt="long_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float">
+              <li class="animate-float justify-center text-center">
                 To enhance digital transactions in the energy sector, we aim to
                 unify efforts, reduce coordination complexities, and scale the
                 Unified Energy Interface (UEI) network.
-              </p>
+              </li>
             </div>
             <div class="p-5 mx-5">
               <img
@@ -42,10 +44,10 @@
                 alt="long_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float my-5">
+              <li class="animate-float my-5 text-center">
                 We will ensure the Beckn Protocol remains relevant and
                 adaptable, guiding its technical evolution and governance.
-              </p>
+              </li>
             </div>
             <div class="p-5 mx-5">
               <img
@@ -53,11 +55,11 @@
                 alt="long_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float my-5">
+              <li class="animate-float my-5 text-center">
                 Our mission includes expanding the UEI network to encompass more
                 energy-related services and sectors, increasing its reach across
                 industries.
-              </p>
+              </li>
             </div>
             <div class="p-5 mx-5">
               <img
@@ -65,11 +67,11 @@
                 alt="long_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float">
+              <li class="animate-float text-center">
                 We are committed to global interoperability by aligning the
                 protocol with international standards, enabling seamless
                 integration as a common underlying fabric.
-              </p>
+              </li>
             </div>
           </div>
         </div>
@@ -77,12 +79,14 @@
     </div>
 
     <div
-      class="flex flex-col lg:flex-row justify-center items-center px-7 rounded-xl"
+      class="flex flex-col lg:flex-row justify-center items-center mb-10 rounded-xl"
     >
       <!-- Left side content -->
-      <div class="buildAnimateSteps w-full lg:m-10">
+      <div
+        class="buildAnimateSteps w-full mt-10 border rounded-md border-black lg:border lg:border-black sm:border-collapse"
+      >
         <h2
-          class="buildAnimateSteps font-bold text-center text-2xl text-black"
+          class="buildAnimateSteps font-bold text-center bg-black text-white text-2xl py-3 sm:py-3"
         >
           Short-term Objectives
         </h2>
@@ -96,10 +100,10 @@
                 alt="short_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float">
+              <li class="animate-float text-center">
                 Support the technical integration of digital platforms with the
                 UEI network by providing expertise.
-              </p>
+              </li>
             </div>
             <div class="p-5 mx-5">
               <img
@@ -107,9 +111,9 @@
                 alt="short_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float my-5">
+              <li class="animate-float my-5 text-center">
                 Engage with key stakeholders to promote network adoption.
-              </p>
+              </li>
             </div>
             <div class="p-5 mx-5">
               <img
@@ -117,10 +121,10 @@
                 alt="short_term"
                 class="h-15 w-20 mx-auto rounded-md mb-5"
               />
-              <p class="animate-float my-5">
+              <li class="animate-float my-5 text-center">
                 Conduct pilot programs to demonstrate UEI network's capabilities
                 and potential for innovation.
-              </p>
+              </li>
             </div>
           </div>
         </div>

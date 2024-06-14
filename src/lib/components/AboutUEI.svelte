@@ -2,30 +2,16 @@
   import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
-<div class="flex justify-center">
-  <div class=" items-center justify-center w-3/4">
-    <p class="font-medium" style="font-family: 'proxima_nova">
-      <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
-      Built on the open-source Beckn Protocol, which powers networks like Open Network
-      for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
-      Open Network for Education & Skilling Transformations (ONEST). it links platforms
-      dealing in energy and its derivatives such as E V charging, battery swapping,
-      renewable energy, and more. UEI creates a unified ecosystem, connecting providers
-      and consumers of energy-related services, fostering innovation, and promoting
-      efficient and sustainable energy use.
-    </p>
-  </div>
-</div>
 <div
-  class="flex justify-center p-5 w-full text-md"
+  class="flex justify-center m-5 w-full text-lg"
   style="font-family: 'proxima_nova"
 >
   <Accordion
-    class="w-full  md:w-3/4 lg:w-3/4 sm:w-full"
+    class="w-full md:w-3/4 lg:w-3/4 sm:w-full"
     activeClass="bg-black dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white"
   >
-    <AccordionItem open class="bg-black hover:bg-gray-800">
-      <span slot="header" class="text-white">What is UEI?</span>
+    <AccordionItem open class="bg-black hover:bg-gray-800 left-20">
+      <span slot="header" class="text-white text-center">What is UEI?</span>
       <ul class="list-disc ps-5 dark:text-black text-black">
         <li class="mb-2 text-black dark:text-gray-400 whitespace-normal">
           <p>
