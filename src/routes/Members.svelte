@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
   import member1 from "$lib/assets/images/member1.png";
-  import member2 from "$lib/assets/company-icons/chargezone.png";
+  import member2 from "$lib/assets/company-icons/chargezone1.png";
   import member3 from "$lib/assets/company-icons/sheru.png";
   import member4 from "$lib/assets/company-icons/isof.png";
   import member5 from "$lib/assets/images/image3.jpg";
@@ -20,8 +20,8 @@
 
   let members = [member1, member2, member3, member4, member5, member6, member7];
   let container: HTMLElement | null = null;
-  let interval: number | null = null;
-
+  // let interval: number | null = null;
+  let interval: NodeJS.Timeout | null = null;
   onMount(() => {
     container = document.querySelector(".participantList");
     if (container) {
@@ -46,7 +46,9 @@
   });
 </script>
 
-<h3 class="text-3xl text-black text-center font-bold">Member Participants</h3>
+<h3 class="text-3xl text-black text-center font-bold mt-10 mb-5 font-inter">
+  Member Participants
+</h3>
 
 <div class="mx-auto max-w-screen-xl">
   <a href="/participants" on:click={todo}>

@@ -3,18 +3,9 @@
   import "../app.css";
   import { isOpen } from "$lib/store";
   import { isActiveTab } from "$lib/store";
-  import { onDestroy } from "svelte";
   import { goto } from "$app/navigation";
 
   let showMenu: boolean = false;
-  let alertContent: boolean = false;
-  let activeTab: string = "";
-
-  const unsubscribe = isOpen.subscribe((value) => (alertContent = value));
-  const unsubscribe1 = isActiveTab.subscribe((value) => (activeTab = value));
-
-  onDestroy(unsubscribe);
-  onDestroy(unsubscribe1);
 
   function toggleForm() {
     isOpen.update((n) => {
@@ -46,27 +37,27 @@
     >
       <a
         href="/"
-        on:click={() => (activeTab = "home")}
+        on:click={() => ($isActiveTab = "home")}
         class="p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500 after:bg-white active:bg-white active:text-gray-600"
-        class:bg-white={activeTab === "home"}
-        class:text-gray-800={activeTab === "home"}
-        class:text-white={activeTab !== "home"}>Home</a
+        class:bg-white={$isActiveTab === "home"}
+        class:text-gray-800={$isActiveTab === "home"}
+        class:text-white={$isActiveTab !== "home"}>Home</a
       >
       <a
         href="/about"
-        on:click={() => (activeTab = "about")}
+        on:click={() => ($isActiveTab = "about")}
         class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
-        class:bg-white={activeTab === "about"}
-        class:text-gray-800={activeTab === "about"}
-        class:text-white={activeTab !== "about"}>About</a
+        class:bg-white={$isActiveTab === "about"}
+        class:text-gray-800={$isActiveTab === "about"}
+        class:text-white={$isActiveTab !== "about"}>About</a
       >
       <a
         href="/news"
-        on:click={() => (activeTab = "news")}
+        on:click={() => ($isActiveTab = "news")}
         class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-sm md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white hover:bg-white rounded-md hover:text-gray-600 transition-colors duration-500 active:bg-white active:text-gray-600"
-        class:bg-white={activeTab === "news"}
-        class:text-gray-800={activeTab === "news"}
-        class:text-white={activeTab !== "news"}>Updates</a
+        class:bg-white={$isActiveTab === "news"}
+        class:text-gray-800={$isActiveTab === "news"}
+        class:text-white={$isActiveTab !== "news"}>Media Center</a
       >
     </nav>
 
@@ -93,35 +84,35 @@
         <a
           href="/"
           on:click={() => {
-            activeTab = "home";
+            $isActiveTab = "home";
             showMenu = false;
           }}
           class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
-          class:bg-white={activeTab === "home"}
-          class:text-gray-800={activeTab === "home"}
-          class:text-white={activeTab !== "home"}>Home</a
+          class:bg-white={$isActiveTab === "home"}
+          class:text-gray-800={$isActiveTab === "home"}
+          class:text-white={$isActiveTab !== "home"}>Home</a
         >
         <a
           href="/about"
           on:click={() => {
-            activeTab = "about";
+            $isActiveTab = "about";
             showMenu = false;
           }}
           class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
-          class:bg-white={activeTab === "about"}
-          class:text-gray-800={activeTab === "about"}
-          class:text-white={activeTab !== "about"}>About</a
+          class:bg-white={$isActiveTab === "about"}
+          class:text-gray-800={$isActiveTab === "about"}
+          class:text-white={$isActiveTab !== "about"}>About</a
         >
         <a
           href="/news"
           on:click={() => {
-            activeTab = "news";
+            $isActiveTab = "news";
             showMenu = false;
           }}
           class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
-          class:bg-white={activeTab === "news"}
-          class:text-gray-800={activeTab === "news"}
-          class:text-white={activeTab !== "news"}>News</a
+          class:bg-white={$isActiveTab === "news"}
+          class:text-gray-800={$isActiveTab === "news"}
+          class:text-white={$isActiveTab !== "news"}>Media Center</a
         >
       </nav>
     </div>

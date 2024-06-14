@@ -15,43 +15,50 @@
     {
       img: screen1,
       title: "ISGF",
-      des: "partnership initiative between government and various stakeholders",
+      des: "ISGF is a Think-Tank of global repute on Energy Transition, Electric Mobility and Grid Modernization",
+      link: "https://indiasmartgrid.org/",
     },
     {
       img: screen2,
       title: "TURNO",
-      des: "upload your own custom organization logo. own custom organization logo",
+      des: "It is an Electric Vehicle company, that helps operators of commercial vehicles to switch to EVs",
+      link: "https://www.turno.club/?utm_source=Li&utm_medium=Osocial&utm_campaign=bio",
     },
     {
       img: screen3,
       title: "World Resources Institute",
-      des: "select payment gateway depend on your business need.",
+      des: "WRI is a trusted partner for change. We work globally and in focus countries to meet people’s essential needs",
+      link: "https://www.wri.org/about",
     },
-    {
-      img: screen4,
-      title: "Thunder",
-      des: "See what it's like to build custom EV charging App, without writing code!",
-    },
+    // {
+    //   img: screen4,
+    //   title: "Thunder",
+    //   des: "See what it's like to build custom EV charging App, without writing code!",
+    // },
     {
       img: screen5,
-      title: "Thunder",
-      des: "See what it's like to build custom EV charging App, without writing code!",
+      title: "Pulse Energy",
+      des: "we enables CPOs and fleet operators to scale up their charging operations pan India.",
+      link: "https://pulseenergy.io/",
     },
     {
       img: screen6,
       title: "Kazam",
-      des: "See what it's like to build custom EV charging App, without writing code!",
+      des: "Kazam is an agnostic EV charging software platform building India's largest EV charging station network.",
+      link: "https://kazam.in/",
     },
     {
       img: screen7,
       title: "Charge Zone",
-      des: "See what it's like to build custom EV charging App, without writing code!",
+      des: "It is one of the leading global companies to have a fully integrated technology",
+      link: "https://chargezone.com/",
     },
 
     {
       img: screen8,
       title: "SHERU",
-      des: "See what it's like to build custom EV charging App, without writing code!",
+      des: "We are building the backend for new energy networks.",
+      link: "https://sheru.se/",
     },
   ];
 
@@ -103,24 +110,36 @@
     class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10"
   >
     {#each steps as step}
-      <div class="flex flex-col  rounded-md ">
+      <div class="flex flex-col rounded-md">
         <div class="flex flex-col rounded-md h-full">
-          <div class="flex items-center w-full h-auto border bg-[#1A1F24] shadow-md shadow-black">
-            <img src={step.img} alt="logo" class="h-[150px] w-full mx-auto p-3 hover:p-1" />
+          <div
+            class="flex items-center w-full h-auto border bg-[#1A1F24] shadow-md shadow-black"
+          >
+            <img
+              src={step.img}
+              alt="logo"
+              class="h-[150px] w-full mx-auto p-3 hover:p-1"
+            />
           </div>
-          <div class="flex flex-col items-start w-full bg-[#1C2428] border shadow-md shadow-black p-4">
-            <div class="flex flex-col w-auto h-[80px] sm:h-[80px] md:h-[120px] lg:h-[120px]">
-              <p class="text-white text-lg font-semibold ">{step.title}</p>
+          <div
+            class="flex flex-col items-center w-full bg-[#1C2428] border shadow-md shadow-black p-4"
+          >
+            <div
+              class="flex flex-col w-auto h-[80px] sm:h-[80px] md:h-[120px] lg:h-[90px]"
+            >
+              <p class="text-white text-lg font-semibold">{step.title}</p>
               <p class="text-sm text-gray-300 flex-1">{step.des}</p>
             </div>
-            <!-- <div class="flex justify-center bg-[#1C2428] mt-3">
-              <Button class="bg-green-500 hover:bg-green-700 font-bold w-auto h-10 text-white px-4 py-2 flex items-center">
-                Know More
-                <ArrowRightOutline class="w-6 h-6 ml-2" />
+            <div class="items-center justify-center flex flex-col">
+              <Button
+                href={step.link}
+                class="w-fit mt-5 text-white hover:bg-green-700 font-bold justify-center"
+              >
+                Click Here<ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
               </Button>
-            </div> -->
+            </div>
           </div>
-        </div>        
+        </div>
       </div>
     {/each}
   </div>

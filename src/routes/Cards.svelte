@@ -22,8 +22,8 @@
   }
 </script>
 
-<div class="lg:right-0">
-  <h2 class="font-bold text-black text-3xl text-center">Focus Areas</h2>
+<div class="lg:right-0 bg-black">
+  <h2 class="font-bold text-white py-5 text-3xl text-center">Focus Areas</h2>
   <div class="justify-center items-center w-full px-[7vw] p-5">
     <div
       class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-4 lg:gap-6"

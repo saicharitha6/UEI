@@ -2,12 +2,18 @@
   import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
-<div class="mt-10 flex justify-center p-5 w-full">
-  <Accordion class="w-full md:w-3/4 lg:w-3/4 sm:w-full" activeClass="bg-gray-600 dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white">
+<div
+  class="mt-10 flex justify-center p-5 w-full text-md"
+  style="font-family: 'proxima_nova"
+>
+  <Accordion
+    class="w-full md:w-3/4 lg:w-3/4 sm:w-full"
+    activeClass="bg-gray-600 dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white"
+  >
     <AccordionItem open>
       <span slot="header">What is UEI?</span>
-      <ul class="list-disc ps-5 dark:text-gray-400 text-gray-500">
-        <li class="mb-2 text-gray-500 dark:text-gray-400 whitespace-normal">
+      <ul class="list-disc ps-5 dark:text-black text-black">
+        <li class="mb-2 text-black dark:text-gray-400 whitespace-normal">
           <p>
             The Unified Energy Interface, or UEI, emerges as a way of unifying
             the fragmented digital attempts spread across the domain of energy
@@ -21,7 +27,7 @@
             common, interoperable language.
           </p>
         </li>
-        <li class="mb-2 text-gray-500 dark:text-gray-400">
+        <li class="mb-2 text-black dark:text-gray-400">
           <p>
             UEI essentially creates a unified ecosystem, integrating disparate
             energy solutions into a cohesive whole. It acts as a dynamic open
@@ -39,20 +45,20 @@
     <AccordionItem>
       <span slot="header">About the Alliance</span>
       <ul class="list-disc px-5">
-        <li class="mb-2 text-gray-500 dark:text-gray-400">
+        <li class="mb-2 text-black dark:text-gray-400">
           The UEI Alliance is a collaborative group formed by various
           stakeholders in the energy sector, committed to global development,
           adoption, and compliance with the Beckn Protocol for energy-related
           economic transactions between digital platforms.
         </li>
-        <li class="mb-2 text-gray-500 dark:text-gray-400">
+        <li class="mb-2 text-black dark:text-gray-400">
           This alliance transcends specific sectors like electric vehicles (EVs)
           or battery technology, encompassing a wide range of energy-related
           transaction domains. Its primary aim is to promote the adoption and
           interoperability of the Beckn Protocol within the energy field,
           thereby scaling the Unified Energy Interface (UEI) network.
         </li>
-        <li>
+        <li class="mb-2 text-black dark:text-gray-400">
           Operating as a think tank, the alliance focuses on enhancing digital
           economic transactions between energy platforms, particularly in
           resource discovery and fulfilment.

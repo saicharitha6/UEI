@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import mission from '$lib/assets/images/mission.png';
+  import mission from "$lib/assets/images/mission.png";
 
   let steps = [
     {
@@ -51,23 +51,20 @@
 </script>
 
 <div class="mb-5 buildAnimate">
-  <div class="flex flex-row mt-20 mb-10 bg-gray-300 mx-5 sm:mx-5 rounded-br-3xl rounded-tl-3xl sm:rounded-br-2xl sm:rounded-tl-2xl lg:mx-52 lg:rounded-br-full lg:rounded-tl-full">
-    <div class="w-1/2 mt-5 flex flex-col items-center justify-center">
-      <h3 class="font-bold text-3xl text-center text-black mt-30">Our Mission</h3>
-      <img src={mission} alt="mission" class="w-20 h-20"/>
-      <!-- <h3 class="font-bold text-3xl text-center text-black">Our Mission</h3> -->
-    </div>
-    
-    <div class="w-3/4 ">
-      <p class="w-3/4 justify-center sm:content-center m-5">
-        The UEI Alliance is committed to global development, adoption, and
-        compliance with the Beckn Protocol for energy-related economic
-        transactions between digital platforms.
-      </p>
-    </div>
+  <div class="flex items-center justify-center">
+    <!-- <h3 class="font-bold text-3xl text-center text-black" style="font-family: 'proxima_nova">Our Mission</h3> -->
   </div>
- 
-  <h3 class="font-bold text-3xl text-center text-black">Our Vision</h3>
+  <div class="flex items-center justify-center">
+    <p class="w-3/4 justify-center text-3xl text-black sm:content-center m-5">
+      The UEI Alliance is committed to <b
+        >global development, adoption, and compliance</b
+      >
+      with the Beckn Protocol for <b>energy-related economic transactions</b> between
+      digital platforms.
+    </p>
+  </div>
+
+  <!-- <h3 class="font-bold text-3xl text-center text-black" style="font-family: 'proxima_nova">Our Vision</h3>
   <div class="flex items-center flex-col">
     <div class="lg:w-3/4 md:w-3/4">
       <div
@@ -86,7 +83,7 @@
                 {/if}
               </div>
               <p
-                class="text-md content-center sm:content-center lg:content-center text-gray-300 p-5"
+                class="text-lg content-center sm:content-center lg:content-center text-gray-300 p-5" style="font-family: 'proxima_nova"
               >
                 {step.des}
               </p>
@@ -95,5 +92,11 @@
         {/each}
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
+
+<style>
+  p {
+    font-family: "proxima-nova";
+  }
+</style>
