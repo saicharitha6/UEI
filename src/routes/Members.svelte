@@ -9,12 +9,7 @@
   import member7 from "$lib/assets/company-icons/thunder.png";
   import { isActiveTab } from "$lib/store";
 
-  let activeTab: string = "";
-  const unsubscribe = isActiveTab.subscribe((value) => (activeTab = value));
-
-  onDestroy(unsubscribe);
-
-  function todo() {
+   function todo() {
     isActiveTab.set("");
   }
 
@@ -46,11 +41,11 @@
   });
 </script>
 
-<h3 class="text-3xl text-black text-center font-bold mt-10 mb-5 font-inter"  style="font-family: 'proxima_nova">
+<h3 class="text-3xl text-black text-center font-bold mt-10 mb-5 font-inter"  style="font-family: 'Open Sans'">
   Member Participants
 </h3>
 
-<div class="mx-auto max-w-screen-xl">
+<div class="mx-auto max-w-screen-xl" style="font-family: 'Open Sans'">
   <a href="/participants" on:click={todo}>
     <div
       class="flex items-center space-x-1 overflow-x-auto mb-10 scrollbar-hide participantList"

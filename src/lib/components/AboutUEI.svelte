@@ -4,7 +4,7 @@
 
 <div
   class="flex justify-center m-5 w-full text-lg"
-  style="font-family: 'proxima_nova"
+style="font-family: 'Open Sans'"
 >
   <Accordion
     class="w-full md:w-3/4 lg:w-3/4 sm:w-full"

@@ -5,7 +5,7 @@
 <div class="flex justify-center">
   <div class="flex flex-col w-3/4">
     <!-- <div class="flex justify-center items-center">
-      <p class="justify-center font-medium" style="font-family: 'proxima_nova">
+      <p class="justify-center font-medium" style="font-family: 'Open Sans'"">
         <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy
         transactions. Built on the open-source Beckn Protocol, which powers networks
         like Open Network for Digital Commerce (ONDC), Namma Yatri, Unified Health
@@ -19,16 +19,16 @@
     <div>
       <h3
         class="text-2xl text-center font-sans font-extrabold mt-5"
-        style="font-family: 'proxima_nova"
+      style="font-family: 'Open Sans'"
       >
         Imagine with UEI
       </h3>
     </div>
-    <div class=" p-5 items-center justify-center flex">
+    <div class="items-center justify-center flex">
       <!-- <Video src="/videos/flowbite.mp4" controls class="w-full max-w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700" trackSrc="flowbite.mp4" /> -->
       <iframe
-        width="800"
-        height="350"
+        width="1500"
+        height="500"
         src="https://www.youtube.com/embed/ReqR_xvFjEI?si=sgdkwmTBMtLncS5K"
         title="YouTube video player"
         frameborder="0"

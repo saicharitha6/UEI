@@ -35,10 +35,9 @@
   });
 </script>
 
-<div class="w-full flex flex-col items-center justify-center my-5"  style="font-family: 'proxima_nova">
+<div class="w-full flex flex-col items-center justify-center my-5"  style="font-family: 'Open Sans'">
   <h3
     class="buildAnimateSteps text-center text-3xl font-bold mb-5"
-    style="font-family: 'proxima_nova"
   >
     Aims and Objectives
   </h3>

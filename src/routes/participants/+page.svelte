@@ -4,7 +4,7 @@
   import { ArrowRightOutline } from "flowbite-svelte-icons";
   import screen1 from "$lib/assets/images/member2.png";
   import screen2 from "$lib/assets/images/image2.jpg";
-  import screen3 from "$lib/assets/images/member7.jpg";
+  import screen3 from "$lib/assets/images/image4.jpg";
   import screen4 from "$lib/assets/images/member6.jpg";
   import screen5 from "$lib/assets/images/member1.png";
   import screen6 from "$lib/assets/images/image3.jpg";
@@ -93,7 +93,7 @@
 </script>
 
 <div
-  class="bg-white flex flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto"
+  class="bg-white flex flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto" style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">

@@ -82,12 +82,12 @@
   ];
 </script>
 
-<div class="mt-40">
+<div class="mt-20">
   <NewsCarousel />
 
 </div>
 
-<div class="bg-white flex flex-col w-full lg:h-screen h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"  style="font-family: 'proxima_nova">
+<div class="bg-white flex flex-col w-full lg:h-screen h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"  style="font-family: 'Open Sans'">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center">
     {#each news as card}
       <div class="bg-black border-gray-300 shadow-lg hover:translate-y-1 floating">

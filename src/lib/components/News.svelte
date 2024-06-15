@@ -52,7 +52,7 @@
   ];
 </script>
 
-<div class="my-10">
+<div class="my-10" style="font-family: 'Open Sans'">
   <p
     class="text-3xl lg:text-3xl md:text-4xl sm:text-3xl mb-5 font-bold text-center text-black"
   >

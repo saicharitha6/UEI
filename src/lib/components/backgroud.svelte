@@ -31,7 +31,7 @@
 
 <div class="flex justify-center mx-5">
   <div class=" items-center justify-center w-3/4">
-    <p class="text-lg" style="font-family: 'proxima_nova">
+    <p class="text-lg" style="font-family: 'Open Sans'">
       <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
       Built on the open-source Beckn Protocol, which powers networks like Open Network
       for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div class="relative h-[100%] flex justify-center mb-5"  style="font-family: 'proxima_nova">
+<div class="relative h-[100%] flex justify-center mb-5"  style="font-family: 'Open Sans'">
   <div class="w-[90%] h-[100%] lg:w-3/4 md:w-3/4 lg:p-5 md:p-5">
     <div class=" items-center">
       <Carousel {images} duration={3900} class="rounded-none"></Carousel>

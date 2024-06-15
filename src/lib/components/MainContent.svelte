@@ -17,10 +17,10 @@
 </script>
 
 <div
-  class="flex flex-col gap-8 h-max px-[10vw] w-full animation_text opacity-0"
+  class="flex flex-col gap-8 h-max px-[10vw] w-full animation_text opacity-0" style="font-family: 'Open Sans'"
 >
   <p
-    class="text-center text-5xl lg:text-7xl md:text-6xl sm:text-5xl sm:text-center sm:mx-auto mx-auto font-semibold mt-40 text-transparent bg-clip-text bg-gradient-to-r from-black pb-4 to-gray-800 leading-[85px]"  style="font-family: 'proxima_nova"
+    class="text-center text-5xl lg:text-7xl md:text-6xl sm:text-5xl sm:text-center sm:mx-auto mx-auto font-semibold mt-40 text-transparent bg-clip-text bg-gradient-to-r from-black pb-4 to-gray-800 leading-[85px]"
   >
     UEI Alliance is a collaborative group<br />
   </p>
@@ -30,3 +30,4 @@
     between digital platforms.
   </p> -->
 </div>
+

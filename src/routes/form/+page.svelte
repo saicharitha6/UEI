@@ -89,7 +89,7 @@
   }
 </script>
 
-<div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20">
+<div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20" style="font-family: 'Open Sans'">
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
     <form on:submit|preventDefault={handleSubmit}>
       <div class="flex justify-between">
