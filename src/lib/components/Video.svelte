@@ -19,13 +19,12 @@
     <div>
       <h3
         class="text-2xl text-center font-sans font-extrabold mt-5"
-      style="font-family: 'Open Sans'"
+        style="font-family: 'Open Sans'"
       >
         Imagine with UEI
       </h3>
     </div>
     <div class="items-center justify-center flex">
-      <!-- <Video src="/videos/flowbite.mp4" controls class="w-full max-w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700" trackSrc="flowbite.mp4" /> -->
       <iframe
         width="1500"
         height="500"
@@ -41,7 +40,6 @@
       class="inline p-2 bg-gradient-to-b from-black via-transparent to-white"
     ></div>
   </div>
-  
 </div>
 <div class="flex justify-center mb-5">
   <Indicator color="dark" />

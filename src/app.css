@@ -2,21 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* body {
-	font-family: "Inter";
-  } */
-
 html,
 :host {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none; /* For Firefox */
-    -ms-text-size-adjust: none; /* For Edge */
-    text-size-adjust: none; /* Standard */
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none; /* For Firefox */
+  -ms-text-size-adjust: none; /* For Edge */
+  text-size-adjust: none; /* Standard */
 }
-
-/* body {
-    font-family: 'Open Sans', sans-serif;
-} */
-

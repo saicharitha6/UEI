@@ -30,11 +30,11 @@
       des: "WRI is a trusted partner for change. We work globally and in focus countries to meet people’s essential needs",
       link: "https://www.wri.org/about",
     },
-    // {
-    //   img: screen4,
-    //   title: "Thunder",
-    //   des: "See what it's like to build custom EV charging App, without writing code!",
-    // },
+    {
+      img: screen4,
+      title: "Thunder",
+      des: "See what it's like to build custom EV charging App, without writing code!",
+    },
     {
       img: screen5,
       title: "Pulse Energy",
@@ -93,7 +93,7 @@
 </script>
 
 <div
-  class="bg-white flex flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto" style="font-family: 'Open Sans'"
+  class="bg-white flex mt-20 flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto" style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">

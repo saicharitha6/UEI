@@ -35,15 +35,16 @@
   });
 </script>
 
-<div class="w-full flex flex-col items-center justify-center my-5"  style="font-family: 'Open Sans'">
-  <h3
-    class="buildAnimateSteps text-center text-3xl font-bold mb-5"
-  >
+<div
+  class="w-full flex flex-col items-center justify-center my-5"
+  style="font-family: 'Open Sans'"
+>
+  <h3 class="buildAnimateSteps text-center text-3xl font-bold mb-5">
     Aims and Objectives
   </h3>
   <div class="lg:w-3/4">
     <div
-      class="flex flex-col sm:flex-row  rounded-md border bg-[#141a1d] justify-center items-center"
+      class="flex flex-col sm:flex-row rounded-md border bg-[#141a1d] justify-center items-center"
     >
       <div class="text-center sm:text-left">
         <img src={aim} alt="aim" class="buildAnimate lg:h-auto w-auto" />

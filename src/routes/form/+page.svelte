@@ -45,53 +45,56 @@
     { value: "fr", name: "Other" },
   ];
 
-  let organizationName = "";
-  let natureOfOrganization = "";
-  let website = "";
-  let industryField = "";
-  let pointOfContact = "";
-  let missionDescription = "";
-  let ceoNameEmail = "";
-  let howDidYouKnow = "";
-  let memberReferral = "";
+  // let organizationName = "";
+  // let natureOfOrganization = "";
+  // let website = "";
+  // let industryField = "";
+  // let pointOfContact = "";
+  // let missionDescription = "";
+  // let ceoNameEmail = "";
+  // let howDidYouKnow = "";
+  // let memberReferral = "";
 
-  async function handleSubmit() {
-    const formData = {
-      organizationName,
-      natureOfOrganization,
-      website,
-      industryField,
-      pointOfContact,
-      missionDescription,
-      ceoNameEmail,
-      howDidYouKnow,
-      memberReferral,
-    };
+  // async function handleSubmit() {
+  //   const formData = {
+  //     organizationName,
+  //     natureOfOrganization,
+  //     website,
+  //     industryField,
+  //     pointOfContact,
+  //     missionDescription,
+  //     ceoNameEmail,
+  //     howDidYouKnow,
+  //     memberReferral,
+  //   };
 
-    try {
-      const response = await fetch("/formData", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+  //   try {
+  //     const response = await fetch("/formData", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
 
-      if (response.ok) {
-        alert("Form submitted successfully!");
-      } else {
-        alert("Form submission failed.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("An error occurred while submitting the form.");
-    }
-  }
+  //     if (response.ok) {
+  //       alert("Form submitted successfully!");
+  //     } else {
+  //       alert("Form submission failed.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //     alert("An error occurred while submitting the form.");
+  //   }
+  // }
 </script>
 
-<div class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20" style="font-family: 'Open Sans'">
+<div
+  class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20"
+  style="font-family: 'Open Sans'"
+>
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
-    <form on:submit|preventDefault={handleSubmit}>
+    <!-- <form on:submit|preventDefault={handleSubmit}> -->
       <div class="flex justify-between">
         <h2 class="font-bold text-2xl mb-10">UEI Alliance Membership Form</h2>
         <a href="/" on:click={toggle}
@@ -237,6 +240,6 @@
           Submit
         </Button>
       </div>
-    </form>
+    <!-- </form> -->
   </div>
 </div>

@@ -2,12 +2,9 @@
   import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
-<div
-  class="flex justify-center m-5 w-full text-lg"
-style="font-family: 'Open Sans'"
->
+<div class="flex justify-center m-5 text-lg" style="font-family: 'Open Sans'">
   <Accordion
-    class="w-full md:w-3/4 lg:w-3/4 sm:w-full"
+    class="w-full md:w-3/4 lg:w-3/4"
     activeClass="bg-black dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white"
   >
     <AccordionItem open class="bg-black hover:bg-gray-800 left-20">

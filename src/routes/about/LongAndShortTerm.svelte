@@ -13,7 +13,6 @@
     <div
       class="flex flex-col lg:flex-row justify-center items-center rounded-xl"
     >
-      <!-- Left side content -->
       <div
         class="buildAnimateSteps w-full border rounded-md border-black lg:border lg:border-black sm:border-collapse"
       >
@@ -81,7 +80,6 @@
     <div
       class="flex flex-col lg:flex-row justify-center items-center mb-10 rounded-xl"
     >
-      <!-- Left side content -->
       <div
         class="buildAnimateSteps w-full mt-10 border rounded-md border-black lg:border lg:border-black sm:border-collapse"
       >

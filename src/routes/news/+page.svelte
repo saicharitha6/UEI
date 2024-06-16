@@ -1,29 +1,9 @@
 <script lang="ts">
   import { Card, Button } from "flowbite-svelte";
   import { ArrowRightOutline } from "flowbite-svelte-icons";
-  import blog from "$lib/assets/images/blog.jpg";
-  import NewsCarousel from './NewsCarousel.svelte';
-
-  const update = [
-    {
-      title:"In a groundbreaking moment, the Beckn community members Pulse Energy, Sheru, Kazam, and Turno rocked a joint demo, showcasing seamless open network transactions on Unified Energy Interface",
-      posted:"FIDE insert log",
-      link:"https://www.linkedin.com/posts/becknprotocol_uei-climateaction-interoperability-activity-7160171957462700032-9J_e/",
-      date:"Date - Jan 2024"
-    },
-    {
-      title:"Energy startups, power utilities and other companies could come together as an open community to take this idea from concept to a full-fledged implementation with the support of existing or new policies on green energy of the participating states in India",
-      posted:"Economic Times insert logo ",
-      link:"https://economictimes.indiatimes.com/tech/technology/a-platform-in-the-works-to-find-closest-ev-charging-spot-more/articleshow/107801218.cms?from=mdr",
-      date:"Date - Feb, 2024 "
-    },
-    {
-      title:" An Explainer on UEI for EV Charging",
-      posted:"EVreporter Magazine",
-      link:"https://evreporter.com/wp-content/uploads/2024/03/EVreporter-Mar-2024-magazine.pdf",
-      dtae:"Date- March 2024"
-    }
-  ]
+  import blog from "$lib/assets/images/n1.png";
+  import NewsCard from "./NewsCard.svelte";
+  import Image from "./image.svelte";
 
   const news = [
     {
@@ -52,7 +32,7 @@
       posted: "EV Reporter",
       link: "https://evreporter.com/wp-content/uploads/2024/03/EVreporter-Mar-2024-magazine.pdf",
     },
-   
+
     {
       title: "UEI Alliance Meetup with Nandan ",
       posted: "Beckn",
@@ -79,29 +59,61 @@
       posted: "Alliance",
       link: "https://drive.google.com/file/d/10xY37w6bvuAelErXt1ONBdO19I3I2Ylj/view",
     },
+    {
+      title: " An Explainer on UEI for EV Charging",
+      posted: "EVreporter Magazine",
+      link: "https://evreporter.com/wp-content/uploads/2024/03/EVreporter-Mar-2024-magazine.pdf",
+      date: "Date- March 2024",
+      // img: s3,
+    },
+    {
+      title:
+        "Pulse Energy and CPOs of India are working together along with UEI",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7200853938584080384/",
+      posted: "CPO Society of India",
+      date: "Date- May 2024",
+      // img: s6,
+    },
   ];
 </script>
 
-<div class="mt-20">
-  <NewsCarousel />
-
-</div>
-
-<div class="bg-white flex flex-col w-full lg:h-screen h-screen md:px-[5vw] px-[10vw] pt-[3vh] overflow-y-auto"  style="font-family: 'Open Sans'">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 justify-center md:justify-center">
+<div style="font-family: 'Open Sans'">
+  <Image />
+  <NewsCard />
+  <div
+    class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-10 justify-center md:justify-center"
+  >
     {#each news as card}
-      <div class="bg-black border-gray-300 shadow-lg hover:translate-y-1 floating">
-        <div class="flex flex-col h-full p-5" >
-          <!-- <div class="flex-grow p-4 overflow-auto"> -->
-            <h5 class="mb-2 text-md font-bold tracking-tight text-white dark:text-black">{card.title}</h5>
-            <p class="mb-3 font-normal text-white dark:text-gray-600 leading-tight">{card.posted}</p>
-          <!-- </div> -->
-          <!-- <hr /> -->
-          <!-- <div class="flex items-center justify-center p-5">
-            <Button href={card.link} class="bg-green-500 hover:bg-green-700 font-bold justify-center">
-              Read more <ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
-            </Button>
-          </div> -->
+      <div class="flex flex-col">
+        <!-- Flex container for each card -->
+        <div>
+          <img
+            src={blog}
+            alt="blog"
+            class="h-auto lg:h-[20rem] sm:h-auto w-full object-cover rounded-t-lg"
+          />
+          <!-- Adjusted image source and added styling -->
+        </div>
+        <div class="bg-white border-gray-300 shadow-lg flex-1">
+          <!-- Flex-1 to make the card expand -->
+          <div class="flex flex-col h-full p-5">
+            <h5
+              class="mb-2 font-bold text-2xl tracking-tight text-gray-900"
+            >
+              {card.title}
+            </h5>
+            <p class="font-normal text-xl text-gray-600 leading-tight">
+              {card.posted}
+            </p>
+            <div class="justify-start  text-gray-900 hover:text-green-700">
+              <Button
+                href={card.link}
+                class="w-fit mt-5 text-white bg-green-600 hover:bg-green-700 font-bold justify-center"
+              >
+                Know More<ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     {/each}
