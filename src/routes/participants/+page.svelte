@@ -107,7 +107,7 @@
   </div>
 
   <div
-    class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10"
+    class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-10"
   >
     {#each steps as step}
       <div class="flex flex-col rounded-md">
@@ -125,10 +125,10 @@
             class="flex flex-col items-center w-full bg-[#1C2428] border shadow-md shadow-black p-4"
           >
             <div
-              class="flex flex-col w-auto h-[80px] sm:h-[80px] md:h-[120px] lg:h-[90px]"
+              class="flex flex-col w-auto h-[100px] sm:h-[100px] md:h-[130px] lg:h-[10rem]"
             >
-              <p class="text-white text-lg font-semibold">{step.title}</p>
-              <p class="text-sm text-gray-300 flex-1">{step.des}</p>
+              <p class="text-white text-xl font-semibold">{step.title}</p>
+              <p class="text-lg text-gray-300 flex-1">{step.des}</p>
             </div>
             <div class="items-center justify-center flex flex-col">
               <Button

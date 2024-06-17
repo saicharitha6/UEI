@@ -9,11 +9,11 @@
 
 <div class="flex justify-center mx-5 lg:mx-0 sm:mx-5 my-10 sm:my-10 lg:my-5 bg-[#f7f9f7] ">
   <div class="items-center justify-center w-3/4">
-    <p class="text-2xl italic my-5" style="font-family: 'Open Sans'">
+    <p class="text-xl italic my-5" style="font-family: 'Open Sans'">
       <b><b class="text-3xl italic">"</b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
       Built on the open-source Beckn Protocol, which powers networks like Open Network
       for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
-      Open Network for Education & Skilling Transformations (ONEST). it links platforms
+      Open Network for Education & Skilling Transformations (ONEST). It links platforms
       dealing in energy and its derivatives such as E V charging, battery swapping,
       renewable energy, and more. UEI creates a unified ecosystem, connecting providers
       and consumers of energy-related services, fostering innovation, and promoting
@@ -32,9 +32,9 @@
     </div>
     <div class="text-center items-center">
       <h2
-        class="bg-black text-white p-5 text-xl sm:text-2xl md:text-3xl font-bold"
+        class="bg-black text-white p-5 text-xl sm:text-xl lg:text-xl font-bold"
       >
-      UEI Alliance is a Collaborative Group.
+      UEI is formed by various stakeholders in the energy sector.
       </h2>
     </div>
   </div>

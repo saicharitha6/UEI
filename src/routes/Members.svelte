@@ -9,7 +9,7 @@
   import member7 from "$lib/assets/company-icons/thunder.png";
   import { isActiveTab } from "$lib/store";
 
-   function todo() {
+  function todo() {
     isActiveTab.set("");
   }
 
@@ -41,7 +41,10 @@
   });
 </script>
 
-<h3 class="text-3xl sm:text-3xl lg:text-4xl text-green-500 text-center font-bold mt-10 mb-5 font-inter"  style="font-family: 'Open Sans'">
+<h3
+  class="text-3xl sm:text-3xl lg:text-3xl text-black text-center font-bold mt-10 mb-5 font-inter"
+  style="font-family: 'Open Sans'"
+>
   Member Participants
 </h3>
 

@@ -78,8 +78,8 @@
         <div class="w-full p-5 flex flex-col justify-between">
           <!-- Use flex-1 to take remaining space -->
           <div>
-            <h5 class="font-bold italic text-2xl mb-5">{n1.title}</h5>
-            <p class="text-gray-800 text-2xl font-medium mb-2">{n1.posted}</p>
+            <h5 class="font-bold italic text-xl mb-5">{n1.title}</h5>
+            <p class="text-gray-800 text-xl font-medium mb-2">{n1.posted}</p>
             <p class="text-gray-600 text-lg mb-2">Posted {n1.date}</p>
           </div>
           <div class="text-black hover:text-green-700">

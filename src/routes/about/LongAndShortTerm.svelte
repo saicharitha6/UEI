@@ -23,9 +23,9 @@
         </h2>
         <div class="buildAnimateSteps">
           <div
-            class="grid grid-cols-1 lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1"
+            class="grid grid-cols-1 text-xl lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1"
           >
-            <div class="p-5 mx-5">
+            <div class="p-5 mx-5 ">
               <img
                 src={l1}
                 alt="long_term"
@@ -90,9 +90,9 @@
         </h2>
         <div class="buildAnimateSteps">
           <div
-            class="grid grid-cols-1 lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1"
+            class="grid grid-cols-1 text-xl lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1"
           >
-            <div class="p-5 mx-5">
+            <div class="p-5 mx-5 ">
               <img
                 src={s1}
                 alt="short_term"

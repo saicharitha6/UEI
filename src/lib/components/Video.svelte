@@ -2,7 +2,7 @@
   import { Indicator } from "flowbite-svelte";
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center" style="font-family: 'Open Sans'">
   <div class="flex flex-col w-3/4">
     <!-- <div class="flex justify-center items-center">
       <p class="justify-center font-medium" style="font-family: 'Open Sans'"">
@@ -18,7 +18,7 @@
     </div> -->
     <div>
       <h3
-        class="text-2xl text-center font-sans font-extrabold mt-5"
+        class="text-2xl text-center font-bold mt-5"
         style="font-family: 'Open Sans'"
       >
         Imagine with UEI

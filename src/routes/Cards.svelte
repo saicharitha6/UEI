@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="lg:right-0 bg-black text-lg"  style="font-family: 'Open Sans'">
+<div class="lg:right-0 bg-black text-xl"  style="font-family: 'Open Sans'">
   <h2 class="font-bold text-white py-5 text-3xl text-center">Focus Areas</h2>
   <div class="justify-center items-center w-full px-[7vw] p-5">
     <div

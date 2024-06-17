@@ -54,8 +54,8 @@
       >
         <div class="buildAnimateSteps flex p-5 rounded-lg">
           <p
-            class="mb-3 text-xl text-gray-300 dark:text-gray-700"
-            style="font-family: 'proxima_nova"
+            class="mb-3 text-xl lg:text-xl sm:text-xl text-gray-300 dark:text-gray-700"
+           
           >
             The UEI Alliance is an inclusive, non-profit consortium composed of
             diverse stakeholders in the energy sector. Its primary mission is to

@@ -2,14 +2,14 @@
   import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
-<div class="flex justify-center m-5 text-lg" style="font-family: 'Open Sans'">
+<div class="flex justify-center m-5" style="font-family: 'Open Sans'">
   <Accordion
     class="w-full md:w-3/4 lg:w-3/4"
     activeClass="bg-black dark:bg-gray-800 text-white dark:text-white focus:ring-4 focus:ring-gray-500 dark:focus:ring-white"
   >
     <AccordionItem open class="bg-black hover:bg-gray-800 left-20">
-      <span slot="header" class="text-white text-center">What is UEI?</span>
-      <ul class="list-disc ps-5 dark:text-black text-black">
+      <span slot="header" class="text-white text-center text-xl">What is UEI?</span>
+      <ul class="list-disc ps-5 text-xl dark:text-black text-black">
         <li class="mb-2 text-black dark:text-gray-400 whitespace-normal">
           <p>
             The Unified Energy Interface, or UEI, emerges as a way of unifying
@@ -40,8 +40,8 @@
       </ul>
     </AccordionItem>
     <AccordionItem class="bg-black hover:bg-gray-800">
-      <span slot="header" class="text-white">About the Alliance</span>
-      <ul class="list-disc px-5">
+      <span slot="header" class="text-white text-xl">About the Alliance</span>
+      <ul class="list-disc px-5 text-xl">
         <li class="mb-2 text-black dark:text-gray-400">
           The UEI Alliance is a collaborative group formed by various
           stakeholders in the energy sector, committed to global development,

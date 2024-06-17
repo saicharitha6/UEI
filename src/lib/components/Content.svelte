@@ -56,7 +56,7 @@
   </div>
   <div class="flex items-center justify-center">
     <p class="w-3/4 justify-center italic text-3xl text-black m-5">
-      <b class="italic text-4xl font-bold">" </b>The UEI Alliance is committed to <b
+      <b class="italic text-2xl lg:text-3xl sm:text-2xl font-bold">" </b>The UEI Alliance is committed to <b
         >global development, adoption, and compliance</b
       >
       with the Beckn Protocol for <b>energy-related economic transactions</b> between

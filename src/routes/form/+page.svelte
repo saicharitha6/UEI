@@ -90,7 +90,7 @@
 </script>
 
 <div
-  class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-20"
+  class="container mx-auto px-5 sm:px-10 text-xl items-center lg:px-8 mt-20"
   style="font-family: 'Open Sans'"
 >
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
@@ -101,7 +101,7 @@
           ><CloseButton class="mb-4 dark:text-white" /></a
         >
       </div>
-      <div class="mb-5">
+      <div class="mb-5 text-xl">
         UEI Alliance (<a
           class="text-blue-600 underline"
           href="https://ueialliance.org/">https://ueialliance.org/</a
@@ -133,7 +133,7 @@
       </div>
       <div class="mb-3">
         <Label for="id3" class="block mb-1 font-bold">Industry/Field *</Label>
-        <p class="text-xs mb-3">
+        <p class="text-sm mb-3">
           eg. Charging Point Operator, EV fleet management, software and service
           provider, energy storage, etc.
         </p>
@@ -143,7 +143,7 @@
         <Label id="id4" class="block mb-2 font-bold"
           >Name & Contact Details of Point of Contact</Label
         >
-        <p class="text-xs mb-3">
+        <p class="text-sm mb-3">
           This would be one of your organization's designated representatives.
           Please identify that person by writing in their name, title, e-mail
           and contact number.
@@ -183,8 +183,8 @@
         ></Textarea>
       </div>
 
-      <div class="mb-3">
-        <Label id="id-8" class="block text-lg font-bold mb-2"
+      <div class="mb-3 ">
+        <Label id="id-8" class="block text-xl font-bold mb-2"
           >Terms of Association</Label
         >
         <ol class="list-decimal ml-4">
@@ -225,7 +225,7 @@
 
       <div class="mt-3">
         <Label id="id10" class="block mb-2 font-bold">Member Referral</Label>
-        <p class="text-xs mb-2">
+        <p class="text-sm mb-2">
           Please refer any potential UEI Alliance members you may be aware of -
           share names & contacts details below
         </p>

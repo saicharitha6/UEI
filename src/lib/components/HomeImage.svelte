@@ -23,7 +23,7 @@
     class="relative object-cover w-full h-full lg:max-h-sm sm:object-contain sm:h-full"
   >
     <img
-      class="object-cover w-full h-full sm:h-svh lg:h-[55rem]"
+      class="object-cover w-full h-full sm:h-svh lg:h-[35rem]"
       src={background}
       alt="background"
     />
@@ -36,12 +36,12 @@
       <h2
         class="text-xl mt-10 sm:mt-10 md:text-4xl lg:text-5xl sm:text-xl font-bold"
       >
-        UEI Alliance is formed by various stakeholders in the energy sector.
+        UEI Alliance is a Collaborative Group.
       </h2>
-      <div class="justify-center flex">
+      <div class="justify-center lg:justify-start sm:justify-center flex">
         <button
           on:click={toggleForm}
-          class="border-2 text-xl border-white hover:bg-green-700 text-white p-1 sm:p-1 md:p-3 lg:p-3 sm:mt-5 px-5 sm:px-5 lg:px-6 rounded-lg mt-5 lg:mt-10"
+          class="border-2 text-xl border-white text-white p-1 sm:p-1 md:p-3 lg:p-3 sm:mt-5 px-5 sm:px-5 lg:px-6 rounded-lg mt-5 lg:mt-10"
           >Join Us</button
         >
       </div>

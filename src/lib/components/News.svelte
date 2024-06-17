@@ -53,7 +53,7 @@
 </script>
 
 <h3
-  class="text-3xl sm:text-3xl lg:text-4xl text-green-500 text-center font-bold mt-3"
+  class="text-2xl sm:text-2xl lg:text-3xl text-black text-center font-bold mt-3"
   style="font-family: 'Open Sans'"
 >
   News & Articles
@@ -65,21 +65,21 @@
 >
   <!-- Left side (image) -->
   <div class="lg:w-1/3">
-    <img src={news} alt="Card" class="w-full h-full object-cover lg:h-auto" />
+    <img src={news} alt="Card" class="w-full h-full object-cover" />
   </div>
 
   <!-- Right side (content) -->
   <div class="p-6 lg:w-2/3 bg-gradient-to-r from-white to-green-200">
     <div class="mb-4">
-      <h2 class="text-3xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800 italic mb-10">
+      <h2 class="text-xl sm:text-xl lg:text-2xl font-extrabold text-gray-800 italic mb-5">
         "Charging network operators, energy co.s form Unified Energy Interface for interoperability .."
       </h2>
-      <p class="text-gray-600">
+      <p class="text-gray-600 text-xl">
         The new UEI , a UPI-like system, will help address interoperability challenges pertaining to EV charging and grid demand response by partnering with Discoms.It is aimed at facilitating seamless payment and transaction interoperability within EV charging networks.
       </p>
     </div>
     <button
-      class="text-gray-800 py-2 px-4 rounded-lg border-2 hover:text-green-500 border-green-300 shadow-md"
+      class="text-gray-800 text-xl font-bold py-2 px-4 rounded-lg border-2 hover:text-green-500 border-green-300 shadow-md"
     >
       <a href={"/news"}> More About</a>
     </button>
