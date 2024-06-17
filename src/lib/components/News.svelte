@@ -53,7 +53,7 @@
 </script>
 
 <h3
-  class="text-3xl text-black text-center font-bold mt-3"
+  class="text-3xl sm:text-3xl lg:text-4xl text-green-500 text-center font-bold mt-3"
   style="font-family: 'Open Sans'"
 >
   News & Articles
@@ -71,7 +71,7 @@
   <!-- Right side (content) -->
   <div class="p-6 lg:w-2/3 bg-gradient-to-r from-white to-green-200">
     <div class="mb-4">
-      <h2 class="text-4xl font-extrabold text-gray-800 italic mb-10">
+      <h2 class="text-3xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800 italic mb-10">
         "Charging network operators, energy co.s form Unified Energy Interface for interoperability .."
       </h2>
       <p class="text-gray-600">
@@ -91,7 +91,7 @@
     <!-- Add one image news letter with some content -->
   </div>
   <div class="flex flex-col gap-3 w-full">
-    <div class="flex flex-row justify-center items-center px-[6vw]">
+    <div class="flex flex-row justify-center items-center px-[2vw] lg:px-[6vw] sm:px-[2vw]">
       <svg
         on:click={shiftLeft}
         class="w-16 h-16 text-gray-800 dark:text-white cursor-pointer"
@@ -166,7 +166,7 @@
     </div>
   </div>
   <div
-    class="justify-end items-end flex mr-20 p-5 text-black hover:text-green-700"
+    class="justify-center lg:justify-end sm:justify-center items-end flex mr-0 lg:mr-20 sm:mr-0 p-5 text-black hover:text-green-700"
   >
     <a href={"/news"} class=" font-bold py-2 px-4 rounded flex items-center">
       Know more <ArrowRightOutline class="w-6 h-6 ml-2" />

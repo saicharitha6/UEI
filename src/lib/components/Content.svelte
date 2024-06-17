@@ -55,12 +55,12 @@
     <!-- <h3 class="font-bold text-3xl text-center text-black" style="font-family: 'proxima_nova">Our Mission</h3> -->
   </div>
   <div class="flex items-center justify-center">
-    <p class="w-3/4 justify-center text-3xl text-black sm:content-center m-5">
-      The UEI Alliance is committed to <b
+    <p class="w-3/4 justify-center italic text-3xl text-black m-5">
+      <b class="italic text-4xl font-bold">" </b>The UEI Alliance is committed to <b
         >global development, adoption, and compliance</b
       >
       with the Beckn Protocol for <b>energy-related economic transactions</b> between
-      digital platforms.
+      digital platforms.<b class="italic text-4xl font-bold">"</b>
     </p>
   </div>
 

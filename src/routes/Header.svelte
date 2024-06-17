@@ -2,6 +2,8 @@
   import logo from "$lib/assets/images/logo.png";
   import { isActiveTab } from "$lib/store";
   import { onMount } from "svelte";
+  import linkedIn from "$lib/assets/images/linkedinIcon1.png"
+  import youtube from "$lib/assets/images/youtubeicon.png"
 
   let navbar: HTMLElement | null;
 
@@ -31,15 +33,13 @@
   let showMenu: boolean = false;
 </script>
 
-<header
-  class="bg-black h-11 fixed top-0 left-0 right-0 z-50 text-lg"
-  style="font-family: 'Open Sans'"
->
-  <div class="flex items-center justify-between px-4 mb-10">
-    <nav
-      class="bg-black text-white md:flex space-x-1 sm:space-x-1 lg:space-x-4 md:space-x-4"
-    >
-      <h3>Contact</h3>
+<header class="bg-black h-16 fixed top-0 left-0 right-0 z-50 text-lg font-open-sans">
+  <div class="flex items-center justify-end mt-5 px-6">
+    
+    <nav class="flex space-x-10">
+      <h3 class="text-white font-bold ">Contact</h3><a href={""}>
+      <img src={linkedIn} alt="LinkedIn" class="w-10 h-7 rounded-lg"></a>
+      <a href={""}><img src={youtube} alt="YouTube" class="w-10 h-7 rounded-lg"></a>
     </nav>
   </div>
 </header>
@@ -48,10 +48,10 @@
   <header
     id="navbar"
     bind:this={navbar}
-    class="fixed top-10 left-0 right-0 z-50 text-lg "
+    class="fixed top-16 left-0 right-0 z-50 text-lg "
     style="font-family: 'Open Sans'"
   >
-    <div class="flex items-center justify-between px-4 py-3">
+    <div class="flex items-center justify-between px-6 py-3">
       <div class="flex items-center">
         <img
           src={logo}

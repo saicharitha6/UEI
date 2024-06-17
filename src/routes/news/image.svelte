@@ -17,9 +17,7 @@
       class="w-full lg:w-1/2 sm:w-full text-white p-10 font-bold text-center lg:text-left absolute inset-0 flex lg:flex-col lg:flex lg:justify-center lg:items-center md:justify-start md:items-center justify-start items-center"
     >
       <div class=" flex-col mt-5 lg:mt-60">
-        <h2
-          class="text-2xl mt-10 sm:mt-10 md:text-4xl lg:text-5xl sm:text-2xl font-bold"
-        >
+        <h2 class="text-2xl mt-10 sm:mt-10 md:text-4xl lg:text-5xl sm:text-2xl font-bold bg-gradient-to-r from-white to-green-800 text-transparent bg-clip-text">
           UEI Alliance daily Media center.
         </h2>
         <div class="justify-left flex">
