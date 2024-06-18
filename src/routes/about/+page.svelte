@@ -4,7 +4,7 @@
   import LongAndShortTerm from "./LongAndShortTerm.svelte";
 </script>
 
-<div class="bg-white h-auto overflow-y-auto mt-40">
+<div class="bg-white h-auto overflow-y-auto mt-28">
   <Content />
   <LongAndShortTerm />
   <AboutAndNot />

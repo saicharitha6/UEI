@@ -58,15 +58,15 @@
 </div>
 
 <div
-  class="flex mb-10 flex-col lg:flex-row sm:flex-col justify-around mx-[2vw] sm:mx-[2vw] lg:mx-[5vw]"
+  class="flex mb-10 flex-col lg:flex-row sm:flex-col justify-between mx-[2vw] sm:mx-[2vw] lg:mx-[5vw]"
   style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col">
-    <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
+    <h2 class="text-black text-2xl mb-5 sm:ml-5 lg:ml-0 ml-5 font-bold buildAnimate">
       The Alliance will focus on being a..
     </h2>
 
-    <ul class="ps-5 custom-list text-[22px] dark:text-gray-400 text-gray-500">
+    <ul class="sm:ps-5 ps-5 lg:ps-0 custom-list text-[22px] dark:text-gray-400 text-gray-500">
       <div class="flex flex-col">
         <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
           <div class="border border-green-500 p-1">

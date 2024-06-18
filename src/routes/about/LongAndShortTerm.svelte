@@ -11,8 +11,8 @@
 <div class="mx-[5vw] flex" style="font-family: 'Open Sans'">
  
     <div class="buildAnimateSteps w-full">
-      <div class="flex flex-row items-center">
-        <h2 class="font-bold text-black py-5 text-3xl">
+      <div class="flex flex-row items-center"><div class="mr-5 flex-grow border-t border-black"></div>
+        <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
           Short-term Objectives
         </h2>
         <div class="ml-5 flex-grow border-t border-black"></div>
@@ -56,7 +56,7 @@
   </div>
 <div class="mx-[5vw]">
   <div class="buildAnimateSteps">
-    <div class="flex flex-row items-center">
+    <div class="flex flex-row items-center"><div class="mr-5 flex-grow border-t border-black"></div>
       <h2 class="font-bold text-black py-5 text-3xl">
         Long-term Objectives
       </h2>
