@@ -15,7 +15,7 @@
     {
       img: screen1,
       title: "ISGF",
-      des: "ISGF is a Think-Tank of global repute on Energy Transition, Electric Mobility and Grid Modernization",
+      des: "ISGF is a Think-Tank of global repute on Energy Transition.",
       link: "https://indiasmartgrid.org/",
     },
     {
@@ -27,7 +27,7 @@
     {
       img: screen3,
       title: "World Resources Institute",
-      des: "WRI is a trusted partner for change. We work globally and in focus countries to meet people’s essential needs",
+      des: "WRI is a trusted partner for change. We work globally to meet people’s essential needs",
       link: "https://www.wri.org/about",
     },
     {
@@ -97,10 +97,10 @@
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">
-      <p class="text-center text-4xl font-semibold text-black">
+      <p class="text-center text-3xl font-semibold text-black">
         Our Participants
       </p>
-      <p class="text-lg text-center text-gray-500">
+      <p class="text-[22px] text-center text-gray-500">
         See our member participants that we have co-ordinate!
       </p>
     </div>
@@ -125,15 +125,15 @@
             class="flex flex-col items-center w-full bg-[#1C2428] border shadow-md shadow-black p-4"
           >
             <div
-              class="flex flex-col w-auto h-[100px] sm:h-[100px] md:h-[130px] lg:h-[10rem]"
+              class="flex flex-col w-auto h-auto sm:h-auto md:h-[130px] lg:h-[10rem]"
             >
-              <p class="text-white text-xl font-semibold">{step.title}</p>
-              <p class="text-lg text-gray-300 flex-1">{step.des}</p>
+              <p class="text-white text-[24px] font-semibold">{step.title}</p>
+              <p class="text-[22px] text-gray-300 flex-1">{step.des}</p>
             </div>
             <div class="items-center justify-center flex flex-col">
               <Button
                 href={step.link}
-                class="w-fit mt-5 text-white hover:bg-green-700 font-bold justify-center"
+                class="w-fit mt-5 text-[22px] text-white hover:bg-green-700 font-bold justify-center"
               >
                 Click Here<ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
               </Button>
