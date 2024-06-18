@@ -62,107 +62,190 @@
   style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col">
-    <h2 class="text-black text-2xl mb-5 sm:ml-5 lg:ml-0 ml-5 font-bold buildAnimate">
+    <h2
+      class="text-black text-2xl mb-5 sm:ml-5 lg:ml-0 ml-5 font-bold buildAnimate"
+    >
       The Alliance will focus on being a..
     </h2>
 
-    <ul class="sm:ps-5 ps-5 lg:ps-0 custom-list text-[22px] dark:text-gray-400 text-gray-500">
+    <ul
+      class="sm:ps-5 ps-5 lg:ps-0 text-[22px] dark:text-gray-400 text-gray-500"
+    >
       <div class="flex flex-col">
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-green-500 p-1">
-            Promotion of Open Standards
-          </div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-green-500 p-1">
-            Server-Side Interoperability
-          </div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-green-500 p-1">Protocol Advocacy</div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-green-500 p-1">Incubation of Ideas</div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-green-500 p-1">Open Membership</div>
-        </li>
+        <div class="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            class="mt-2"
+          >
+            <path
+              fill="green"
+              d="M168 364.4c-5.6 5.6-14.8 5.6-20.4 0L21.2 238.8c-5.6-5.6-5.6-14.8 0-20.4l29.8-29.8c5.6-5.6 14.8-5.6 20.4 0l96.2 96.2 192.4-192.4c5.6-5.6 14.8-5.6 20.4 0l29.8 29.8c5.6 5.6 5.6 14.8 0 20.4L188.4 364.4c-5.6 5.6-14.8 5.6-20.4 0z"
+            />
+          </svg>
+
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Promotion of Open Standards</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            class="mt-2"
+          >
+            <path
+              fill="green"
+              d="M168 364.4c-5.6 5.6-14.8 5.6-20.4 0L21.2 238.8c-5.6-5.6-5.6-14.8 0-20.4l29.8-29.8c5.6-5.6 14.8-5.6 20.4 0l96.2 96.2 192.4-192.4c5.6-5.6 14.8-5.6 20.4 0l29.8 29.8c5.6 5.6 5.6 14.8 0 20.4L188.4 364.4c-5.6 5.6-14.8 5.6-20.4 0z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Server-Side Interoperability</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            class="mt-2"
+          >
+            <path
+              fill="green"
+              d="M168 364.4c-5.6 5.6-14.8 5.6-20.4 0L21.2 238.8c-5.6-5.6-5.6-14.8 0-20.4l29.8-29.8c5.6-5.6 14.8-5.6 20.4 0l96.2 96.2 192.4-192.4c5.6-5.6 14.8-5.6 20.4 0l29.8 29.8c5.6 5.6 5.6 14.8 0 20.4L188.4 364.4c-5.6 5.6-14.8 5.6-20.4 0z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Protocol Advocacy</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            class="mt-2"
+          >
+            <path
+              fill="green"
+              d="M168 364.4c-5.6 5.6-14.8 5.6-20.4 0L21.2 238.8c-5.6-5.6-5.6-14.8 0-20.4l29.8-29.8c5.6-5.6 14.8-5.6 20.4 0l96.2 96.2 192.4-192.4c5.6-5.6 14.8-5.6 20.4 0l29.8 29.8c5.6 5.6 5.6 14.8 0 20.4L188.4 364.4c-5.6 5.6-14.8 5.6-20.4 0z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Incubation of Ideas</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            class="mt-2"
+          >
+            <path
+              fill="green"
+              d="M168 364.4c-5.6 5.6-14.8 5.6-20.4 0L21.2 238.8c-5.6-5.6-5.6-14.8 0-20.4l29.8-29.8c5.6-5.6 14.8-5.6 20.4 0l96.2 96.2 192.4-192.4c5.6-5.6 14.8-5.6 20.4 0l29.8 29.8c5.6 5.6 5.6 14.8 0 20.4L188.4 364.4c-5.6 5.6-14.8 5.6-20.4 0z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Open Membership</div>
+          </li>
+        </div>
       </div>
     </ul>
   </div>
-
-  <div class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-0" style="font-family: 'Open Sans'">
+ <!-- Vertical line here -->
+ <div class="border-l border-black mx-5 my-5 lg:my-0 hidden lg:block"></div>
+  <div
+    class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-0"
+    style="font-family: 'Open Sans'"
+  >
     <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
       And alliance is not involve in..
     </h2>
-    <ul class="ps-5 custom-list1 text-[22px] dark:text-gray-400 text-gray-500">
+    <ul class="ps-5 text-[22px] dark:text-gray-400 text-gray-500">
       <div class="flex flex-col">
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-red-500 p-1">Hardware Specifications</div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-red-500 p-1">
-            National Infrastructure Development.
-          </div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-red-500 p-1">
-            Being an industry association/energy expert group.
-          </div>
-        </li>
-        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-          <div class="border border-red-500 p-1">
-            Being an implementation arm for any network.
-          </div>
-        </li>
+        <div class="flex flex-row">
+          <!-- SVG Close Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 352 512"
+            width="24"
+            height="24"
+            class="mt-1"
+          >
+            <path
+              fill="red"
+              d="M335.5 113.9l-21.9-21.9c-4.7-4.7-12.3-4.7-17 0L176 231 55.4 110.4c-4.7-4.7-12.3-4.7-17 0L16.5 132.3c-4.7 4.7-4.7 12.3 0 17L137 256 16.5 376.7c-4.7 4.7-4.7 12.3 0 17l21.9 21.9c4.7 4.7 12.3 4.7 17 0L176 281l120.6 120.6c4.7 4.7 12.3 4.7 17 0l21.9-21.9c4.7-4.7 4.7-12.3 0-17L215 256l120.5-120.6c4.8-4.6 4.8-12.3.1-16.9z"
+            />
+          </svg>
+
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Hardware Specifications</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <!-- SVG Close Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 352 512"
+            width="24"
+            height="24"
+            class="mt-1"
+          >
+            <path
+              fill="red"
+              d="M335.5 113.9l-21.9-21.9c-4.7-4.7-12.3-4.7-17 0L176 231 55.4 110.4c-4.7-4.7-12.3-4.7-17 0L16.5 132.3c-4.7 4.7-4.7 12.3 0 17L137 256 16.5 376.7c-4.7 4.7-4.7 12.3 0 17l21.9 21.9c4.7 4.7 12.3 4.7 17 0L176 281l120.6 120.6c4.7 4.7 12.3 4.7 17 0l21.9-21.9c4.7-4.7 4.7-12.3 0-17L215 256l120.5-120.6c4.8-4.6 4.8-12.3.1-16.9z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>National Infrastructure Development.</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <!-- SVG Close Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 352 512"
+            width="24"
+            height="24"
+            class="mt-1"
+          >
+            <path
+              fill="red"
+              d="M335.5 113.9l-21.9-21.9c-4.7-4.7-12.3-4.7-17 0L176 231 55.4 110.4c-4.7-4.7-12.3-4.7-17 0L16.5 132.3c-4.7 4.7-4.7 12.3 0 17L137 256 16.5 376.7c-4.7 4.7-4.7 12.3 0 17l21.9 21.9c4.7 4.7 12.3 4.7 17 0L176 281l120.6 120.6c4.7 4.7 12.3 4.7 17 0l21.9-21.9c4.7-4.7 4.7-12.3 0-17L215 256l120.5-120.6c4.8-4.6 4.8-12.3.1-16.9z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Being an industry association/energy expert group.</div>
+          </li>
+        </div>
+        <div class="flex flex-row">
+          <!-- SVG Close Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 352 512"
+            width="24"
+            height="24"
+            class="mt-1"
+          >
+            <path
+              fill="red"
+              d="M335.5 113.9l-21.9-21.9c-4.7-4.7-12.3-4.7-17 0L176 231 55.4 110.4c-4.7-4.7-12.3-4.7-17 0L16.5 132.3c-4.7 4.7-4.7 12.3 0 17L137 256 16.5 376.7c-4.7 4.7-4.7 12.3 0 17l21.9 21.9c4.7 4.7 12.3 4.7 17 0L176 281l120.6 120.6c4.7 4.7 12.3 4.7 17 0l21.9-21.9c4.7-4.7 4.7-12.3 0-17L215 256l120.5-120.6c4.8-4.6 4.8-12.3.1-16.9z"
+            />
+          </svg>
+          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+            <div>Being an implementation arm for any network.</div>
+          </li>
+        </div>
       </div>
     </ul>
   </div>
 </div>
-
-<style>
-  .custom-list {
-    list-style-type: none;
-    /* padding-left: 1.5rem; */
-  }
-
-  .custom-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    /* Green color */
-  }
-
-  .custom-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.75rem;
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: #4caf50; /* Green color */
-    border-radius: 20%;
-  }
-
-  .custom-list1 {
-    list-style-type: none;
-    /* padding-left: 1.5rem; */
-  }
-
-  .custom-list1 li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .custom-list1 li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.75rem;
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: red;
-    border-radius: 20%;
-  }
-</style>

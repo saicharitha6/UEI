@@ -9,55 +9,57 @@
 </script>
 
 <div class="mx-[5vw] flex" style="font-family: 'Open Sans'">
- 
-    <div class="buildAnimateSteps w-full">
-      <div class="flex flex-row items-center"><div class="mr-5 flex-grow border-t border-black"></div>
-        <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
-          Short-term Objectives
-        </h2>
-        <div class="ml-5 flex-grow border-t border-black"></div>
+  <div class="buildAnimateSteps w-full">
+    <div class="flex flex-row items-center">
+      <div class="mr-5 flex-grow border-t border-black"></div>
+      <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
+        Short-term Objectives
+      </h2>
+      <div class="ml-5 flex-grow border-t border-black"></div>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-5 text-[22px]"
+    >
+      <div class="py-5">
+        <img
+          src={s1}
+          alt="short_term"
+          class="h-15 w-20 mx-auto rounded-md mb-5"
+        />
+        <li class="animate-float text-center">
+          Support the technical integration of digital platforms with the UEI
+          network by providing expertise.
+        </li>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-5 text-[22px]">
-        
-        <div class="py-5">
-            <img
-              src={s1}
-              alt="short_term"
-              class="h-15 w-20 mx-auto rounded-md mb-5"
-            />
-            <li class="animate-float text-center">
-              Support the technical integration of digital platforms with the
-              UEI network by providing expertise.
-            </li>
-          </div>
-          <div class="py-5 mx-5">
-            <img
-              src={s2}
-              alt="short_term"
-              class="h-15 w-20 mx-auto rounded-md mb-5"
-            />
-            <li class="animate-float my-5 text-center">
-              Engage with key stakeholders to promote network adoption.
-            </li>
-          </div>
-          <div class="p-5 mx-5">
-            <img
-              src={s3}
-              alt="short_term"
-              class="h-15 w-20 mx-auto rounded-md mb-5"
-            />
-            <li class="animate-float my-5 text-center">
-              Conduct pilot programs to demonstrate UEI network's capabilities
-              and potential for innovation.
-            </li>
-          </div>
-        </div>
+      <div class="py-5 mx-5">
+        <img
+          src={s2}
+          alt="short_term"
+          class="h-15 w-20 mx-auto rounded-md mb-5"
+        />
+        <li class="animate-float my-5 text-center">
+          Engage with key stakeholders to promote network adoption.
+        </li>
+      </div>
+      <div class="p-5 mx-5">
+        <img
+          src={s3}
+          alt="short_term"
+          class="h-15 w-20 mx-auto rounded-md mb-5"
+        />
+        <li class="animate-float my-5 text-center">
+          Conduct pilot programs to demonstrate UEI network's capabilities and
+          potential for innovation.
+        </li>
+      </div>
     </div>
   </div>
-<div class="mx-[5vw]">
-  <div class="buildAnimateSteps">
-    <div class="flex flex-row items-center"><div class="mr-5 flex-grow border-t border-black"></div>
-      <h2 class="font-bold text-black py-5 text-3xl">
+</div>
+<div class="mx-[5vw] flex" style="font-family: 'Open Sans'">
+  <div class="buildAnimateSteps w-full">
+    <div class="flex flex-row items-center">
+      <div class="mr-5 flex-grow border-t border-black"></div>
+      <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
         Long-term Objectives
       </h2>
       <div class="ml-5 flex-grow border-t border-black"></div>

@@ -133,6 +133,12 @@
     position: relative; /* Ensure pagination dots are positioned relative to this container */
     overflow: hidden;
   }
+
+@media (max-width: 500px) {
+  .swiper-container {
+    max-height: 200px; /* Reset max-height for smaller screens */
+  }
+}
   .swiper-slide {
     display: flex;
     justify-content: center;
