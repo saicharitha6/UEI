@@ -12,7 +12,7 @@
     {
       title:
         "In a groundbreaking moment, the Beckn community members Pulse Energy, Sheru, Kazam, and Turno rocked a joint demo, showcasing seamless open network transactions on Unified Energy Interface",
-      posted: "FIDE insert log",
+      posted: "FIDE",
       link: "https://www.linkedin.com/posts/becknprotocol_uei-climateaction-interoperability-activity-7160171957462700032-9J_e/",
       date: "Date - Jan 2024",
       img: s1,
@@ -20,7 +20,7 @@
     {
       title:
         "Energy startups, power utilities and other companies could come together as an open community to take this idea from concept to a full-fledged implementation with the support of existing or new policies on green energy of the participating states in India",
-      posted: "Economic Times insert logo",
+      posted: "Economic Times",
       link: "https://economictimes.indiatimes.com/tech/technology/a-platform-in-the-works-to-find-closest-ev-charging-spot-more/articleshow/107801218.cms?from=mdr",
       date: "Date - Feb, 2024",
       img: s2,

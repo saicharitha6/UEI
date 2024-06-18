@@ -138,10 +138,10 @@
   </div>
 </div>
 <div
-  class="justify-center lg:justify-end sm:justify-center items-end flex mr-0 lg:mr-20 sm:mr-0 py-5  text-black hover:text-green-700"
+  class="justify-center lg:justify-center  sm:justify-center items-end flex mr-0 lg:mr-20 sm:mr-0 pb-5  text-white hover:text-gray-200"
 >
-  <a href={"/form"} class="text-xl font-bold py-2 px-4 rounded flex items-center">
-    Join Us <ArrowRightOutline class="w-6 h-6 ml-2" />
+  <a href={"/form"} class="text-xl bg-black font-bold py-4 px-6 rounded-lg flex items-center">
+    Join Our Alliance <ArrowRightOutline class="w-6 h-6 ml-2" />
   </a>
 </div>
 

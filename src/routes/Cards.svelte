@@ -26,7 +26,7 @@
   <div class="flex flex-row items-center">
     <h2 class="font-bold text-black py-5 text-3xl pl-[5vw]">Focus Areas</h2>
     <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
-</div>
+  </div>
   <div class="justify-center items-center w-full px-[5vw] p-5">
     <div
       class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 md:gap-4 lg:gap-6"
@@ -71,22 +71,24 @@
     </div>
   </div>
 </div>
-
+<div class="flex pl-[5vw] flex-row items-center mt-5">
+  <h2 class="font-bold text-3xl">What is UEI?</h2>
+  <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
+</div>
 <div
-  class="flex justify-center mx-5 lg:mx-0 sm:mx-5 my-10 sm:my-10 lg:my-5 bg-[#f7f9f7]"
+  class="flex flex-col px-[5vw] justify-center mx-5 lg:mx-0 sm:mx-5 my-10 sm:my-10 lg:my-5 bg-[#f7f9f7]"
 >
+ 
   <div
-    class="items-center justify-center w-3/4 transition-colors from-white to-gray-500"
+    class="items-center justify-center transition-colors from-white to-gray-500"
   >
-    <p class="text-xl italic my-5" style="font-family: 'Open Sans'">
-      <b><b class="text-3xl italic">"</b>Unified Energy Interface</b> or UEI
-      unifies digital efforts in energy transactions. Built on the open-source
-      Beckn Protocol, which powers networks like Open Network for Digital
-      Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and Open
-      Network for Education & Skilling Transformations (ONEST). It links
-      platforms dealing in energy and its derivatives such as E V charging,
-      battery swapping, renewable energy, and more.
-      <b class="text-3xl italic">"</b>
+    <p class="text-xl my-5" style="font-family: 'Open Sans'">
+      <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
+      Built on the open-source Beckn Protocol, which powers networks like Open Network
+      for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
+      Open Network for Education & Skilling Transformations (ONEST). It links platforms
+      dealing in energy and its derivatives such as E V charging, battery swapping,
+      renewable energy, and more.
     </p>
     <p class="text-xl italic my-5" style="font-family: 'Open Sans'">
       UEI creates a unified ecosystem, connecting providers and consumers of

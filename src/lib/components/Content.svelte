@@ -43,5 +43,5 @@
     </p>
   </div>
 </div>
-<div class="relative bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray mt-3"></div>
+<!-- <div class="relative mx-[5vw] bottom-0  w-full h-0.5 bg-gradient-to-r from-black to-gray-500 mt-3"></div> -->
  
