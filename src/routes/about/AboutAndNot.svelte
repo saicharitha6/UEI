@@ -36,12 +36,14 @@
 </script>
 
 <div class="justify-center text-lg" style="font-family: 'Open Sans'">
-  <h3 class="buildAnimate text-2xl lg:text-3xl sm:text-2xl text-center text-black font-bold">
+  <h3
+    class="buildAnimate text-2xl lg:text-3xl sm:text-2xl ml-44 text-black font-bold"
+  >
     Why Do We Need an Alliance?
   </h3>
-  <div class="flex justify-center my-5">
+  <div class="flex justify-center m-5">
     <p
-      class="buildAnimate content-center bg-[#1C2428] rounded-tl-3xl rounded-br-3xl p-5 text-white text-lg s:text-lg lg:text-xl lg:w-3/4 border shadow-lg mx-5 lg:mx-10 sm:mx-5 rounded-md sm:w-full"
+      class="buildAnimate py-5 text-black text-lg s:text-lg lg:text-xl lg:w-3/4 mx-5 lg:mx-10 sm:mx-5 sm:w-full"
     >
       The benefits of the Beckn Protocol, like expanded markets and inclusive
       open networks, become tangible only with substantial adoption and scale.
@@ -58,7 +60,7 @@
     class="flex items-center justify-center"
     style="font-family: 'Open Sans'"
   >
-    <div class="mt-10 items-center justify-center w-3/4">
+    <div class="items-center justify-center w-3/4">
       <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
         The Alliance will focus on being a..
       </h2>

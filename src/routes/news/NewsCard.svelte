@@ -63,7 +63,7 @@
   class="bg-[#f5f5f4] flex flex-col w-full p-3 sm:p-3 md:p-10 lg:p-10 lg:min-h-screen md:px-[5vw] px-[10vw] pt-[3vh]"
   style="font-family: 'Open Sans'"
 >
-  <h2 class="text-center font-bold text-3xl mt-10 mb-5">Media Updates</h2>
+  <h2 class="text-center font-bold text-3xl mt-14 mb-5">In The News</h2>
   <div class="flex flex-col space-y-4">
     {#each news1 as n1}
       <div
@@ -85,7 +85,7 @@
           <div class="text-black hover:text-green-700">
             <Button
                 href={n1.link}
-                class="w-fit mt-5 text-white bg-green-600 hover:bg-green-700 font-bold justify-center"
+                class="w-fit mt-5 text-white bg-black hover:bg-gray-700 font-bold justify-center"
               >
                 Know More<ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
               </Button>

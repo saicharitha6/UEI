@@ -14,10 +14,10 @@
       class="flex flex-col lg:flex-row justify-center items-center rounded-xl"
     >
       <div
-        class="buildAnimateSteps w-full border rounded-md border-black lg:border lg:border-black sm:border-collapse"
+        class="buildAnimateSteps w-full "
       >
         <h2
-          class="buildAnimateSteps font-bold text-center bg-black text-white text-2xl py-3 sm:py-3"
+          class="buildAnimateSteps font-bold text-center  text-black text-2xl py-3 sm:py-3"
         >
           Long-term Objectives
         </h2>
@@ -81,10 +81,10 @@
       class="flex flex-col lg:flex-row justify-center items-center mb-10 rounded-xl"
     >
       <div
-        class="buildAnimateSteps w-full mt-10 border rounded-md border-black lg:border lg:border-black sm:border-collapse"
+        class="buildAnimateSteps w-full mt-10"
       >
         <h2
-          class="buildAnimateSteps font-bold text-center bg-black text-white text-2xl py-3 sm:py-3"
+          class="buildAnimateSteps font-bold text-center  text-black text-2xl py-3 sm:py-3"
         >
           Short-term Objectives
         </h2>

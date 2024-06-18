@@ -3,7 +3,7 @@
   import { ArrowRightOutline } from "flowbite-svelte-icons";
   import blog from "$lib/assets/images/n1.png";
   import NewsCard from "./NewsCard.svelte";
-  import Image from "./image.svelte";
+  import Publications from "./Publications.svelte";
 
   const news = [
     {
@@ -78,10 +78,10 @@
 </script>
 
 <div style="font-family: 'Open Sans'">
-  <Image />
   <NewsCard />
+  <Publications />
   <div
-    class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-10 justify-center md:justify-center"
+    class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-10 justify-center md:justify-center"
   >
     {#each news as card}
       <div class="flex flex-col">

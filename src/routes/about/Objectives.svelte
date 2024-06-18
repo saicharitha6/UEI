@@ -34,36 +34,30 @@
     animateData();
   });
 </script>
-
+<div class="flex flex-row items-center">
+  <h2 class="buildAnimateSteps font-bold text-black pt-5 text-3xl ml-40">  Aims and Objectives</h2>
+  <!-- <div class="ml-4 mr-20 flex-grow border-t border-black"></div> -->
+</div>
 <div
-  class="w-full flex flex-col items-center justify-center my-5"
+  class="w-full flex flex-col items-center justify-center "
   style="font-family: 'Open Sans'"
 >
-  <h3 class="buildAnimateSteps text-center text-3xl font-bold mb-5">
+  <!-- <h3 class="buildAnimateSteps text-center text-3xl font-bold mb-5">
     Aims and Objectives
-  </h3>
+  </h3> -->
+  
   <div class="lg:w-3/4">
-    <div
-      class="flex flex-col sm:flex-row rounded-md border bg-[#141a1d] justify-center items-center"
-    >
-      <div class="text-center sm:text-left">
-        <img src={aim} alt="aim" class="buildAnimate lg:h-auto w-auto" />
-      </div>
-      <div
-        class="w-3/4 lg:3/4 md:w-3/4 sm:w-3/4 bg-[#141a1d] items-center justify-center"
-      >
-        <div class="buildAnimateSteps flex p-5 rounded-lg">
-          <p
-            class="mb-3 text-xl lg:text-xl sm:text-xl text-gray-300 dark:text-gray-700"
-           
-          >
-            The UEI Alliance is an inclusive, non-profit consortium composed of
-            diverse stakeholders in the energy sector. Its primary mission is to
-            promote the global development and adoption of the Beckn Protocol
-            within the energy context, facilitating energy-related economic
-            transactions between digital platforms.
-          </p>
-        </div>
+    <div class="flex justify-center items-center">
+      <div class="buildAnimateSteps flex py-3 rounded-lg">
+        <p
+          class="mb-3 text-xl lg:text-xl sm:text-xl text-black dark:text-gray-700"
+        >
+          The UEI Alliance is an inclusive, non-profit consortium composed of
+          diverse stakeholders in the energy sector. Its primary mission is to
+          promote the global development and adoption of the Beckn Protocol
+          within the energy context, facilitating energy-related economic
+          transactions between digital platforms.
+        </p>
       </div>
     </div>
   </div>
