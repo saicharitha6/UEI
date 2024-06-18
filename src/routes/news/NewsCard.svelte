@@ -60,10 +60,10 @@
 </script>
 
 <div
-  class="bg-[#f5f5f4] flex flex-col w-full p-3 sm:p-3 md:p-10 lg:p-10 lg:min-h-screen md:px-[5vw] px-[10vw] pt-[3vh]"
+  class="bg-[#f5f5f4] flex flex-col w-full p-3 sm:p-3 md:p-10 lg:p-10 lg:min-h-screen md:px-[5vw] px-[10vw] pt-[5vh]"
   style="font-family: 'Open Sans'"
 >
-  <h2 class="text-center font-bold text-3xl mt-14 mb-5">In The News</h2>
+  <h2 class="text-center font-bold text-3xl mt-20 mb-5">In The News</h2>
   <div class="flex flex-col space-y-4">
     {#each news1 as n1}
       <div

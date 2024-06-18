@@ -1,18 +1,18 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import Swiper from "swiper";
   import "swiper/swiper-bundle.css";
+  import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
   // Importing images
   import courosel1 from "$lib/assets/images/linkedinImage1.jpg";
   import courosel2 from "$lib/assets/images/linkedinImage2.jpg";
   import courosel3 from "$lib/assets/images/linkedinImage3.jpg";
-  import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
   let swiperContainer: HTMLDivElement;
   let swiper: Swiper;
+  let youtubePlayers: any[] = [];
 
-  // YouTube Player API load function
   function loadYouTubeAPI() {
     const tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
@@ -24,25 +24,35 @@
     }
 
     (window as any).onYouTubeIframeAPIReady = () => {
-      const iframe = swiperContainer.querySelector("iframe");
-      if (iframe) {
+      const iframes = Array.from(swiperContainer.querySelectorAll("iframe"));
+      iframes.forEach((iframe, index) => {
         const player = new (window as any).YT.Player(iframe, {
           events: {
             onStateChange: (event: any) => {
-              if (event.data == (window as any).YT.PlayerState.PLAYING) {
-                swiper.autoplay.stop();
-              } else {
-                swiper.autoplay.start();
+              if (event.data === (window as any).YT.PlayerState.PLAYING) {
+                // Pause Swiper autoplay
+                if (swiper) {
+                  swiper.autoplay.stop();
+                }
+              } else if (
+                event.data === (window as any).YT.PlayerState.PAUSED ||
+                event.data === (window as any).YT.PlayerState.ENDED
+              ) {
+                // Resume Swiper autoplay after video ends or paused
+                if (swiper) {
+                  swiper.autoplay.start();
+                }
               }
             },
           },
         });
-      }
+        youtubePlayers.push(player);
+      });
     };
   }
 
   onMount(() => {
-    Swiper.use([Autoplay, Pagination]);
+    Swiper.use([Autoplay, Pagination, Navigation]);
     swiper = new Swiper(swiperContainer, {
       loop: true,
       autoplay: {
@@ -53,18 +63,31 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
 
     loadYouTubeAPI();
   });
+
+  onDestroy(() => {
+    // Clean up YouTube players and listeners when component is destroyed
+    youtubePlayers.forEach(player => {
+      player.destroy();
+    });
+    youtubePlayers = [];
+  });
 </script>
 
-<div class="text-center  text-3xl">
+<div class="text-center text-3xl">
   <h2 class="font-bold mb-5 relative inline-block">
-      Imagine with UEI
-      <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray mt-3"></div>
+    Imagine with UEI
+    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray mt-3"></div>
   </h2>
 </div>
+
 <div class="swiper-container" bind:this={swiperContainer}>
   <div class="swiper-wrapper">
     <!-- Slide 1 -->
@@ -95,6 +118,10 @@
 
   <!-- Pagination -->
   <div class="swiper-pagination"></div>
+
+  <!-- Navigation Buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
 
 <style>
@@ -120,5 +147,24 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 10; /* Ensure pagination dots are above other content */
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10; /* Ensure navigation buttons are above other content */
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-prev {
+    left: 10px;
   }
 </style>

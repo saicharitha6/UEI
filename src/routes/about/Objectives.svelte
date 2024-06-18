@@ -34,7 +34,7 @@
     animateData();
   });
 </script>
-<div class="flex flex-row items-center">
+<div class="flex flex-row items-center "  style="font-family: 'Open Sans'">
   <h2 class="buildAnimateSteps font-bold text-black pt-5 text-3xl ml-40">  Aims and Objectives</h2>
   <!-- <div class="ml-4 mr-20 flex-grow border-t border-black"></div> -->
 </div>

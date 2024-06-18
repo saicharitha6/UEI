@@ -8,6 +8,7 @@
   import member5 from "$lib/assets/images/image3.jpg";
   import member6 from "$lib/assets/images/image4.jpg";
   import member7 from "$lib/assets/company-icons/thunder.png";
+  import { ArrowRightOutline } from "flowbite-svelte-icons";
 
   // Define members
   let members = [member1, member2, member3, member4, member5, member6, member7];
@@ -135,6 +136,13 @@
       />
     </svg>
   </div>
+</div>
+<div
+  class="justify-center lg:justify-end sm:justify-center items-end flex mr-0 lg:mr-20 sm:mr-0 py-5  text-black hover:text-green-700"
+>
+  <a href={"/form"} class="text-xl font-bold py-2 px-4 rounded flex items-center">
+    Join Us <ArrowRightOutline class="w-6 h-6 ml-2" />
+  </a>
 </div>
 
 <style>

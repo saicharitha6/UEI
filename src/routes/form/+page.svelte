@@ -90,7 +90,7 @@
 </script>
 
 <div
-  class="container mx-auto px-5 sm:px-10 text-xl items-center lg:px-8 mt-20"
+  class="container mx-auto px-5 sm:px-10 text-xl items-center lg:px-8 mt-40"
   style="font-family: 'Open Sans'"
 >
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
@@ -116,9 +116,17 @@
         Energy Interface (UEI) network. The alliance serves as a hub for open
         network concepts, providing support and advisory services.
       </div>
+      <!-- <div class="relative bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray-500 mt-3"></div> -->
+ <hr/>
       <!-- Form fields -->
+
+      <div class="my-3">
+        <Label for="id0" class="block font-bold mb-2">Email *</Label
+        >
+        <Input id="id0" size="md" placeholder="Enter Email" />
+      </div>
       <div class="mb-3">
-        <Label for="id0" class="block font-bold mb-2">Organization Name *</Label
+        <Label for="id0" class="block font-bold mb-2">Name of Organization*</Label
         >
         <Input id="id0" size="md" placeholder="Enter Organization" />
       </div>
@@ -141,16 +149,39 @@
       </div>
       <div class="mb-3">
         <Label id="id4" class="block mb-2 font-bold"
-          >Name & Contact Details of Point of Contact</Label
+          >Name & Contact Details of Point of Contact 1</Label
         >
         <p class="text-sm mb-3">
           This would be one of your organization's designated representatives.
           Please identify that person by writing in their name, title, e-mail
           and contact number.
         </p>
-        <Input id="id4" size="md" placeholder="Enter Details" />
+        <!-- <Input id="idi" size="md" placeholder="Enter Details" /> -->
+        <Textarea
+          for="idi"
+          rows="4"
+          placeholder="Enter details..."
+          class="block mb-2"
+        ></Textarea>
       </div>
       <div class="mb-3">
+        <Label id="id4" class="block mb-2 font-bold"
+          >Name & Contact Details of Point of Contact 2</Label
+        >
+        <p class="text-sm mb-3">
+          This would be one of your organization's designated representatives.
+          Please identify that person by writing in their name, title, e-mail
+          and contact number.
+        </p>
+        <!-- <Input id="id4" size="md" placeholder="Enter Details" /> -->
+        <Textarea
+          for="id4"
+          rows="4"
+          placeholder="Enter details..."
+          class="block mb-2"
+        ></Textarea>
+      </div>
+      <!-- <div class="mb-3">
         <Label id="id5" class="block mb-2 font-bold"
           >Mission / Description of Organization's Work
         </Label>
@@ -160,16 +191,15 @@
           placeholder="Enter details..."
           class="block mb-2"
         ></Textarea>
-      </div>
+      </div> -->
       <div class="mb-3">
         <Label id="id6" class="block mb-2 font-bold"
-          >Name & Email Id of Organization's CEO *</Label
+          >Name & Email Id of Organization's CEO/Chairman *</Label
         >
         <Input id="id6" size="md" placeholder="Enter Details" />
       </div>
 
-      <Label id="id9" class="mb-3 font-bold">Upload Logo</Label>
-      <Fileupload {...fileuploadprops} />
+      
 
       <div class="my-3">
         <Label id="id7" class="font-bold block mb-2"
@@ -182,6 +212,8 @@
           class="block mb-2"
         ></Textarea>
       </div>
+      <Label id="id9" class="mb-3 font-bold">Upload Logo</Label>
+      <Fileupload {...fileuploadprops} />
 
       <div class="mb-3 ">
         <Label id="id-8" class="block text-xl font-bold mb-2"

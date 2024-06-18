@@ -6,7 +6,7 @@
   let showMenu: boolean = false;
 </script>
 
-<header
+<header id="navbar"
   class="fixed bg-white left-0 shadow-lg top-0 right-0 z-50 text-lg"
   style="font-family: 'Open Sans'"
 >
@@ -107,7 +107,7 @@
       padding-top: 0%;
     }
   }
-  /* #navbar {
+  #navbar {
     text-align: center;
     margin: auto auto;
     position: -webkit-sticky;
@@ -116,5 +116,5 @@
     padding: 10px;
     width: 100%;
     color: #f4f4f3;
-  } */
+  }
 </style>

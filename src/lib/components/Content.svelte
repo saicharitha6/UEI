@@ -27,9 +27,9 @@
   });
 </script>
 
-<div class="mb-5 buildAnimate" style="font-family: 'Open Sans'">
-    <div class="flex flex-row items-center">
-      <h2 class="font-bold text-black py-5 text-3xl ml-40">Our Mission</h2>
+<div class="flex flex-col mb-5 buildAnimate" style="font-family: 'Open Sans'">
+    <div class="lg:w-3/4 flex flex-row ml-10 sm:ml-10 lg:ml-[10rem] items-center">
+      <h2 class="font-bold text-black py-5 text-3xl">Our Mission</h2>
       <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
   </div>
   

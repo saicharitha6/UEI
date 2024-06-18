@@ -7,7 +7,7 @@
   import HomeContent from "$lib/components/HomeContent.svelte";
 </script>
 
-<div class="flex flex-col mt-10 bg-white min-h-screen">
+<div class="bg-white h-auto overflow-y-auto mt-20">
   <HomeContent />
   <AboutUei />
    <Cards />
