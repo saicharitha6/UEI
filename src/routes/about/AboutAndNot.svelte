@@ -35,62 +35,61 @@
   });
 </script>
 
-<div class="justify-center text-lg" style="font-family: 'Open Sans'">
-  <h3
-    class="buildAnimate text-2xl lg:text-3xl sm:text-2xl ml-44 text-black font-bold"
-  >
+<div
+  class="buildAnimate mx-[5vw] flex flex-row items-center"
+  style="font-family: 'Open Sans'"
+>
+  <h2 class="font-bold text-black py-5 text-3xl">
     Why Do We Need an Alliance?
-  </h3>
-  <div class="flex justify-center m-5">
-    <p
-      class="buildAnimate py-5 text-black text-lg s:text-lg lg:text-xl lg:w-3/4 mx-5 lg:mx-10 sm:mx-5 sm:w-full"
-    >
-      The benefits of the Beckn Protocol, like expanded markets and inclusive
-      open networks, become tangible only with substantial adoption and scale.
-      For an initiative of this magnitude, the costs of coordination can become
-      prohibitively high when pursued individually. Similar to the cell tower
-      analogy, where shared infrastructure is more cost-effective and efficient
-      than isolated efforts, the UEI Alliance unifies efforts to promote
-      interoperability, reducing duplicated efforts and coordination
-      complexities.
-    </p>
-  </div>
+  </h2>
+  <div class="ml-5 flex-grow border-t border-black"></div>
+</div>
 
-  <div
-    class="flex items-center justify-center"
-    style="font-family: 'Open Sans'"
+<div class="flex mx-[5vw]">
+  <p
+    class="buildAnimate py-5 text-black text-[22px]"
   >
-    <div class="items-center justify-center w-3/4">
-      <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
-        The Alliance will focus on being a..
-      </h2>
+    The benefits of the Beckn Protocol, like expanded markets and inclusive open
+    networks, become tangible only with substantial adoption and scale. For an
+    initiative of this magnitude, the costs of coordination can become
+    prohibitively high when pursued individually. Similar to the cell tower
+    analogy, where shared infrastructure is more cost-effective and efficient
+    than isolated efforts, the UEI Alliance unifies efforts to promote
+    interoperability, reducing duplicated efforts and coordination complexities.
+  </p>
+</div>
 
-      <ul class="ps-5 custom-list text-xl dark:text-gray-400 text-gray-500">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1"
-        >
-          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-            <div class="border border-green-500 p-1">
-              Promotion of Open Standards
-            </div>
-          </li>
-          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-            <div class="border border-green-500 p-1">
-              Server-Side Interoperability
-            </div>
-          </li>
-          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-            <div class="border border-green-500 p-1">Protocol Advocacy</div>
-          </li>
-          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-            <div class="border border-green-500 p-1">Incubation of Ideas</div>
-          </li>
-          <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
-            <div class="border border-green-500 p-1">Open Membership</div>
-          </li>
-        </div>
-      </ul>
-    </div>
+<div class="flex mx-[5vw] items-center justify-center" style="font-family: 'Open Sans'">
+  <div class="flex">
+    <h2 class="text-black text-2xl mb-5 font-bold buildAnimate">
+      The Alliance will focus on being a..
+    </h2>
+
+    <ul class="ps-5 custom-list text-xl dark:text-gray-400 text-gray-500">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1"
+      >
+        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+          <div class="border border-green-500 p-1">
+            Promotion of Open Standards
+          </div>
+        </li>
+        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+          <div class="border border-green-500 p-1">
+            Server-Side Interoperability
+          </div>
+        </li>
+        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+          <div class="border border-green-500 p-1">Protocol Advocacy</div>
+        </li>
+        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+          <div class="border border-green-500 p-1">Incubation of Ideas</div>
+        </li>
+        <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
+          <div class="border border-green-500 p-1">Open Membership</div>
+        </li>
+      </div>
+    </ul>
   </div>
 </div>
 

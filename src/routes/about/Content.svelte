@@ -27,21 +27,23 @@
   });
 </script>
 
-<div class="flex flex-col mb-5 buildAnimate" style="font-family: 'Open Sans'">
-    <div class="lg:w-3/4 flex flex-row ml-10 sm:ml-10 lg:ml-[10rem] items-center">
-      <h2 class="font-bold text-black py-5 text-3xl">Our Mission</h2>
-      <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
+<div
+  class="flex flex-col px-[5vw] mb-5 buildAnimate"
+  style="font-family: 'Open Sans'"
+>
+  <div class="flex flex-row items-center">
+    <h2 class="font-bold text-black py-5 text-3xl">Our Mission</h2>
+    <div class="ml-5 flex-grow border-t border-black"></div>
   </div>
-  
-  <div class="flex items-center justify-center">
-    <p class="w-3/4 justify-center  text-3xl text-black m-5">
-      <b class="italic text-2xl lg:text-3xl sm:text-2xl font-bold">" </b>The UEI Alliance is committed to <b
+
+  <div class="flex">
+    <p class=" text-[22px] text-black">
+      The UEI Alliance is committed to <b
         >global development, adoption, and compliance</b
       >
       with the Beckn Protocol for <b>energy-related economic transactions</b> between
-      digital platforms.<b class="italic text-4xl font-bold">"</b>
+      digital platforms.
     </p>
   </div>
 </div>
 <!-- <div class="relative mx-[5vw] bottom-0  w-full h-0.5 bg-gradient-to-r from-black to-gray-500 mt-3"></div> -->
- 

@@ -8,6 +8,7 @@
   import courosel1 from "$lib/assets/images/linkedinImage1.jpg";
   import courosel2 from "$lib/assets/images/linkedinImage2.jpg";
   import courosel3 from "$lib/assets/images/linkedinImage3.jpg";
+  import courosel4 from "$lib/assets/images/linkedinImage4.jpg";
 
   let swiperContainer: HTMLDivElement;
   let swiper: Swiper;
@@ -55,17 +56,14 @@
     Swiper.use([Autoplay, Pagination, Navigation]);
     swiper = new Swiper(swiperContainer, {
       loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      slidesPerView: 1,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
       },
     });
 
@@ -74,7 +72,7 @@
 
   onDestroy(() => {
     // Clean up YouTube players and listeners when component is destroyed
-    youtubePlayers.forEach(player => {
+    youtubePlayers.forEach((player) => {
       player.destroy();
     });
     youtubePlayers = [];
@@ -84,24 +82,16 @@
 <div class="text-center text-3xl">
   <h2 class="font-bold mb-5 relative inline-block">
     Imagine with UEI
-    <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray mt-3"></div>
+    <div
+      class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-black to-gray mt-3"
+    ></div>
   </h2>
 </div>
 
 <div class="swiper-container" bind:this={swiperContainer}>
   <div class="swiper-wrapper">
     <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <img src={courosel1} alt="Image1" class="slide-content" />
-    </div>
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <img src={courosel2} alt="Image2" class="slide-content" />
-    </div>
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <img src={courosel3} alt="Image3" class="slide-content" />
-    </div>
+
     <!-- Slide 4 - YouTube Video -->
     <div class="swiper-slide">
       <iframe
@@ -114,22 +104,34 @@
         class="slide-content"
       ></iframe>
     </div>
+    <div class="swiper-slide">
+      <img src={courosel1} alt="Image1" class="slide-content" />
+    </div>
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <img src={courosel2} alt="Image2" class="slide-content" />
+    </div>
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <img src={courosel3} alt="Image3" class="slide-content" />
+    </div>
+    <!-- Slide 4 -->
+    <div class="swiper-slide">
+      <img src={courosel4} alt="Image4" class="slide-content" />
+    </div>
   </div>
 
   <!-- Pagination -->
   <div class="swiper-pagination"></div>
-
-  <!-- Navigation Buttons -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
 </div>
 
 <style>
   .swiper-container {
-    width: 100%;
+    width: 90%;
     height: 500px; /* Set a consistent height for the carousel */
     margin: auto; /* Center the carousel */
     position: relative; /* Ensure pagination dots are positioned relative to this container */
+    overflow: hidden;
   }
   .swiper-slide {
     display: flex;
@@ -142,29 +144,15 @@
     height: 100%;
     object-fit: cover;
   }
+  .swiper-wrapper{
+    object-fit: cover;
+    margin:0%
+  }
   .swiper-pagination {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10; /* Ensure pagination dots are above other content */
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10; /* Ensure navigation buttons are above other content */
-  }
-  .swiper-button-next {
-    right: 10px;
-  }
-  .swiper-button-prev {
-    left: 10px;
   }
 </style>

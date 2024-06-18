@@ -138,9 +138,9 @@
   </div>
 </div>
 <div
-  class="justify-center lg:justify-center  sm:justify-center items-end flex mr-0 lg:mr-20 sm:mr-0 pb-5  text-white hover:text-gray-200"
+  class="justify-center flex pb-5  text-white hover:text-gray-200"
 >
-  <a href={"/form"} class="text-xl bg-black font-bold py-4 px-6 rounded-lg flex items-center">
+  <a href={"/form"} class="text-[22px] bg-black font-bold py-3 px-5 rounded-lg flex items-center">
     Join Our Alliance <ArrowRightOutline class="w-6 h-6 ml-2" />
   </a>
 </div>

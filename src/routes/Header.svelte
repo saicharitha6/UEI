@@ -7,7 +7,7 @@
 </script>
 
 <header id="navbar"
-  class="fixed bg-white left-0 shadow-lg top-0 right-0 z-50 text-lg"
+  class="fixed bg-white left-0 shadow-lg top-0 right-0 z-50 text-[22px]"
   style="font-family: 'Open Sans'"
 >
   <div class="flex items-center justify-between px-6 py-3">
@@ -24,7 +24,7 @@
       <a
         href="/"
         on:click={() => ($isActiveTab = "home")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "home"}
         class:text-white={$isActiveTab === "home"}
         class:text-black={$isActiveTab !== "home"}>Home</a
@@ -32,7 +32,7 @@
       <a
         href="/about"
         on:click={() => ($isActiveTab = "about")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "about"}
         class:text-white={$isActiveTab === "about"}
         class:text-black={$isActiveTab !== "about"}>About</a
@@ -40,7 +40,7 @@
       <a
         href="/news"
         on:click={() => ($isActiveTab = "news")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xs lg:text-lg md:text-sm sm:text-xs font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "news"}
         class:text-white={$isActiveTab === "news"}
         class:text-black={$isActiveTab !== "news"}>Media Center</a
@@ -66,7 +66,7 @@
             $isActiveTab = "home";
             showMenu = false;
           }}
-          class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
+          class="p-2 text-xl lg:text-xl md:text-xl font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
           class:bg-white={$isActiveTab === "home"}
           class:text-gray-800={$isActiveTab === "home"}
           class:text-black={$isActiveTab !== "home"}>Home</a
@@ -77,7 +77,7 @@
             $isActiveTab = "about";
             showMenu = false;
           }}
-          class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
+          class="p-2 text-xl lg:text-xl md:text-xl font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
           class:bg-white={$isActiveTab === "about"}
           class:text-gray-800={$isActiveTab === "about"}
           class:text-black={$isActiveTab !== "about"}>About</a
@@ -88,7 +88,7 @@
             $isActiveTab = "news";
             showMenu = false;
           }}
-          class="p-2 text-sm font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
+          class="p-2 text-xl lg:text-xl md:text-xl font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
           class:bg-white={$isActiveTab === "news"}
           class:text-gray-800={$isActiveTab === "news"}
           class:text-black={$isActiveTab !== "news"}>Media Center</a
