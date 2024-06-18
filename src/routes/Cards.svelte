@@ -90,7 +90,7 @@
       dealing in energy and its derivatives such as E V charging, battery swapping,
       renewable energy, and more.
     </p>
-    <p class="text-[22px] italic my-5" style="font-family: 'Open Sans'">
+    <p class="text-[22px] my-5" style="font-family: 'Open Sans'">
       UEI creates a unified ecosystem, connecting providers and consumers of
       energy-related services, fostering innovation, and promoting efficient and
       sustainable energy use.

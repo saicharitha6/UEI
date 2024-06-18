@@ -46,9 +46,7 @@
 </div>
 
 <div class="flex mx-[5vw]">
-  <p
-    class="buildAnimate py-5 text-black text-[22px]"
-  >
+  <p class="buildAnimate py-5 text-black text-[22px]">
     The benefits of the Beckn Protocol, like expanded markets and inclusive open
     networks, become tangible only with substantial adoption and scale. For an
     initiative of this magnitude, the costs of coordination can become
@@ -59,16 +57,17 @@
   </p>
 </div>
 
-<div class="flex mx-[5vw] items-center justify-center" style="font-family: 'Open Sans'">
-  <div class="flex">
-    <h2 class="text-black text-2xl mb-5 font-bold buildAnimate">
+<div
+  class="flex mb-10 flex-col lg:flex-row sm:flex-col justify-around mx-[2vw] sm:mx-[2vw] lg:mx-[5vw]"
+  style="font-family: 'Open Sans'"
+>
+  <div class="flex flex-col">
+    <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
       The Alliance will focus on being a..
     </h2>
 
-    <ul class="ps-5 custom-list text-xl dark:text-gray-400 text-gray-500">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1"
-      >
+    <ul class="ps-5 custom-list text-[22px] dark:text-gray-400 text-gray-500">
+      <div class="flex flex-col">
         <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
           <div class="border border-green-500 p-1">
             Promotion of Open Standards
@@ -91,20 +90,13 @@
       </div>
     </ul>
   </div>
-</div>
 
-<div
-  class="flex items-center justify-center text-lg mb-10"
-  style="font-family: 'Open Sans'"
->
-  <div class="mt-10 items-center justify-center w-3/4">
+  <div class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-0" style="font-family: 'Open Sans'">
     <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
       And alliance is not involve in..
     </h2>
-    <ul class="ps-5 custom-list1 text-xl dark:text-gray-400 text-gray-500">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1"
-      >
+    <ul class="ps-5 custom-list1 text-[22px] dark:text-gray-400 text-gray-500">
+      <div class="flex flex-col">
         <li class="mb-2 text-gray-600 dark:text-gray-400 mr-5">
           <div class="border border-red-500 p-1">Hardware Specifications</div>
         </li>
@@ -131,7 +123,7 @@
 <style>
   .custom-list {
     list-style-type: none;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 
   .custom-list li {
@@ -154,7 +146,7 @@
 
   .custom-list1 {
     list-style-type: none;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 
   .custom-list1 li {
