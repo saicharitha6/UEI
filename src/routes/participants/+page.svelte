@@ -34,6 +34,7 @@
       img: screen4,
       title: "Thunder",
       des: "See what it's like to build custom EV charging App, without writing code!",
+      link:"https://www.thunderplus.io/"
     },
     {
       img: screen5,
@@ -133,7 +134,7 @@
             <div class="items-center justify-center flex flex-col">
               <Button
                 href={step.link}
-                class="w-fit mt-5 text-[22px] text-white hover:bg-green-700 font-bold justify-center"
+                class="w-fit mt-5 text-[22px] text-white hover:bg-green-700 border-none font-bold justify-center"
               >
                 Click Here<ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
               </Button>
