@@ -67,7 +67,7 @@
 </script>
 
 <h3
-  class="text-3xl sm:text-3xl lg:text-3xl text-black text-center font-bold mt-10 mb-5 font-inter"
+  class="text-3xl sm:text-3xl lg:text-3xl text-black text-center font-bold mt-20 mb-5 font-inter"
   style="font-family: 'Open Sans'"
 >
   Member Participants
@@ -138,7 +138,7 @@
   </div>
 </div>
 <div
-  class="justify-center flex pb-5  text-white hover:text-gray-200"
+  class="justify-center flex  mb-[3vw] mt-[5vw] text-white hover:text-gray-200"
 >
   <a href={"/form"} class="text-[22px] bg-black font-bold py-3 px-5 rounded-lg flex items-center">
     Join Our Alliance <ArrowRightOutline class="w-6 h-6 ml-2" />

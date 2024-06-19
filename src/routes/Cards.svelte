@@ -22,9 +22,9 @@
   }
 </script>
 
-<div class="lg:right-0 text-xl" style="font-family: 'Open Sans'">
+<div class="lg:right-0 text-xl  mb-[3vw] mt-[5vw]" style="font-family: 'Open Sans'">
   <div class="flex flex-row items-center">
-    <h2 class="font-bold text-black py-5 text-3xl text-[30px] pl-[5vw]">Focus Areas</h2>
+    <h2 class="font-bold text-black py-7 text-3xl text-[30px] pl-[5vw]">Focus Areas</h2>
     <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
   </div>
   <div class="justify-center items-center w-full px-[5vw] p-5">
@@ -71,7 +71,7 @@
     </div>
   </div>
 </div>
-<div class="flex pl-[5vw] flex-row items-center mt-5">
+<div class="flex pl-[5vw] mb-[3vw] mt-[5vw] flex-row items-center">
   <h2 class="font-bold text-3xl">What is UEI?</h2>
   <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
 </div>

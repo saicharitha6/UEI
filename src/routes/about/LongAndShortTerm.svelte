@@ -8,11 +8,11 @@
   import l4 from "$lib/assets/images/l4.png";
 </script>
 
-<div class="mx-[5vw] flex" style="font-family: 'Open Sans'">
+<div class="mx-[5vw]  mb-[3vw] mt-[5vw] flex" style="font-family: 'Open Sans'">
   <div class="w-full">
     <div class="flex flex-row items-center">
       <!-- <div class="mr-5 flex-grow border-t border-black"></div> -->
-      <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
+      <h2 class="font-bold text-black text-center sm:text-center py-10 text-3xl">
         Short-term Objectives
       </h2>
       <div class="ml-5 flex-grow border-t border-black"></div>
@@ -55,7 +55,7 @@
     </div>
   </div>
 </div>
-<div class="mx-[5vw] flex" style="font-family: 'Open Sans'">
+<div class="mx-[5vw] flex  mb-[3vw] mt-[5vw]" style="font-family: 'Open Sans'">
   <div class="w-full">
     <div class="flex flex-row items-center">
       <!-- <div class="mr-5 flex-grow border-t border-black"></div> -->

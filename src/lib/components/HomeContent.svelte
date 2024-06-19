@@ -1,13 +1,13 @@
 <div
   class="flex border-b border-black flex-col items-center px-[5vw] justify-center my-5 bg-gradient-to-r from-white via-gray-200 to-gray-200" style="font-family: 'Open Sans'"
 >
-  <p class="w-full my-10 justify-center text-3xl text-black">
+  <p class="w-full mt-20 mb-5 justify-center text-3xl text-black">
    The UEI
     Alliance is committed to <b>global development, adoption, and compliance</b>
     with the Beckn Protocol for <b>energy-related economic transactions</b>
     between digital platforms.
   </p>
-  <p class="w-full pb-10 justify-center text-[22px]">
+  <p class="w-full pb-20 justify-center text-[22px]">
     The alliance serves as a hub for open network concepts, providing support
     and advisory services.
     <br />
@@ -19,7 +19,7 @@
 
 
 
-<div class="px-[5vw]" style="font-family: 'Open Sans'">
+<div class="px-[5vw] mt-20" style="font-family: 'Open Sans'">
   <p class="mb-3 text-[22px]">
     <b class="text-3xl lg:text-5xl sm:text-3xl font-bold">UEI Alliance is a collaborative group </b><br
     />formed by various stakeholders in the energy sector, committed to global

@@ -36,7 +36,7 @@
 </script> -->
 
 <div
-  class="mx-[5vw] flex flex-row items-center"
+  class="mx-[5vw]  mt-[5vw] flex flex-row items-center"
   style="font-family: 'Open Sans'"
 >
   <h2 class="font-bold text-black py-5 text-3xl">
@@ -61,7 +61,7 @@
   class="flex mb-10 flex-col lg:flex-row sm:flex-col justify-between mx-[2vw] sm:mx-[2vw] lg:mx-[5vw]"
   style="font-family: 'Open Sans'"
 >
-  <div class="flex flex-col">
+  <div class="flex flex-col  mb-[3vw] mt-[3vw]">
     <h2
       class="text-black text-2xl mb-5 sm:ml-5 lg:ml-0 ml-5 font-bold buildAnimate"
     >
@@ -162,9 +162,9 @@
     </ul>
   </div>
  <!-- Vertical line here -->
- <div class="border-l border-black ml-20 my-5 lg:my-0 hidden lg:block"></div>
+ <div class="border-l border-black ml-20 my-10 hidden lg:block"></div>
   <div
-    class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-0"
+    class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-10"
     style="font-family: 'Open Sans'"
   >
     <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">

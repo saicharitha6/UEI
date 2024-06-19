@@ -1,5 +1,5 @@
 <div
-  class="flex flex-col px-[5vw] mb-5"
+  class="flex flex-col px-[5vw]  mb-[3vw] mt-[3vw]"
   style="font-family: 'Open Sans'"
 >
   <div class="flex flex-row items-center">

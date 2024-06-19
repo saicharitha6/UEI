@@ -79,7 +79,7 @@
   });
 </script>
 
-<div class="text-center text-3xl">
+<div class="text-center text-3xl  mb-[3vw] mt-[5vw]">
   <h2 class="font-bold mb-5 relative inline-block">
     Imagine with UEI
     <div

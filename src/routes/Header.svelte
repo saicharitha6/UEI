@@ -7,7 +7,8 @@
   let showMenu: boolean = false;
 </script>
 
-<header id="navbar"
+<header
+  id="navbar"
   class="fixed bg-white left-0 shadow-lg top-0 right-0 z-50 text-[22px]"
   style="font-family: 'Open Sans'"
 >
@@ -25,7 +26,7 @@
       <a
         href="/"
         on:click={() => ($isActiveTab = "home")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 lg:py-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "home"}
         class:text-white={$isActiveTab === "home"}
         class:text-black={$isActiveTab !== "home"}>Home</a
@@ -33,7 +34,7 @@
       <a
         href="/about"
         on:click={() => ($isActiveTab = "about")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 lg:py-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "about"}
         class:text-white={$isActiveTab === "about"}
         class:text-black={$isActiveTab !== "about"}>About</a
@@ -41,21 +42,22 @@
       <a
         href="/news"
         on:click={() => ($isActiveTab = "news")}
-        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 lg:py-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
         class:bg-black={$isActiveTab === "news"}
         class:text-white={$isActiveTab === "news"}
         class:text-black={$isActiveTab !== "news"}>Media Center</a
       >
       <a
-      href="/"
-      on:click={() => ($isActiveTab = "dashboard")}
-      class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
-      class:bg-black={$isActiveTab === "dashboard"}
-      class:text-white={$isActiveTab === "dashboard"}
-      class:text-black={$isActiveTab !== "dashboard"}>Dashboard</a
-    >
+        href="/"
+        on:click={() => ($isActiveTab = "dashboard")}
+        class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 lg:py-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+        class:bg-black={$isActiveTab === "dashboard"}
+        class:text-white={$isActiveTab === "dashboard"}
+        class:text-black={$isActiveTab !== "dashboard"}>Dashboard</a
+      >
+      
     </nav>
-
+   
     <div class="block md:hidden">
       <button
         on:click={() => (showMenu = !showMenu)}
@@ -63,7 +65,12 @@
       >
         ☰
       </button>
-      <Button href="/form" class="text-white bg-black text-[20px]">
+    </div>
+    <div>
+      <Button
+        href="/form"
+        class="text-white font-bold bg-black text-xl lg:text-[22px] md:text-xl"
+      >
         JOIN US
       </Button>
     </div>
