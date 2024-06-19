@@ -45,6 +45,14 @@
         class:text-white={$isActiveTab === "news"}
         class:text-black={$isActiveTab !== "news"}>Media Center</a
       >
+      <a
+      href="/"
+      on:click={() => ($isActiveTab = "dashboard")}
+      class=" p-1.5 sm:p-1.5 md:p-auto text-xl lg:text-[22px] md:text-xl font-bold px-2 lg:px-3 md:px-3 sm:px-2 py-2 selection:bg-white rounded-md transition-colors duration-500 active:bg-black active:text-gray-600"
+      class:bg-black={$isActiveTab === "dashboard"}
+      class:text-white={$isActiveTab === "dashboard"}
+      class:text-black={$isActiveTab !== "dashboard"}>Dashboard</a
+    >
     </nav>
 
     <div class="block md:hidden">
@@ -92,6 +100,17 @@
           class:bg-white={$isActiveTab === "news"}
           class:text-gray-800={$isActiveTab === "news"}
           class:text-black={$isActiveTab !== "news"}>Media Center</a
+        >
+        <a
+          href="/"
+          on:click={() => {
+            $isActiveTab = "dashboard";
+            showMenu = false;
+          }}
+          class="p-2 text-xl lg:text-xl md:text-xl font-bold hover:bg-white hover:text-gray-600 rounded-md transition-colors duration-500"
+          class:bg-white={$isActiveTab === "dashboard"}
+          class:text-gray-800={$isActiveTab === "dashboard"}
+          class:text-black={$isActiveTab !== "dashboard"}>Dashboard</a
         >
       </nav>
     </div>
