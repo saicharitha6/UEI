@@ -94,7 +94,7 @@
 </script>
 
 <div
-  class="bg-white flex mt-20 flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh]" style="font-family: 'Open Sans'"
+  class="bg-white flex mt-20 flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] overflow-y-auto" style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">

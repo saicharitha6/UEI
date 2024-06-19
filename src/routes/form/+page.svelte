@@ -9,10 +9,13 @@
     CloseButton,
     Radio,
   } from "flowbite-svelte";
-
+  import thankyou from "$lib/assets/images/thankyou.png";
   import { isOpen } from "$lib/store";
   import { isActiveTab } from "$lib/store";
   import { onMount } from "svelte";
+  import { bounceIn } from "svelte/easing";
+
+  let showThankYou = false
 
   onMount(() => {
     console.log($isOpen);
@@ -30,7 +33,7 @@
 
   let fileuploadprops = {
     id: "user_avatar",
-    fontSize:"22px"
+    fontSize: "22px",
   };
 
   let selected = "";
@@ -44,53 +47,16 @@
     { value: "ot", name: "Other" },
   ];
 
-  // let organizationName = "";
-  // let natureOfOrganization = "";
-  // let website = "";
-  // let industryField = "";
-  // let pointOfContact = "";
-  // let missionDescription = "";
-  // let ceoNameEmail = "";
-  // let howDidYouKnow = "";
-  // let memberReferral = "";
-
-  // async function handleSubmit() {
-  //   const formData = {
-  //     organizationName,
-  //     natureOfOrganization,
-  //     website,
-  //     industryField,
-  //     pointOfContact,
-  //     missionDescription,
-  //     ceoNameEmail,
-  //     howDidYouKnow,
-  //     memberReferral,
-  //   };
-
-  //   try {
-  //     const response = await fetch("/formData", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     if (response.ok) {
-  //       alert("Form submitted successfully!");
-  //     } else {
-  //       alert("Form submission failed.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error submitting form:", error);
-  //     alert("An error occurred while submitting the form.");
-  //   }
-  // }
+  function SubmitEvent() {
+    // Here you would typically handle form submission (not implemented in this example)
+    // For now, just toggle the thank you message
+    showThankYou = true;
+  }
 </script>
 
 <div
   class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-40"
-  style="font-family: 'Open Sans'"
+  style="font-family: 'Open Sans'" 
 >
   <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
     <!-- <form on:submit|preventDefault={handleSubmit}> -->
@@ -159,7 +125,12 @@
         eg. Charging Point Operator, EV fleet management, software and service
         provider, energy storage, etc.
       </p>
-      <Input id="id03" class="text-[22px]" size="md" placeholder="Enter Field" />
+      <Input
+        id="id03"
+        class="text-[22px]"
+        size="md"
+        placeholder="Enter Field"
+      />
     </div>
     <div class="mb-3">
       <Label id="idi" class="text-[22px] block mb-2 font-bold"
@@ -194,21 +165,10 @@
         for="id40"
         rows="4"
         placeholder="Enter details..."
-      class="block mb-2 text-lg placeholder-gray-400"
+        class="block mb-2 text-lg placeholder-gray-400"
         style="font-size: 22px; line-height: 1.5;"
       ></Textarea>
     </div>
-    <!-- <div class="mb-3">
-        <Label id="id5" class="block mb-2 font-bold"
-          >Mission / Description of Organization's Work
-        </Label>
-        <Textarea
-          for="id9"
-          rows="4"
-          placeholder="Enter details..."
-          class="block mb-2"
-        ></Textarea>
-      </div> -->
     <div class="mb-3">
       <Label id="id50" class="text-[22px] block mb-2 font-bold"
         >Name & Email Id of Organization's CEO/Chairman *</Label
@@ -234,9 +194,9 @@
       ></Textarea>
     </div>
     <div class="mb-3 text-[22px]">
-    <Label id="id9" class="text-[22px] mb-3 font-bold">Upload Logo</Label>
-    <Fileupload {...fileuploadprops} style={{ fontSize: "22px" }}/>
-  </div>
+      <Label id="id9" class="text-[22px] mb-3 font-bold">Upload Logo</Label>
+      <Fileupload {...fileuploadprops} style={{ fontSize: "22px" }} />
+    </div>
     <div class="mb-3">
       <Label id="id-8" class="text-[22px] block text-xl font-bold mb-2"
         >Terms of Association</Label
@@ -296,11 +256,24 @@
     <div class="flex justify-center my-6">
       <Button
         type="submit"
+        on:click={SubmitEvent}
         class="bg-green-500 no-underline text-[22px] hover:bg-green-800 text-white mx-20 ring-1 font-bold mb-10"
       >
         Submit
       </Button>
     </div>
+     <!-- Popover for Thank You Message -->
+     {#if showThankYou }
+     <div class="fixed inset-0 flex items-center justify-center z-50">
+       <div class="bg-white p-8 rounded-lg shadow-lg">
+         <img src={thankyou} alt="ThankImage" class="mb-4 mx-auto" style="max-width: 200px;" />
+         <p class="text-lg text-center">Thank you for your interest in joining the UEI Alliance. <br/>We will be in touch with you shortly to discuss next steps.</p>
+         <div class="justify-center items-center flex">
+         <Button on:click={() => showThankYou = false} class="bg-gray-300 text-gray-800 hover:bg-gray-400 hover:text-gray-900 mt-4 px-6 py-2 rounded-lg ">Close</Button>
+       </div>
+      </div>
+     </div>
+   {/if}
     <!-- </form> -->
   </div>
 </div>
