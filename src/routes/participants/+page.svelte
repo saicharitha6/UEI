@@ -63,38 +63,38 @@
     },
   ];
 
-  const animateData = async () => {
-    const { default: gsap } = await import("gsap");
-    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-    gsap.registerPlugin(ScrollTrigger);
+  // const animateData = async () => {
+  //   const { default: gsap } = await import("gsap");
+  //   const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".buildAnimateSteps",
-        start: "10% 80%",
-      },
-    });
-    tl.fromTo(
-      ".buildAnimateSteps",
-      {
-        y: 100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.5,
-      }
-    );
-  };
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".buildAnimateSteps",
+  //       start: "10% 80%",
+  //     },
+  //   });
+  //   tl.fromTo(
+  //     ".buildAnimateSteps",
+  //     {
+  //       y: 100,
+  //       opacity: 0,
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       duration: 0.5,
+  //     }
+  //   );
+  // };
 
-  onMount(() => {
-    animateData();
-  });
+  // onMount(() => {
+  //   animateData();
+  // });
 </script>
 
 <div
-  class="bg-white flex mt-20 flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh] buildAnimateSteps opacity-0 overflow-y-auto" style="font-family: 'Open Sans'"
+  class="bg-white flex mt-20 flex-col gap-14 w-full lg:h-screen min-h-screen pt-[10vh] px-[10vw] sm:pt-[10vh] md:pt-[10vh] lg:pt-[10vh]" style="font-family: 'Open Sans'"
 >
   <div class="flex flex-col gap-4">
     <div class="flex flex-col gap-3">

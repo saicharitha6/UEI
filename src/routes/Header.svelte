@@ -1,6 +1,7 @@
 <script lang="ts">
   import logo from "$lib/assets/images/logo.png";
   import { isActiveTab } from "$lib/store";
+  import { Button } from "flowbite-svelte";
   import { onMount } from "svelte";
 
   let showMenu: boolean = false;
@@ -62,6 +63,9 @@
       >
         ☰
       </button>
+      <Button href="/form" class="text-white bg-black text-[20px]">
+        JOIN US
+      </Button>
     </div>
   </div>
 
