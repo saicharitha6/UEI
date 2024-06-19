@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { onMount } from "svelte";
 
   const animateData = async () => {
@@ -33,10 +33,10 @@
   onMount(() => {
     animateData();
   });
-</script>
+</script> -->
 
 <div
-  class="buildAnimate mx-[5vw] flex flex-row items-center"
+  class="mx-[5vw] flex flex-row items-center"
   style="font-family: 'Open Sans'"
 >
   <h2 class="font-bold text-black py-5 text-3xl">
@@ -46,7 +46,7 @@
 </div>
 
 <div class="flex mx-[5vw]">
-  <p class="buildAnimate py-5 text-black text-[22px]">
+  <p class="py-5 text-black text-[22px]">
     The benefits of the Beckn Protocol, like expanded markets and inclusive open
     networks, become tangible only with substantial adoption and scale. For an
     initiative of this magnitude, the costs of coordination can become
@@ -162,7 +162,7 @@
     </ul>
   </div>
  <!-- Vertical line here -->
- <div class="border-l border-black mx-5 my-5 lg:my-0 hidden lg:block"></div>
+ <div class="border-l border-black ml-20 my-5 lg:my-0 hidden lg:block"></div>
   <div
     class="flex flex-col mb-10 mt-0 sm:mt-10 lg:mt-0"
     style="font-family: 'Open Sans'"

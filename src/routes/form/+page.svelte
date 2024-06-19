@@ -36,14 +36,12 @@
   let selected = "";
 
   let type = [
-    { value: "su", name: "start-up" },
-    { value: "ca", name: "Corporate" },
-    { value: "fr", name: "PSU" },
-    { value: "fr", name: "Foundation/ Society" },
-    { value: "fr", name: "Non-Profit/NGO" },
-    { value: "fr", name: "University/Education" },
-    { value: "fr", name: "Think tank" },
-    { value: "fr", name: "Other" },
+    { value: "tt", name: "Think tank" },
+    { value: "pc", name: "Private Corporations" },
+    { value: "psu", name: "PSU" },
+    { value: "fn", name: "Foundation/Non-Profit/NGO" },
+    { value: "ue", name: "University/Education" },
+    { value: "ot", name: "Other" },
   ];
 
   // let organizationName = "";
