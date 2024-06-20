@@ -23,7 +23,7 @@
   let contact2 = "";
   let ceoDetails = "";
   let ueiAlliance = "";
-  let logo: any
+  let logo: any;
   let termsAccepted = "No";
   let referral = "";
 
@@ -37,37 +37,7 @@
   ];
 
   async function SubmitEvent() {
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycby4MD5u1qeNWg0_GqCxf6XJknlcz7n545V7W2RiP2CvYLtPVXAS1-936f_KXnn5y3SLAg/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors", // This will disable CORS
-        body: JSON.stringify({
-          email,
-          organizationName,
-          organizationType: selected,
-          website,
-          industryField,
-          contact1,
-          contact2,
-          ceoDetails,
-          ueiAlliance,
-          logo,
-          termsAccepted,
-          referral,
-        }),
-      }
-    );
-    console.log(response);
-    const result = await response.json();
-    if (result.status === "success") {
-      showThankYou = true;
-    } else {
-      console.error("Form submission failed");
-    }
+    showThankYou = true;
   }
 
   function toggle() {
@@ -82,7 +52,7 @@
 
   let fileuploadprops = {
     id: "logo",
-    name:"logo",
+    name: "logo",
     fontSize: "20px",
   };
 </script>
@@ -91,10 +61,13 @@
   class="container mx-auto px-5 sm:px-10 items-center lg:px-8 mt-40"
   style="font-family: 'Open Sans'"
 >
-  <form id="myForm" method="POST" action="https://script.google.com/macros/s/AKfycby4MD5u1qeNWg0_GqCxf6XJknlcz7n545V7W2RiP2CvYLtPVXAS1-936f_KXnn5y3SLAg/exec">
+  <!-- <form id="myForm" on:submit|preventDefault={SubmitEvent}> -->
+  <form method="POST">
     <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
       <div class="flex justify-between">
-        <h2 class="font-bold text-[29px] mb-10">UEI Alliance Membership Form</h2>
+        <h2 class="font-bold text-[29px] mb-10">
+          UEI Alliance Membership Form
+        </h2>
         <a href="/" on:click={toggle}
           ><CloseButton class="mb-4 dark:text-white" /></a
         >
@@ -117,7 +90,8 @@
       <hr />
 
       <div class="my-3">
-        <Label for="email" class="text-[20px] block font-bold mb-2">Email *</Label
+        <Label for="email" class="text-[20px] block font-bold mb-2"
+          >Email *</Label
         >
         <Input
           id="email"
@@ -146,7 +120,12 @@
         <Label id="organizationType" class="text-[20px] font-bold"
           >Nature of Organization *</Label
         >
-        <Select class="mt-2 text-[20px]" items={type} name="organizationType" bind:value={selected} />
+        <Select
+          class="mt-2 text-[20px]"
+          items={type}
+          name="organizationType"
+          bind:value={selected}
+        />
       </div>
       <div class="mb-3">
         <Label for="website" class="text-[20px] block mb-2 font-bold"
@@ -156,7 +135,7 @@
           id="website"
           bind:value={website}
           class="text-[20px]"
-           name="website"
+          name="website"
           size="md"
           placeholder="Enter Organization"
         />
@@ -173,7 +152,7 @@
           id="industryField"
           bind:value={industryField}
           class="text-[20px]"
-          name= "industryField"
+          name="industryField"
           size="md"
           placeholder="Enter Field"
         />
@@ -210,7 +189,7 @@
         <Textarea
           for="contact2"
           bind:value={contact2}
-           name="contact2"
+          name="contact2"
           rows="4"
           placeholder="Enter details..."
           class="block mb-2 text-lg placeholder-gray-400"
@@ -224,7 +203,7 @@
         <Input
           id="ceoDetails"
           bind:value={ceoDetails}
-           name="ceoDetails"
+          name="ceoDetails"
           class="text-[20px]"
           size="md"
           placeholder="Enter Details"
@@ -246,11 +225,16 @@
         ></Textarea>
       </div>
       <div class="mb-3 text-[20px]">
-        <Label id="logo" name="logo" class="text-[20px] mb-3 font-bold">Upload Logo</Label>
+        <Label id="logo" name="logo" class="text-[20px] mb-3 font-bold"
+          >Upload Logo</Label
+        >
         <Fileupload {...fileuploadprops} style={{ fontSize: "20px" }} />
       </div>
       <div class="mb-3">
-        <Label id="termsAccepted" name="termsAccepted" class="text-[20px] block text-xl font-bold mb-2"
+        <Label
+          id="termsAccepted"
+          name="termsAccepted"
+          class="text-[20px] block text-xl font-bold mb-2"
           >Terms of Association</Label
         >
         <ol class="list-decimal ml-4">
@@ -286,7 +270,7 @@
         </p>
 
         <Radio
-        name="termsAccepted"
+          name="termsAccepted"
           bind:group={termsAccepted}
           value="Yes"
           class="text-[20px] mb-2">Yes</Radio

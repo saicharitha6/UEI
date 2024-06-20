@@ -1,4 +1,4 @@
-// src/routes/api/submitForm.ts
+// src/lib/api/submitForm.ts
 
 import { json,type RequestHandler } from '@sveltejs/kit';
 import fetch from 'node-fetch';
