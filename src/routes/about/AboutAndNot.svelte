@@ -39,14 +39,14 @@
   class="mx-[5vw]  mt-[5vw] flex flex-row items-center"
   style="font-family: 'Open Sans'"
 >
-  <h2 class="font-bold text-black py-5 text-3xl">
+  <h2 class="font-bold text-black py-5 text-[29px]">
     Why Do We Need an Alliance?
   </h2>
   <div class="ml-5 flex-grow border-t border-black"></div>
 </div>
 
-<div class="flex mx-[5vw]">
-  <p class="py-5 text-black text-[22px]">
+<div class="flex mx-[5vw]" style="font-family: 'Open Sans'">
+  <p class="py-5 text-black text-[20px]">
     The benefits of the Beckn Protocol, like expanded markets and inclusive open
     networks, become tangible only with substantial adoption and scale. For an
     initiative of this magnitude, the costs of coordination can become
@@ -69,7 +69,7 @@
     </h2>
 
     <ul
-      class="sm:ps-5 ps-5 lg:ps-0 text-[22px] dark:text-gray-400 text-gray-500"
+      class="sm:ps-5 ps-5 lg:ps-0 text-[20px] dark:text-gray-400 text-gray-500"
     >
       <div class="flex flex-col">
         <div class="flex flex-row">
@@ -170,7 +170,7 @@
     <h2 class="text-black text-2xl ml-5 mb-5 font-bold buildAnimate">
       And alliance is not involve in..
     </h2>
-    <ul class="ps-5 text-[22px] dark:text-gray-400 text-gray-500">
+    <ul class="ps-5 text-[20px] dark:text-gray-400 text-gray-500">
       <div class="flex flex-col">
         <div class="flex flex-row">
           <!-- SVG Close Icon -->

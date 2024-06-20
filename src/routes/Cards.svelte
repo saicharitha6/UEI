@@ -22,9 +22,9 @@
   }
 </script>
 
-<div class="lg:right-0 text-xl  mb-[3vw] mt-[5vw]" style="font-family: 'Open Sans'">
+<div class="lg:right-0 mb-[3vw] mt-[5vw]" style="font-family: 'Open Sans'">
   <div class="flex flex-row items-center">
-    <h2 class="font-bold text-black py-7 text-3xl text-[30px] pl-[5vw]">Focus Areas</h2>
+    <h2 class="font-bold text-black py-7 text-[29px] pl-[5vw]">Focus Areas</h2>
     <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
   </div>
   <div class="justify-center items-center w-full px-[5vw] p-5">
@@ -33,7 +33,7 @@
     >
       {#each Array.from({ length: 3 }) as _, i}
         <div
-          class="card floating rounded-lg text-[22px] shadow-md bg-white border overflow-hidden"
+          class="card floating rounded-lg text-[20px] shadow-md bg-white border overflow-hidden"
         >
           {#if i === 0}
             <div
@@ -71,8 +71,8 @@
     </div>
   </div>
 </div>
-<div class="flex pl-[5vw] mb-[3vw] mt-[5vw] flex-row items-center">
-  <h2 class="font-bold text-3xl">What is UEI?</h2>
+<div class="flex pl-[5vw] mb-[3vw] mt-[5vw] flex-row items-center" style="font-family: 'Open Sans'">
+  <h2 class="font-bold text-[29px]">What is UEI?</h2>
   <div class="ml-4 mr-20 flex-grow border-t border-black"></div>
 </div>
 <div
@@ -82,7 +82,7 @@
   <div
     class="items-center justify-center transition-colors from-white to-gray-500"
   >
-    <p class="text-[22px] my-5" style="font-family: 'Open Sans'">
+    <p class="text-[20px] my-5" style="font-family: 'Open Sans'">
       <b>Unified Energy Interface</b> or UEI unifies digital efforts in energy transactions.
       Built on the open-source Beckn Protocol, which powers networks like Open Network
       for Digital Commerce (ONDC), Namma Yatri, Unified Health Interface (UHI), and
@@ -90,7 +90,7 @@
       dealing in energy and its derivatives such as E V charging, battery swapping,
       renewable energy, and more.
     </p>
-    <p class="text-[22px] my-5" style="font-family: 'Open Sans'">
+    <p class="text-[20px] my-5" style="font-family: 'Open Sans'">
       UEI creates a unified ecosystem, connecting providers and consumers of
       energy-related services, fostering innovation, and promoting efficient and
       sustainable energy use.

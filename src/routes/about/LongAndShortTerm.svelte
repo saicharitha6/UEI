@@ -12,13 +12,13 @@
   <div class="w-full">
     <div class="flex flex-row items-center">
       <!-- <div class="mr-5 flex-grow border-t border-black"></div> -->
-      <h2 class="font-bold text-black text-center sm:text-center py-10 text-3xl">
+      <h2 class="font-bold text-black text-center sm:text-center py-10 text-[29px]">
         Short-term Objectives
       </h2>
       <div class="ml-5 flex-grow border-t border-black"></div>
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-5 text-[22px]"
+      class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-5 text-[20px]"
     >
       <div class="p-5 mx-5">
         <img
@@ -59,14 +59,14 @@
   <div class="w-full">
     <div class="flex flex-row items-center">
       <!-- <div class="mr-5 flex-grow border-t border-black"></div> -->
-      <h2 class="font-bold text-black text-center sm:text-center py-5 text-3xl">
+      <h2 class="font-bold text-black text-center sm:text-center py-5 text-[29px]">
         Long-term Objectives
       </h2>
       <div class="ml-5 flex-grow border-t border-black"></div>
     </div>
     <div>
       <div
-        class="grid grid-cols-1 text-[22px] lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1 gap-5"
+        class="grid grid-cols-1 text-[20px] lg:grid-col-2 md:grid-cols-2 sm:grid-cols-1 gap-5"
       >
         <div class="p-5 mx-5">
           <img

@@ -3,12 +3,12 @@
   style="font-family: 'Open Sans'"
 >
   <div class="flex flex-row items-center">
-    <h2 class="font-bold text-black py-5 text-3xl">Our Mission</h2>
+    <h2 class="font-bold text-black py-5 text-[29px]">Our Mission</h2>
     <div class="ml-5 flex-grow border-t border-black"></div>
   </div>
 
   <div class="flex">
-    <p class=" text-[22px] text-black">
+    <p class=" text-[20px] text-black">
       The UEI Alliance is committed to <b
         >global development, adoption, and compliance</b
       >

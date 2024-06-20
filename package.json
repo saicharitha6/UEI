@@ -37,8 +37,10 @@
 		"font-proxima-nova": "^1.0.1",
 		"gsap": "^3.12.5",
 		"js-base64": "^3.7.7",
+		"node-fetch": "^3.3.2",
 		"svelte-routing": "^2.13.0",
 		"svelte-transitions": "^1.2.0",
-		"swiper": "^11.1.4"
+		"swiper": "^11.1.4",
+		"xlsx": "^0.18.5"
 	}
 }

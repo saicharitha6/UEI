@@ -79,7 +79,7 @@
   });
 </script>
 
-<div class="text-center text-3xl  mb-[3vw] mt-[5vw]">
+<div class="text-center text-[29px]  mb-[3vw] mt-[5vw]" style="font-family: 'Open Sans'">
   <h2 class="font-bold mb-5 relative inline-block">
     Imagine with UEI
     <div
