@@ -24,7 +24,7 @@
   let ceoDetails = "";
   let ueiAlliance = "";
   let logo: any;
-  let termsAccepted = "No";
+  let termsAccepted = "Yes";
   let referral = "";
 
   let type = [
@@ -54,6 +54,7 @@
     id: "logo",
     name: "logo",
     fontSize: "20px",
+    type: "file",
   };
 </script>
 
@@ -62,7 +63,7 @@
   style="font-family: 'Open Sans'"
 >
   <!-- <form id="myForm" on:submit|preventDefault={SubmitEvent}> -->
-  <form method="POST">
+  <form method="POST" on:submit={SubmitEvent}>
     <div class="w-full sm:w-3/4 lg:w-3/4 mx-auto items-center">
       <div class="flex justify-between">
         <h2 class="font-bold text-[29px] mb-10">
@@ -306,35 +307,35 @@
         <Button
           type="submit"
           value="submit"
-          on:click={SubmitEvent}
+          on:submit={SubmitEvent}
           class="bg-black no-underline text-[20px] hover:bg-green-800 text-white mx-20 ring-1 font-bold mb-10"
         >
           Submit
         </Button>
       </div>
-      {#if showThankYou}
-        <div class="fixed inset-0 flex items-center justify-center z-50">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <img
-              src={thankyou}
-              alt="ThankImage"
-              class="mb-4 mx-auto"
-              style="max-width: 200px;"
-            />
-            <p class="text-lg text-center">
-              Thank you for your interest in joining the UEI Alliance. <br />We
-              will be in touch with you shortly to discuss next steps.
-            </p>
-            <div class="justify-center items-center flex">
-              <Button
-                on:click={() => (showThankYou = false)}
-                class="bg-gray-300 text-gray-800 hover:bg-gray-400 hover:text-gray-900 mt-4 px-6 py-2 rounded-lg "
-                >Close</Button
-              >
-            </div>
-          </div>
-        </div>
-      {/if}
     </div>
   </form>
+  {#if showThankYou}
+    <div class="fixed inset-0 flex items-center justify-center z-50">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <img
+          src={thankyou}
+          alt="ThankImage"
+          class="mb-4 mx-auto"
+          style="max-width: 200px;"
+        />
+        <p class="text-lg text-center">
+          Thank you for your interest in joining the UEI Alliance. <br />We will
+          be in touch with you shortly to discuss next steps.
+        </p>
+        <div class="justify-center items-center flex">
+          <Button
+            on:click={() => (showThankYou = false)}
+            class="bg-gray-300 text-gray-800 hover:bg-gray-400 hover:text-gray-900 mt-4 px-6 py-2 rounded-lg "
+            >Close</Button
+          >
+        </div>
+      </div>
+    </div>
+  {/if}
 </div>
