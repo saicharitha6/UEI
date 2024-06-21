@@ -7,7 +7,7 @@
   import member4 from "$lib/assets/company-icons/isof.png";
   import member5 from "$lib/assets/images/image3.jpg";
   import member6 from "$lib/assets/images/image4.jpg";
-  import member7 from "$lib/assets/company-icons/thunder.png";
+  import member7 from "$lib/assets/images/member6.jpg";
   import { ArrowRightOutline } from "flowbite-svelte-icons";
 
   // Define members
